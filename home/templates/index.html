@@ -920,21 +920,20 @@
 <body>
     <main>
         <div class="navbar">
-            <div class="nav_logo"><img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png" alt="" id="nav_logo"
-                    height="120px" width="270px"></div>
+            <div class="nav_logo">
+                <img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png" alt="" id="nav_logo" height="120px" width="270px">
+            </div>
             <div class="nav-content">
                 {% if user.is_authenticated %}
                     <div class="nav_items" id="nav_items"><a href="{% url 'index' %}">Home</a></div>
                     <div class="nav_items" id="nav_items"><a href="{% url 'about' %}">About Us</a></div>
-                    <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Course Outline</a> </div>
-                    <div class="nav_items" id="nav_items"><a href="https://cstutorialpoint.com/computer-science-notes/">PYQs</a> </div>
+                    <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Course Outline</a></div>
+                    <div class="nav_items" id="nav_items"><a href="https://cstutorialpoint.com/computer-science-notes/">PYQs</a></div>
                     <button id="login-button"><a href="{% url 'login' %}">Login</a></button>
-                    {% else %}
-             <p>Please <a href="{% url 'login' %}">login</a> to access the pages.</p>
                 {% endif %}
-                
             </div>
         </div>
+        
 
         <section class="sectionA">
             <div class="sectionA_items">
