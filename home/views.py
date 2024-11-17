@@ -4,6 +4,7 @@ from django.contrib.auth import authenticate, login
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth.hashers import check_password, make_password
+from django.contrib.auth.decorators import login_required
 
 
 
@@ -17,6 +18,7 @@ def about(request):
 def contact(request):
     if request.method == 'POST':
         username = request.POST['username']
+        course = request.POST['course']
         email = request.POST['email']
         password = request.POST['password']
         
@@ -25,7 +27,7 @@ def contact(request):
         hashed_password = make_password(password)
         
         # Save the contact in the Contact model (not the User model)
-        contact = Contact.objects.create(username=username, email=email, password=hashed_password)
+        contact = Contact.objects.create(username=username, course=course, email=email, password=hashed_password)
         contact.save()
 
         # Redirect to the index page after registration

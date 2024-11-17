@@ -1,27 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Register</title>
     <style>
-        * { margin: 0; font-family: Arial, Helvetica, sans-serif; }
-        .navbar { background-color: rgb(255, 255, 255); display: flex; padding-top: 10px; margin-bottom: 12px; }
-        .nav_logo { width: auto; height: auto; padding-left: 80px; }
-        .nav-content { display: flex; justify-content: flex-end; margin-left: 700px; padding-top: 55px; }
-        #nav_items { font-size: 20px; margin-right:50px; font-weight: 700; }
-        .form-container { display: flex; justify-content: center; padding: 20px; }
-        .form-container form { max-width: 400px; width: 100%; }
-        .form-container input, .form-container button { width: 100%; padding: 10px; margin: 10px 0; }
-        .form-container button { cursor: pointer; background-color: #4CAF50; color: white; border: none; }
-        .form-container button:hover { background-color: #45a049; }
-        .toggle-btn { cursor: pointer; color: #007BFF; text-decoration: none; }
-        .toggle-btn:hover { text-decoration: underline; }
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Makes the body take the full height of the viewport */
+            margin: 0;
+            background-color: rgb(255, 255, 255);
+            /* Removes any default margin */
+        }
+
+        .navbar {
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            padding-top: 10px;
+            margin-bottom: 12px;
+        }
+
+        .nav_logo {
+            width: auto;
+            height: auto;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            /* Centers the image horizontally */
+            align-items: center;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 700px;
+            padding-top: 55px;
+        }
+
+        #nav_items {
+            font-size: 20px;
+            margin-right: 50px;
+            font-weight: 700;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 20px;
+            background: linear-gradient(to bottom, #ccccff 0%, #ffff99 100%);
+            width: 450px;
+            height: 400px;
+            align-items: center;
+            border-radius: 9px;
+            border-color: black;
+        }
+
+        .form-container form {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        #login-form h2 {
+            text-align: center;
+        }
+
+        #register-form h2 {
+            text-align: center;
+        }
+
+        .form-container input,
+        .form-container button {
+            width: 380px;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 8px;
+            height: 10px;
+        }
+
+        .form-container button {
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            margin-left: 10px;
+            height: 30px;
+
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+
+        .toggle-btn {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .toggle-btn:hover {
+            text-decoration: underline;
+
+        
     </style>
 </head>
+
 <body>
-   
-    <h1 style="text-align:center;">Welcome to Knowledge Hub</h1>
+
+
+    <div class="nav_logo">
+        <img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png" alt="" id="nav_logo" height="150px" width="300px">
+    </div>
 
     <div class="form-container">
         <!-- Login Form -->
@@ -30,13 +130,14 @@
             <form method="post">
                 {% csrf_token %}
                 <label for="username">Username:</label>
-                <input type="text" name="username" id="username" required>
+                <input type="text" name="username" id="username" placeholder="Enter Your Username/Name" required>
                 <br>
                 <label for="password">Password:</label>
-                <input type="password" name="password" id="password" required>
+                <input type="password" name="password" id="password" placeholder="Enter Your Password" required>
                 <br>
                 <button type="submit">Login</button>
-                <p>Don't have an account? <a href="javascript:void(0);" class="toggle-btn" onclick="showForm('register')">Register here</a></p>
+                <p>Don't have an account? <a href="javascript:void(0);" class="toggle-btn"
+                        onclick="showForm('register')">Register here</a></p>
             </form>
         </div>
 
@@ -48,6 +149,9 @@
                 <label for="register-username">Username</label>
                 <input type="text" id="register-username" name="username" placeholder="Enter Your Name" required>
 
+                <label for="register-course">Course:</label>
+                <input type="text" name="course" id="course" placeholder="Enter Your Course/Branch" required>
+
                 <label for="register-email">Email</label>
                 <input type="email" id="register-email" name="email" placeholder="youremail@email.com" required>
 
@@ -55,11 +159,15 @@
                 <input type="password" id="register-password" name="password" placeholder="Enter Password" required>
 
                 <button type="submit">Register</button>
-                <p>Already have an account? <a href="javascript:void(0);" class="toggle-btn" onclick="showForm('login')">Login here</a></p>
+                <p>Already have an account? <a href="javascript:void(0);" class="toggle-btn"
+                        onclick="showForm('login')">Login here</a></p>
             </form>
         </div>
     </div>
 
+
+    </div>
+    
     <script>
         function showForm(formType) {
             document.getElementById('login-form').style.display = formType === 'login' ? 'block' : 'none';
@@ -67,4 +175,5 @@
         }
     </script>
 </body>
+
 </html>
