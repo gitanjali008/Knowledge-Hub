@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-mtte4pdc+x=@p@hka=lz73@1zt*@#+_$phxmua^%0y1a+@$)xd
 DEBUG = True
 
 ALLOWED_HOSTS = ['.vercel.app']
+APPEND_SLASH = False
 
+
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
 
 # Application definition
 
@@ -71,20 +74,19 @@ TEMPLATES = [
 WSGI_APPLICATION = 'online_website.wsgi.application'
 
 
-#  Database
-#  https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+# #  Database
+# #  https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'contact',
-#         'USER': 'root',
-#         'PASSWORD': '79832806',
-#         'HOST': 'localhost',
-#         'PORT': '3306',
-#     }
-# }
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+AUTHENTICATION_BACKENDS=[
+       'django.contrib.auth.backends.ModelBackend',
+]
 
 
 # Password validation
@@ -116,6 +118,9 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+
+SILENCED_SYSTEM_CHECKS = ['urls.W005']
 
 
 # Static files (CSS, JavaScript, Images)
