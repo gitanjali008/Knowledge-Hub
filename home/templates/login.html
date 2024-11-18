@@ -12,17 +12,19 @@
         }
 
         body {
-            background-image: url(https://i.ibb.co/nLZmpKs/pngegg.png);
-            background-size: cover;
+            background-image: url(https://i.ibb.co/qFmkLqK/ryan-kosmides-lfm4j1a-ev0-unsplash.jpg);
+            background-size:cover;
             background-position: center;
             background-repeat: no-repeat;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            opacity: 0.8;
+            color:white;
             /* Adjust this value to control the opacity */
             z-index: -1;
+            font-family: serif;
+            font-weight: 800;
             /* Ensures the image is behind other content */
             /* Make sure it covers the full screen height */
         }
@@ -60,28 +62,30 @@
         }
 
         .form-container {
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            margin: 20px;
-            background: rgb(213, 208, 208);
-            width: 500px;
-            height: 600px;
-            align-items: center;
-            border-radius: 9px;
-            border-color: black;
-          
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.3); /* Adds transparency */
+    width: 500px;
+    height: 600px;
+    align-items: center;
+    border-radius: 9px;
+    border-color: black;
+    backdrop-filter: blur(10px); /* Adds blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
 
-        }
 
         .form-container form {
             max-width: 400px;
-            width: 100%;
+            width: 100%;  margin-left: 40px;
         }
 
         #login-form h2 {
             text-align: center;
-        }
+        }   
 
         #register-form h2 {
             text-align: center;
@@ -99,38 +103,50 @@
 
         .form-container button {
             cursor: pointer;
-            background-color: #4CAF50;
+            background-color: #f08c00;
             color: white;
             border: none;
             margin-left: 10px;
             height: 30px;
+            font-size: 18px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-weight: 600;
 
         }
 
         .form-container button:hover {
-            background-color: #45a049;
+            background-color: #3cc152;
         }
 
         .toggle-btn {
             cursor: pointer;
-            color: #007BFF;
+            color: #07006b;
             text-decoration: none;
-            text-align: center;
+            text-align: right;
         }
 
         .toggle-btn:hover {
-            text-decoration: underline;
+            text-decoration: underline;}
+        
+     #avatar{
+            margin-left: 200px;
+            margin-right: 200px;
+           
+        } 
     </style>
 </head>
 
 <body>
 
 
-   
+
 
     <div class="form-container">
         <!-- Login Form -->
         <div id="login-form" style="display: block;">
+
+            <img src="https://i.ibb.co/m0HNzqc/pngegg-2.png" id="avatar" height="80px" width="80px">
             <h2>Login</h2>
             <form method="post">
                 {% csrf_token %}
@@ -148,6 +164,7 @@
 
         <!-- Register Form -->
         <div id="register-form" style="display: none;">
+            <img src="https://i.ibb.co/m0HNzqc/pngegg-2.png" id="avatar" height="80px" width="80px">
             <h2>Register</h2>
             <form action="/contact/" method="POST">
                 {% csrf_token %}
