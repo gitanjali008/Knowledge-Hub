@@ -12,15 +12,22 @@
         }
 
         body {
+            background-image: url(https://i.ibb.co/nLZmpKs/pngegg.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            /* Makes the body take the full height of the viewport */
-            margin: 0;
-            background-color: rgb(255, 255, 255);
-            /* Removes any default margin */
+            opacity: 0.8;
+            /* Adjust this value to control the opacity */
+            z-index: -1;
+            /* Ensures the image is behind other content */
+            /* Make sure it covers the full screen height */
         }
+
+
 
         .navbar {
             background-color: rgb(0, 0, 0);
@@ -57,12 +64,14 @@
             justify-content: center;
             padding: 0;
             margin: 20px;
-            background: linear-gradient(to bottom, #ccccff 0%, #ffff99 100%);
-            width: 450px;
-            height: 400px;
+            background: rgb(213, 208, 208);
+            width: 500px;
+            height: 600px;
             align-items: center;
             border-radius: 9px;
             border-color: black;
+          
+
         }
 
         .form-container form {
@@ -111,17 +120,13 @@
 
         .toggle-btn:hover {
             text-decoration: underline;
-
-        
     </style>
 </head>
 
 <body>
 
 
-    <div class="nav_logo">
-        <img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png" alt="" id="nav_logo" height="150px" width="300px">
-    </div>
+   
 
     <div class="form-container">
         <!-- Login Form -->
@@ -167,7 +172,7 @@
 
 
     </div>
-    
+
     <script>
         function showForm(formType) {
             document.getElementById('login-form').style.display = formType === 'login' ? 'block' : 'none';
