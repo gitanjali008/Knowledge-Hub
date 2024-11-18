@@ -318,6 +318,14 @@
   .contactus li {
       margin-right: 10px
   }
+
+  .reserve{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #007BFF;
+    color: white;
+  }
     </style>        
 </head>
 <body>
@@ -330,7 +338,7 @@
             <div class="nav_items" id="nav_items"><a href="{% url 'index' %}">Home</a></div>
             <div class="nav_items" id="nav_items"><a href="{% url 'about' %}">About Us</a></div>
             <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Course Outline</a></div>
-            <div class="nav_items" id="nav_items"><a href="https://cstutorialpoint.com/computer-science-notes/">PYQs</a></div>
+            <div class="nav_items" id="nav_items"><a href="{% url 'pyq' %}">PYQ</a></div>
             
 
       
@@ -455,7 +463,9 @@
             </div>
           </li>
         </ul>
+        
     </main>
+   
     
     <footer>
       <div><img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png" alt="" height="150px" width="350px"></div>
@@ -596,8 +606,14 @@
               </div>
           </ul>
       </div>
+     
       <div></div>
   </footer>
+  <div class="reserve">
+    <p>&copy; 2024 Knowledge-Hub. All rights reserved.</p>
+  </div>
+
+ 
     
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

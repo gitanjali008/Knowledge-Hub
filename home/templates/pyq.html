@@ -19,6 +19,69 @@
             line-height: 1.6;
         }
 
+        .navbar {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            padding-top: 10px;
+            box-shadow: 0px 10px rgba(165, 173, 173, 0.491);
+            margin-bottom: 2px;
+        }
+
+        .nav_logo {
+            width: auto;
+            height: auto;
+            padding-left: 80px;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 700px;
+            padding-top: 55px;
+            
+        }
+
+        #nav_items {
+            font-size: 18px;
+            margin-right: 50px;
+            font-weight: 700;
+            font-family = serif;
+        }
+
+        .nav_content button {
+            background-color: rgb(69, 135, 201);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-color: transparent;
+            border-width: 3px;
+            border-radius: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: -50px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .nav_content button:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            border-color: rgb(0, 0, 0);
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        #student_button a {
+            color: aliceblue;
+        }
+
+        a:hover {
+            color: rgb(255, 51, 0);
+        }
+
         header {
             text-align: center;
             background-color: #007BFF;
@@ -112,6 +175,21 @@
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <div class="nav_logo">
+            <img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png" alt="" id="nav_logo" height="120px" width="270px">
+        </div>
+        <div class="nav-content">
+                <div class="nav_items" id="nav_items"><a href="{% url 'index' %}">Home</a></div>
+                <div class="nav_items" id="nav_items"><a href="{% url 'about' %}">About Us</a></div>
+                <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Course Outline</a></div>
+                <div class="nav_items" id="nav_items"><a href="{% url 'pyq' %}">PYQ</a></div>
+                
+
+          
+        </div>
+    </div>
+    
     <header>
         <h1>Previous Year Questions (PYQs)</h1>
         <p>Select a course to view the subjects and their PYQs.</p>

@@ -11,6 +11,7 @@ urlpatterns = [
    path('', views.login_view, name='login'), 
    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path("faculty/", views.faculty, name='faculty'),
+     path("pyq/", views.pyq, name='pyq'),
     path("course_outline/", views.course_outline, name='course_outline'),
     path("practice/index/", views.index, name='index'),
     path("course_outline/index/", views.index, name='index'),

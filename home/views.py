@@ -35,7 +35,8 @@ def contact(request):
 
     return render(request, 'contact.html')
 
-    
+def pyq(request):
+    return render(request, '../templates/pyq.html')   
 
 def course_outline(request):
     return render(request, '../templates/course_outline.html')
