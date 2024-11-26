@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCom - PYQs</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 1.5rem 0;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .semester {
+            margin-bottom: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .semester h2 {
+            font-size: 1.8rem;
+            color: #007bff;
+            padding: 1rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-bottom: 2px solid #007bff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .semester h2:hover {
+            background-color: #0069d9;
+            color: #fff;
+        }
+
+        .arrow {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .semester-content {
+            display: none;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+        }
+
+        .semester-content.expanded {
+            background-color: #e6f7ff;
+        }
+
+        .subjects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 1rem);
+            padding: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .card:hover {
+            background-color: #007bff;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .card a.btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card a.btn:hover {
+            background-color: #0069d9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #007bff;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BCom PYQs</h1>
+        <p>Explore subjects under BCom and access their PYQs by semester.</p>
+    </header>
+
+    <main class="container">
+        <!-- Semester 1 -->
+        <section class="semester">
+            <h2 onclick="toggleSemester(1)">
+                Semester 1
+                <span id="arrow-1" class="arrow">▼</span>
+            </h2>
+            <div id="semester-content-1" class="semester-content">
+                <div class="subjects">
+                    <div class="card">
+                        <h3>Principles of Accounting</h3>
+                        <a href="sem1-accounting-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Business Communication</h3>
+                        <a href="sem1-communication-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Microeconomics</h3>
+                        <a href="sem1-microeconomics-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Business Mathematics</h3>
+                        <a href="sem1-math-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Semester 2 -->
+        <section class="semester">
+            <h2 onclick="toggleSemester(2)">
+                Semester 2
+                <span id="arrow-2" class="arrow">▼</span>
+            </h2>
+            <div id="semester-content-2" class="semester-content">
+                <div class="subjects">
+                    <div class="card">
+                        <h3>Cost Accounting</h3>
+                        <a href="sem2-cost-accounting-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Business Law</h3>
+                        <a href="sem2-business-law-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Macroeconomics</h3>
+                        <a href="sem2-macroeconomics-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Financial Accounting</h3>
+                        <a href="sem2-financial-accounting-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Semester 3 -->
+        <section class="semester">
+            <h2 onclick="toggleSemester(3)">
+                Semester 3
+                <span id="arrow-3" class="arrow">▼</span>
+            </h2>
+            <div id="semester-content-3" class="semester-content">
+                <div class="subjects">
+                    <div class="card">
+                        <h3>Corporate Accounting</h3>
+                        <a href="sem3-corporate-accounting-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Income Tax Law</h3>
+                        <a href="sem3-income-tax-law-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Cost & Management Accounting</h3>
+                        <a href="sem3-management-accounting-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Business Statistics</h3>
+                        <a href="sem3-business-statistics-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Semester 4 -->
+        <section class="semester">
+            <h2 onclick="toggleSemester(4)">
+                Semester 4
+                <span id="arrow-4" class="arrow">▼</span>
+            </h2>
+            <div id="semester-content-4" class="semester-content">
+                <div class="subjects">
+                    <div class="card">
+                        <h3>Advanced Accounting</h3>
+                        <a href="sem4-advanced-accounting-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Indirect Taxes</h3>
+                        <a href="sem4-indirect-taxes-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Financial Management</h3>
+                        <a href="sem4-financial-management-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Human Resource Management</h3>
+                        <a href="sem4-hrm-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Semester 5 -->
+        <section class="semester">
+            <h2 onclick="toggleSemester(5)">
+                Semester 5
+                <span id="arrow-5" class="arrow">▼</span>
+            </h2>
+            <div id="semester-content-5" class="semester-content">
+                <div class="subjects">
+                    <div class="card">
+                        <h3>Corporate Law</h3>
+                        <a href="sem5-corporate-law-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Auditing</h3>
+                        <a href="sem5-auditing-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Management Accounting</h3>
+                        <a href="sem5-management-accounting-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Entrepreneurship</h3>
+                        <a href="sem5-entrepreneurship-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Semester 6 -->
+        <section class="semester">
+            <h2 onclick="toggleSemester(6)">
+                Semester 6
+                <span id="arrow-6" class="arrow">▼</span>
+            </h2>
+            <div id="semester-content-6" class="semester-content">
+                <div class="subjects">
+                    <div class="card">
+                        <h3>Advanced Financial Accounting</h3>
+                        <a href="sem6-advanced-financial-accounting-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Direct Taxes</h3>
+                        <a href="sem6-direct-taxes-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Investment Analysis</h3>
+                        <a href="sem6-investment-analysis-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Business Economics</h3>
+                        <a href="sem6-business-economics-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Knowledge Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleSemester(semester) {
+            var content = document.getElementById("semester-content-" + semester);
+            var arrow = document.getElementById("arrow-" + semester);
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                arrow.innerHTML = "▼";
+            } else {
+                content.style.display = "block";
+                arrow.innerHTML = "▲";
+            }
+        }
+    </script>
+</body>
+</html>

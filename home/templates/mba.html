@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBA - PYQs</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 1.5rem 0;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .semester {
+            margin-bottom: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .semester h2 {
+            font-size: 1.8rem;
+            color: #007bff;
+            padding: 1rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-bottom: 2px solid #007bff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .semester h2:hover {
+            background-color: #0069d9;
+            color: #fff;
+        }
+
+        .arrow {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .semester-content {
+            display: none;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+        }
+
+        .semester-content.expanded {
+            background-color: #e6f7ff;
+        }
+
+        .subjects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 1rem);
+            padding: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .card:hover {
+            background-color: #007bff;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .card a.btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card a.btn:hover {
+            background-color: #0069d9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #007bff;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MBA PYQs</h1>
+        <p>Explore subjects under MBA and access their PYQs by semester.</p>
+    </header>
+
+    <main class="container">
+        <!-- Semester 1 -->
+        <section class="semester">
+            <h2 onclick="toggleSemester(1)">
+                Semester 1
+                <span id="arrow-1" class="arrow">▼</span>
+            </h2>
+            <div id="semester-content-1" class="semester-content">
+                <div class="subjects">
+                    <div class="card">
+                        <h3>Managerial Economics</h3>
+                        <a href="sem1-managerial-economics-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Organizational Behavior</h3>
+                        <a href="sem1-organizational-behavior-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Accounting for Managers</h3>
+                        <a href="sem1-accounting-for-managers-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Quantitative Methods</h3>
+                        <a href="sem1-quantitative-methods-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Semester 2 -->
+        <section class="semester">
+            <h2 onclick="toggleSemester(2)">
+                Semester 2
+                <span id="arrow-2" class="arrow">▼</span>
+            </h2>
+            <div id="semester-content-2" class="semester-content">
+                <div class="subjects">
+                    <div class="card">
+                        <h3>Financial Management</h3>
+                        <a href="sem2-financial-management-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Marketing Management</h3>
+                        <a href="sem2-marketing-management-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Operations Management</h3>
+                        <a href="sem2-operations-management-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Human Resource Management</h3>
+                        <a href="sem2-hrm-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Semester 3 -->
+        <section class="semester">
+            <h2 onclick="toggleSemester(3)">
+                Semester 3
+                <span id="arrow-3" class="arrow">▼</span>
+            </h2>
+            <div id="semester-content-3" class="semester-content">
+                <div class="subjects">
+                    <div class="card">
+                        <h3>Business Research Methods</h3>
+                        <a href="sem3-business-research-methods-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Strategic Management</h3>
+                        <a href="sem3-strategic-management-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>International Business</h3>
+                        <a href="sem3-international-business-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Business Ethics</h3>
+                        <a href="sem3-business-ethics-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Semester 4 -->
+        <section class="semester">
+            <h2 onclick="toggleSemester(4)">
+                Semester 4
+                <span id="arrow-4" class="arrow">▼</span>
+            </h2>
+            <div id="semester-content-4" class="semester-content">
+                <div class="subjects">
+                    <div class="card">
+                        <h3>Corporate Governance</h3>
+                        <a href="sem4-corporate-governance-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Project Management</h3>
+                        <a href="sem4-project-management-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Investment Management</h3>
+                        <a href="sem4-investment-management-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                    <div class="card">
+                        <h3>Entrepreneurship</h3>
+                        <a href="sem4-entrepreneurship-pyqs.html" class="btn">View PYQs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Knowledge Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleSemester(semester) {
+            var content = document.getElementById("semester-content-" + semester);
+            var arrow = document.getElementById("arrow-" + semester);
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                arrow.innerHTML = "▼";
+            } else {
+                content.style.display = "block";
+                arrow.innerHTML = "▲";
+            }
+        }
+    </script>
+</body>
+</html>
