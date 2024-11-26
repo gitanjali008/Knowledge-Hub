@@ -17,6 +17,8 @@ def about(request):
 
 def book(request):
     return render(request, '../templates/book.html')
+def notes(request):
+    return render(request, '../templates/notes.html')
 
     
 def contact(request):
