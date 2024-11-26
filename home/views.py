@@ -15,6 +15,10 @@ def index(request):
 def about(request):
     return render(request, '../templates/about.html')
 
+def book(request):
+    return render(request, '../templates/book.html')
+
+    
 def contact(request):
     if request.method == 'POST':
         username = request.POST['username']

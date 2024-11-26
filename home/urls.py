@@ -16,4 +16,5 @@ urlpatterns = [
     path("practice/index/", views.index, name='index'),
     path("course_outline/index/", views.index, name='index'),
     path("faculty/index/", views.index, name='index'),
+     path("book/", views.book, name='book'),
 ]
