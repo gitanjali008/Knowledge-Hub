@@ -42,7 +42,7 @@ def contact(request):
     return render(request, 'contact.html')
 
 def pyq(request):
-    return render(request, '../templates/pyq.html')   
+    return render(request, '../templates/pyqs.html')   
 
 def course_outline(request):
     return render(request, '../templates/course_outline.html')
@@ -73,3 +73,20 @@ def login_view(request):
     
     return render(request, 'login.html')
 
+
+def btech(request):
+    return render(request, '../templates/btech.html')
+def bba(request):
+    return render(request, '../templates/bba.html')
+def mba(request):
+    return render(request, '../templates/mba.html')
+def bsc(request):
+    return render(request, '../templates/bsc.html')
+def mca(request):
+    return render(request, '../templates/mca.html')
+def mcom(request):
+    return render(request, '../templates/mcom.html')
+def bcom(request):
+    return render(request, '../templates/bcom.html')
+def bca(request):
+    return render(request, '../templates/bca.html')
