@@ -20,7 +20,9 @@ def book(request):
 def notes(request):
     return render(request, '../templates/notes.html')
 
-    
+def assignment(request):
+    return render(request, '../templates/assignment.html')
+
 def contact(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -90,3 +92,5 @@ def bcom(request):
     return render(request, '../templates/bcom.html')
 def bca(request):
     return render(request, '../templates/bca.html')
+def btech_assignment(request):
+    return render(request, '../templates/btech_assignment.html')    

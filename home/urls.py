@@ -18,6 +18,7 @@ urlpatterns = [
     path("faculty/index/", views.index, name='index'),
     path("book/", views.book, name='book'),
     path("notes/", views.notes, name='notes'),
+    path("assignments/", views.assignment, name='assignment'),
     path("btech/", views.btech, name='btech'),
     path("bba/", views.bba, name='bba'),
     path("bca/", views.bca, name='bca'),
@@ -26,4 +27,5 @@ urlpatterns = [
     path("mcom/", views.mcom, name='mcom'),
     path("mba/", views.mba, name='mba'),
     path("bcom/", views.bcom, name='bcom'),
+    path("btech_assignment/", views.btech_assignment, name='btech_assignment'),
 ]
