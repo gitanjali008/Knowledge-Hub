@@ -429,10 +429,11 @@
             padding-right: 10px;
             padding-left: 10px;
             border-radius: 5px;
-            margin-top: 35px;
+            margin-top: 20px;
             border-color: transparent;
             background-color: rgb(11, 11, 52);
             color: white;
+            
         }
 
         #student_button:hover {
@@ -1012,7 +1013,7 @@
                         <p>Our notes are specially desingned by our experts and they contains all the valuable key
                             points and topics, related for upcoming government exams</p>
                         <img src="https://i.ibb.co/4FDzmw8/note-taking.png" alt="" height="150px" width="200px">
-                        <button type="button" id="student_button"><a href="assignment.html">Enroll Now</a></button>
+                        <button type="button" id="student_button"><a href="{% url 'notes' %}">Enroll Now</a></button>
                     </div>
                 </div>
                 <div class="students_msg">
@@ -1021,7 +1022,7 @@
                         <p>our experts have created through study materials that break down complicated concepts into
                             easy languages.</p>
                         <img src="https://i.ibb.co/746tVBH/download-2.jpg" alt="" height="150px" width="200px">
-                        <button type="button" id="student_button">Enroll Now</button>
+                        <button type="button" id="student_button"><a href="{% url 'book' %}">Enroll Now</a></button>
                     </div>
                 </div>
                 <div class="students_msg">
