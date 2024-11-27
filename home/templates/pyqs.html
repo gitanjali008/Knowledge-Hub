@@ -4,8 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PYQs</title>
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="styles.css">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    header {
+        text-align: center;
+        background-color: #007BFF;
+        color: white;
+        padding: 1.5rem 0;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 2rem auto;
+    }
+
+    .course h2 {
+        font-size: 1.8rem;
+        color: #007BFF;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        border-bottom: 2px solid #007BFF;
+        display: inline-block;
+        padding-bottom: 0.2rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: calc(33.333% - 1rem);
+        padding: 1rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+    }
+
+    .card p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: #666;
+    }
+
+    .card a.btn {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #007BFF;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .card a.btn:hover {
+        background-color: #0056b3;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 2rem;
+        padding: 1rem;
+        background-color: #007BFF;
+        color: white;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    </style>
     
     
 </head>
@@ -22,42 +126,42 @@
                 <div class="card">
                     <h3>BTech</h3>
                     <p>Get PYQs for BTech subjects.</p>
-                    <a href="btech.html" class="btn">View BTech</a>
+                    <a href="{% url 'btech' %}" class="btn">View BTech</a>
                 </div>
                 <div class="card">
                     <h3>BBA</h3>
                     <p>Get PYQs for BBA subjects.</p>
-                    <a href="bba.html" class="btn">View BBA</a>
+                    <a href="{% url 'bba' %}" class="btn">View BBA</a>
                 </div>
                 <div class="card">
                     <h3>BCA</h3>
                     <p>Get PYQs for BCA subjects.</p>
-                    <a href="bca.html" class="btn">View BCA</a>
+                    <a href="{% url 'bca' %}" class="btn">View BCA</a>
                 </div>
                 <div class="card">
                     <h3>MBA</h3>
                     <p>Get PYQs for MBA subjects.</p>
-                    <a href="mba.html" class="btn">View MBA</a>
+                    <a href="{% url 'mba' %}" class="btn">View MBA</a>
                 </div>
                 <div class="card">
                     <h3>MCA</h3>
                     <p>Get PYQs for MCA subjects.</p>
-                    <a href="mca.html" class="btn">View MCA</a>
+                    <a href="{% url 'mca' %}" class="btn">View MCA</a>
                 </div>
                 <div class="card">
                     <h3>BCom</h3>
                     <p>Get PYQs for BCom subjects.</p>
-                    <a href="bcom.html" class="btn">View BCom</a>
+                    <a href="{% url 'bcom' %}" class="btn">View BCom</a>
                 </div>
                 <div class="card">
                     <h3>MCom</h3>
                     <p>Get PYQs for MCom subjects.</p>
-                    <a href="mcom.html" class="btn">View MCom</a>
+                    <a href="{% url 'mcom' %}" class="btn">View MCom</a>
                 </div>
                 <div class="card">
                     <h3>BSc</h3>
                     <p>Get PYQs for BSc subjects.</p>
-                    <a href="bsc.html" class="btn">View BSc</a>
+                    <a href="{% url 'bsc' %}" class="btn">View BSc</a>
                 </div>
                 
                 
