@@ -94,3 +94,14 @@ def bca(request):
     return render(request, '../templates/bca.html')
 def btech_assignment(request):
     return render(request, '../templates/btech_assignment.html')    
+
+
+
+def sem1-math-pyqs(request):
+    return render(request, '../templates/sem1-math-pyqs.html')
+def sem1-physics-pyqs(request):
+    return render(request, '../templates/sem1-physics-pyqs.html')
+def sem1-ece-pyqs(request):
+    return render(request, '../templates/sem1-ece-pyqs.html')
+def sem2-math-pys(request):
+    return render(request, '../templates/sem2-math-pys.html')                

@@ -28,4 +28,9 @@ urlpatterns = [
     path("mba/", views.mba, name='mba'),
     path("bcom/", views.bcom, name='bcom'),
     path("btech_assignment/", views.btech_assignment, name='btech_assignment'),
+
+    path("sem1-math-pyqs/", views.sem1-math-pyqs, name='sem1-math-pyqs'),
+    path("sem1-physics-pyqs/", views.sem1-physics-pyqs, name='sem1-physics-pyqs'),
+    path("sem1-ece-pyqs/", views.sem1-ece-pyqs, name='sem1-ece-pyqs'),
+    path("sem2-math-pys/", views.sem2-math-pys, name='sem2-math-pys'),  
 ]
