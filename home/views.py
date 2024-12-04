@@ -76,6 +76,11 @@ def login_view(request):
     return render(request, 'login.html')
 
 
+
+
+def courses(request):
+    return render(request, '../templates/courses.html')
+
 def btech(request):
     return render(request, '../templates/btech.html')
 def bba(request):
@@ -97,11 +102,11 @@ def btech_assignment(request):
 
 
 
-def sem1-math-pyqs(request):
+def sem1mathpyqs(request):
     return render(request, '../templates/sem1-math-pyqs.html')
-def sem1-physics-pyqs(request):
+def sem1physicspyqs(request):
     return render(request, '../templates/sem1-physics-pyqs.html')
-def sem1-ece-pyqs(request):
+def sem1ecepyqs(request):
     return render(request, '../templates/sem1-ece-pyqs.html')
-def sem2-math-pys(request):
-    return render(request, '../templates/sem2-math-pys.html')                
+def sem2mathpyqs(request):
+    return render(request, '../templates/sem2-math-pyqs.html')                
