@@ -32,7 +32,7 @@ DEBUG = True
 APPEND_SLASH = False
 
 
-ALLOWED_HOSTS = [ '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [ '127.0.0.1', 'localhost','knowledge-hub-2mtc.onrender.com']
 
 
 # Application definition
