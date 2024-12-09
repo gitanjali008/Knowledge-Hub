@@ -31,7 +31,9 @@ ALLOWED_HOSTS = ['.vercel.app']
 APPEND_SLASH = False
 
 
-ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1','100.20.92.101',
+'44.225.181.72',
+'44.227.217.144']
 
 # Application definition
 
