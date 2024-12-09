@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-mtte4pdc+x=@p@hka=lz73@1zt*@#+_$phxmua^%0y1a+@$)xd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+
 APPEND_SLASH = False
 
 
@@ -89,7 +89,7 @@ DATABASES = {
         'NAME': os.getenv('DB_NAME', 'Knowledge_Hub'),
         'USER': os.getenv('DB_USER', 'ajay'),
         'PASSWORD': os.getenv('DB_PASSWORD', 'Ajay7983@'),
-        'HOST': os.getenv('DB_HOST', 'database-name.onrender.com'),
+        'HOST': os.getenv('DB_HOST', 'Knowledge_Hub.onrender.com'),
         'PORT': os.getenv('DB_PORT', '3306'),
     }
 }
