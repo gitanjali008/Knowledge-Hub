@@ -32,7 +32,7 @@ DEBUG = True
 APPEND_SLASH = False
 
 
-ALLOWED_HOSTS = ['.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [ '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -90,8 +90,8 @@ DATABASES = {
         'NAME': os.getenv('DB_NAME', 'Knowledge_Hub'),
         'USER': os.getenv('DB_USER', 'ajay'),
         'PASSWORD': os.getenv('DB_PASSWORD', 'Ajay7983@'),
-        'HOST': os.getenv('DB_HOST', 'localhost',),
-        'PORT': os.getenv('DB_PORT', '3306'),
+        'HOST': os.getenv('DB_HOST', 'localhost'),  # Render host for production
+        'PORT': os.getenv('DB_PORT', '3306'),  # MySQL default port
     }
 }
 
