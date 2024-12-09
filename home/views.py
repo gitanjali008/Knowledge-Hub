@@ -61,7 +61,7 @@ def login_view(request):
         
         # Find the contact by username
         try:
-            contact = Contact.objects.get(password=password)
+            contact = Contact.objects.get(username=username)
         except Contact.DoesNotExist:
             contact = None
         
