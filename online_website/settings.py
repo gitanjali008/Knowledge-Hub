@@ -22,7 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-mtte4pdc+x=@p@hka=lz73@1zt*@#+_$phxmua^%0y1a+@$)xd'
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'your-default-secret-key')  # Load from env
+DEBUG = os.getenv('DJANGO_DEBUG', 'True') == 'True'  # Change to False in production
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -81,7 +82,7 @@ WSGI_APPLICATION = 'online_website.wsgi.application'
 # #  https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 
-import os
+
 
 DATABASES = {
     'default': {
