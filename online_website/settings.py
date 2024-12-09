@@ -31,9 +31,8 @@ ALLOWED_HOSTS = ['.vercel.app']
 APPEND_SLASH = False
 
 
-ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1','100.20.92.101',
-'44.225.181.72',
-'44.227.217.144']
+ALLOWED_HOSTS = ['.onrender.com', '127.0.0.1', 'localhost']
+
 
 # Application definition
 
@@ -82,16 +81,19 @@ WSGI_APPLICATION = 'online_website.wsgi.application'
 # #  https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 
+import os
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # MySQL engine
-        'NAME': 'Knowledge_Hub',
-        'USER': 'ajay',
-        'PASSWORD': 'Ajay7983@',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.getenv('DB_NAME', 'Knowledge_Hub'),
+        'USER': os.getenv('DB_USER', 'ajay'),
+        'PASSWORD': os.getenv('DB_PASSWORD', 'Ajay7983@'),
+        'HOST': os.getenv('DB_HOST', 'database-name.onrender.com'),
+        'PORT': os.getenv('DB_PORT', '3306'),
     }
 }
+
 AUTHENTICATION_BACKENDS=[
        'django.contrib.auth.backends.ModelBackend',
 ]
