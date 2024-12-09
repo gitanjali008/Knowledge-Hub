@@ -86,14 +86,11 @@ WSGI_APPLICATION = 'online_website.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('DB_NAME', 'Knowledge_Hub'),
-        'USER': os.getenv('DB_USER', 'ajay'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'Ajay7983@'),
-        'HOST': os.getenv('DB_HOST', 'localhost'),  # Render host for production
-        'PORT': os.getenv('DB_PORT', '3306'),  # MySQL default port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # BASE_DIR ensures the database file is in the project root.
     }
 }
+
 
 AUTHENTICATION_BACKENDS=[
        'django.contrib.auth.backends.ModelBackend',
