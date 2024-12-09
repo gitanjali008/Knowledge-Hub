@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'your-default-secret-key')  # Load from env
+SECRET_KEY = 'django-insecure-mtte4pdc+x=@p@hka=lz73@1zt*@#+_$phxmua^%0y1a+@$)xd'
 DEBUG = os.getenv('DJANGO_DEBUG', 'True') == 'True'  # Change to False in production
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -90,7 +90,7 @@ DATABASES = {
         'NAME': os.getenv('DB_NAME', 'Knowledge_Hub'),
         'USER': os.getenv('DB_USER', 'ajay'),
         'PASSWORD': os.getenv('DB_PASSWORD', 'Ajay7983@'),
-        'HOST': os.getenv('DB_HOST', 'Knowledge_Hub.onrender.com'),
+        'HOST': os.getenv('DB_HOST', 'localhost',),
         'PORT': os.getenv('DB_PORT', '3306'),
     }
 }
