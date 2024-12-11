@@ -226,13 +226,13 @@
         <div class="card-title">Semester 1</div>
       </div>
       <div class="dropdown" id="dropdown1">
-        <a href="mathematics1.html">Mathematics I</a>
-        <a href="physics.html">Physics</a>
-        <a href="chemistry.html">Chemistry</a>
-        <a href="computer-programming.html">Computer Programming</a>
-        <a href="engineering-drawing.html">Engineering Drawing</a>
-        <a href="basic-electrical.html">Basic Electrical Engineering</a>
-        <a href="environmental-science.html">Environmental Science</a>
+        <a href="{% url 'notes' %}">Mathematics I</a>
+        <a href="{% url 'notes' %}">Physics</a>
+        <a href="{% url 'notes' %}">Chemistry</a>
+        <a href="{% url 'notes' %}">Computer Programming</a>
+        <a href="{% url 'notes' %}">Engineering Drawing</a>
+        <a href="{% url 'notes' %}">Basic Electrical Engineering</a>
+        <a href="{% url 'notes' %}">Environmental Science</a>
       </div>
     </div>
 
@@ -259,7 +259,7 @@
       </div>
       <div class="dropdown" id="dropdown3">
         <a href="discrete-mathematics.html">Discrete Mathematics</a>
-        <a href="object-oriented-programming.html">Object-Oriented Programming</a>
+        <a href="{% url 'notes' %}">Object-Oriented Programming</a>
         <a href="computer-organization.html">Computer Organization</a>
         <a href="algorithms.html">Algorithms</a>
         <a href="database-management.html">Database Management</a>

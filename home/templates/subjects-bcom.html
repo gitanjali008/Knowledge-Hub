@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Courses</title>
+  <title>B. Tech. Semesters</title>
   <style>
     * {
       margin: 0;
@@ -11,40 +11,34 @@
       box-sizing: border-box;
     }
 
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-
-    /* Add header here */
-
-    .navbar{
+    .navbar {
             background-color: rgb(255, 255, 255);
             display: flex;
             padding-top: 10px;
-            box-shadow: 0px 10px  rgba(165, 173, 173, 0.491);
+            box-shadow: 0px 10px rgba(165, 173, 173, 0.491);
             margin-bottom: 2px;
         }
-        
-        .nav_logo{
+
+        .nav_logo {
             width: auto;
             height: auto;
             padding-left: 80px;
         }
-        .nav-content{
+
+        .nav-content {
             display: flex;
             justify-content: flex-end;
             margin-left: 500px;
             padding-top: 55px;
         }
-        #nav_items{
+
+        #nav_items {
             font-size: 18px;
-            margin-right:50px;
+            margin-right: 50px;
             font-weight: 700;
         }
-        .nav_content button{
+
+        .nav_content button {
             background-color: rgb(69, 135, 201);
             padding-top: 15px;
             padding-bottom: 15px;
@@ -57,233 +51,266 @@
             font-weight: 700;
             color: white;
         }
-        .nav_content button:hover{
+
+        .nav_content button:hover {
             background-color: rgb(255, 255, 255);
             color: rgb(0, 0, 0);
             cursor: pointer;
             border-color: rgb(0, 0, 0);
         }
-        a{
-            text-decoration: none;
-            
-        }
-        #student_button a{
-            color: aliceblue;
-        }
-        
-        a:hover{
-           color:rgb
 
-
-        }
-        footer{
-            background-color: rgb(176, 238, 238);
-            padding-bottom: 30px;
-            padding-top: 20px;
-            display: flex;
-            justify-content: flex-end;
-         
-            
-          }
-          #footer{
-           
-            padding-top: 5px;
-            padding-right: 20px;
-            padding-bottom: 10px;
-            border-radius: 100px;
-         
-          }
-          #text{
-            padding-top: 210px;
-            font-size: 15px;
-          }
-          #text h1{
-            font-size: 25px
-          }
-          .text1{
-            padding-right: 900px;
-            margin-right: -800px;
-            padding-top: 90px;
-            font-weight: 900;
-            font-size: 35px;
-            font-style: italic;
-            font-stretch: extra-expanded;
-          }
-          .base2{
-            padding-left: 300px;
-          }
-
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
 
     h1 {
       text-align: center;
       margin-bottom: 30px;
-      color: #2c3e50;
+      color: #0d3b66;
     }
 
-    .course-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+    .semester-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
-    .card {
-      background: #fff;
+    .card-container {
+      margin-bottom: 20px;
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      width: calc(100% / 2 - 40px);
-      max-width: 300px;
-      text-decoration: none;
+      background: #ffffff;
+    }
+
+    .card {
+      background: #0d3b66;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ffffff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
     .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 15px;
+      background: #107dac;
     }
 
     .card-title {
       font-size: 1.2rem;
-      margin-bottom: 10px;
-      color: #34495e;
+      font-weight: bold;
     }
 
-    .card-description {
-      font-size: 0.9rem;
-      color: #7f8c8d;
+    .dropdown {
+      display: none;
+      background: #f8f9fc;
+      padding: 10px 20px;
+      border-top: 1px solid #dfe3e8;
     }
 
-    @media (max-width: 768px) {
-      .card {
-        width: 100%;
-      }
+    .dropdown a {
+      text-decoration: none;
+      color: #0d3b66;
+      display: block;
+      margin: 8px 0;
+      padding: 8px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    /* Add footer here */
-    footer{
+    .dropdown a:hover {
+      background-color: #107dac;
+      color: #ffffff;
+    }
+
+    footer {
             display: flex;
             justify-content: space-evenly;
-            padding-bottom: 120px;animation: apper linear;
+            padding-bottom: 120px;
+            animation: apper linear;
             animation-timeline: view();
             animation-range: entry 20% cover 10%;
-            font-size: 20px;
             background-color: rgb(255, 255, 255);
-           }
-           footer img{
-            border-radius: 15px;animation: apper linear;
+        }
+
+        footer img {
+            border-radius: 15px;
+            animation: apper linear;
             animation-timeline: view();
             animation-range: entry 20% cover 40%;
-           }
-           ul{
+        }
+
+        ul {
             list-style-type: none;
-           
-           }
-           ul li h1{
+
+        }
+
+        ul li h1 {
             font-size: 20px;
-           }
-           ul li{
+        }
+
+        ul li {
             font-size: 18px;
             padding-top: 5px;
-           }
-           #refrence_tools{
+        }
+
+        #refrence_tools {
             color: black;
-           }
-           .element01{
+        }
+
+        .element01 {
             text-align: center;
             font-size: 29px;
             padding-bottom: 35px;
             background-color: rgb(244, 248, 252);
             padding-top: 15px;
-           }
-           .element01 h1{
+        }
+
+        .element01 h1 {
             font-size: 35px;
-            
-           }
-           #element01{
+
+        }
+
+        #element01 {
             color: red;
-           }
-           .contactus {
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .contactus {
             display: flex;
         }
+
         .contactus li {
             margin-right: 10px
         }
 
+    /* Media Query for Mobile Devices */
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="nav_logo">
-                <img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png" alt="" id="nav_logo" height="120px" width="270px">
-            </div>
-            <div class="nav-content">
-                <div class="nav_items" id="nav_items"><a href="{% url 'index' %}">Home</a></div>
-                <div class="nav_items" id="nav_items"><a href="{% url 'about' %}">About Us</a></div>
-                <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Course Outline</a></div>
-                <div class="nav_items" id="nav_items"><a href="https://cstutorialpoint.com/computer-science-notes/">PYQs</a></div>
-            </div>
-        </div>
-    </header>
-        <main>
-        <h1>Courses</h1>
-        <div class="course-container">
-            <a href="{% url 'subjects_btech' %}" class="card">
-              <img src="https://via.placeholder.com/300x150" alt="Course 1">
-              <div class="card-content">
-                <h3 class="card-title">B. Tech.</h3>
-                <p class="card-description">Learn the basics of web development with HTML, CSS, and JavaScript.</p>
-              </div>
-            </a>
-        
-            <a href="{% url 'subjects_bca' %}" class="card">
-              <img src="https://via.placeholder.com/300x150" alt="Course 2">
-              <div class="card-content">
-                <h3 class="card-title">BCA</h3>
-                <p class="card-description">Master the art of building responsive and dynamic websites.</p>
-              </div>
-            </a>
-        
-            <a href="{% url 'subjects_bcom' %}" class="card">
-              <img src="https://via.placeholder.com/300x150" alt="Course 3">
-              <div class="card-content">
-                <h3 class="card-title">B. Com.</h3>
-                <p class="card-description">Explore advanced JavaScript concepts and frameworks.</p>
-              </div>
-            </a>
-        
-            <a href="{% url 'subjects_bba' %}" class="card">
-              <img src="https://via.placeholder.com/300x150" alt="Course 4">
-              <div class="card-content">
-                <h3 class="card-title">BBA</h3>
-                <p class="card-description">Learn backend development with Node.js and Express.</p>
-              </div>
-            </a>
-        
-            <a href="{% url 'subjects_mba' %}" class="card">
-              <img src="https://via.placeholder.com/300x150" alt="Course 5">
-              <div class="card-content">
-                <h3 class="card-title">MBA</h3>
-                <p class="card-description">Get started with database management using SQL and MongoDB.</p>
-              </div>
-            </a>
-          </div>
-    </main>
+  <div class="navbar">
+    <div class="nav_logo">
+        <img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png" alt="" id="nav_logo" height="120px" width="270px">
+    </div>
+    <div class="nav-content">
+            <div class="nav_items" id="nav_items"><a href="{% url 'index' %}">Home</a></div>
+            <div class="nav_items" id="nav_items"><a href="{% url 'about' %}">About Us</a></div>
+            <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Course Outline</a></div>
+            <div class="nav_items" id="nav_items"><a href="{% url 'pyq' %}">PYQs</a></div>
+      
+    </div>
+</div>
+<h1>B.Com. - Course Overview</h1>
+<div class="semester-container">
+  <!-- Semester 1 -->
+  <div class="card-container">
+    <div class="card" onclick="toggleDropdown('dropdown1')">
+      <div class="card-title">Semester 1</div>
+    </div>
+    <div class="dropdown" id="dropdown1">
+      <a href="financial-accounting.html">Financial Accounting</a>
+      <a href="business-economics.html">Business Economics</a>
+      <a href="business-law.html">Business Law</a>
+      <a href="business-communication.html">Business Communication</a>
+      <a href="principles-of-management.html">Principles of Management</a>
+      <a href="environmental-studies.html">Environmental Studies</a>
+    </div>
+  </div>
+
+  <!-- Semester 2 -->
+  <div class="card-container">
+    <div class="card" onclick="toggleDropdown('dropdown2')">
+      <div class="card-title">Semester 2</div>
+    </div>
+    <div class="dropdown" id="dropdown2">
+      <a href="corporate-accounting.html">Corporate Accounting</a>
+      <a href="microeconomics.html">Microeconomics</a>
+      <a href="company-law.html">Company Law</a>
+      <a href="marketing-management.html">Marketing Management</a>
+      <a href="english-communication.html">English Communication</a>
+    </div>
+  </div>
+
+  <!-- Semester 3 -->
+  <div class="card-container">
+    <div class="card" onclick="toggleDropdown('dropdown3')">
+      <div class="card-title">Semester 3</div>
+    </div>
+    <div class="dropdown" id="dropdown3">
+      <a href="cost-accounting.html">Cost Accounting</a>
+      <a href="macroeconomics.html">Macroeconomics</a>
+      <a href="human-resource-management.html">Human Resource Management</a>
+      <a href="statistics.html">Business Statistics</a>
+      <a href="open-elective1.html">Open Elective I</a>
+    </div>
+  </div>
+
+  <!-- Semester 4 -->
+  <div class="card-container">
+    <div class="card" onclick="toggleDropdown('dropdown4')">
+      <div class="card-title">Semester 4</div>
+    </div>
+    <div class="dropdown" id="dropdown4">
+      <a href="income-tax.html">Income Tax</a>
+      <a href="international-business.html">International Business</a>
+      <a href="investment-management.html">Investment Management</a>
+      <a href="entrepreneurship.html">Entrepreneurship</a>
+      <a href="open-elective2.html">Open Elective II</a>
+    </div>
+  </div>
+
+  <!-- Semester 5 -->
+  <div class="card-container">
+    <div class="card" onclick="toggleDropdown('dropdown5')">
+      <div class="card-title">Semester 5</div>
+    </div>
+    <div class="dropdown" id="dropdown5">
+      <a href="management-accounting.html">Management Accounting</a>
+      <a href="financial-management.html">Financial Management</a>
+      <a href="auditing.html">Auditing</a>
+      <a href="e-commerce.html">E-Commerce</a>
+      <a href="mini-project.html">Mini Project</a>
+      <a href="open-elective3.html">Open Elective III</a>
+    </div>
+  </div>
+
+  <!-- Semester 6 -->
+  <div class="card-container">
+    <div class="card" onclick="toggleDropdown('dropdown6')">
+      <div class="card-title">Semester 6</div>
+    </div>
+    <div class="dropdown" id="dropdown6">
+      <a href="indirect-tax.html">Indirect Tax</a>
+      <a href="strategic-management.html">Strategic Management</a>
+      <a href="financial-markets.html">Financial Markets</a>
+      <a href="management-skills.html">Management Skills</a>
+      <a href="elective-subject1.html">Elective Subject I</a>
+      <a href="elective-subject2.html">Elective Subject II</a>
+      <a href="final-seminar.html">Final Seminar</a>
+    </div>
+  </div>
+</div>
 
 
-
-<footer>
+  <footer>
     <div><img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png" alt="" height="150px" width="350px"></div>
     <div>
         <ul>
@@ -425,8 +452,19 @@
     <div></div>
 </footer>
 
-<script>
-    // JavaScript for additional interactivity can be added here if needed.
+  <script>
+    function toggleDropdown(dropdownId) {
+      // Close all other dropdowns
+      document.querySelectorAll('.dropdown').forEach(dropdown => {
+        if (dropdown.id !== dropdownId) {
+          dropdown.style.display = 'none';
+        }
+      });
+
+      // Toggle the targeted dropdown
+      const dropdown = document.getElementById(dropdownId);
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
   </script>
 </body>
 </html>

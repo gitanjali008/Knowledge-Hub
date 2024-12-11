@@ -112,3 +112,14 @@ def sem2mathpyqs(request):
 
 def subjects_btech(request):
     return render(request, '../templates/subjects-btech.html')
+def subjects_bca(request):
+    return render(request, '../templates/subjects-bca.html')
+def subjects_bcom(request):
+    return render(request, '../templates/subjects-bcom.html')
+def subjects_bba(request):
+    return render(request, '../templates/subjects-bba.html')
+def subjects_mba(request):
+    return render(request, '../templates/subjects-mba.html')
+
+def notes(request):
+    return render(request, '../templates/notes.html')
