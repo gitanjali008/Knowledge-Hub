@@ -17,7 +17,7 @@ def about(request):
 
 def book(request):
     return render(request, '../templates/book.html')
-def notes(request):
+def courses(request):
     return render(request, '../templates/notes-courses.html')
 
 def assignment(request):
