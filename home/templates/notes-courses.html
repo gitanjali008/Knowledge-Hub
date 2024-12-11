@@ -16,39 +16,35 @@
       line-height: 1.6;
       background-color: #f4f4f9;
       color: #333;
-      padding: 20px;
     }
 
     /* Add header here */
 
-    .navbar {
+    .navbar{
             background-color: rgb(255, 255, 255);
             display: flex;
             padding-top: 10px;
-            box-shadow: 0px 10px rgba(165, 173, 173, 0.491);
+            box-shadow: 0px 10px  rgba(165, 173, 173, 0.491);
             margin-bottom: 2px;
         }
-
-        .nav_logo {
+        
+        .nav_logo{
             width: auto;
             height: auto;
             padding-left: 80px;
         }
-
-        .nav-content {
+        .nav-content{
             display: flex;
             justify-content: flex-end;
             margin-left: 500px;
             padding-top: 55px;
         }
-
-        #nav_items {
+        #nav_items{
             font-size: 18px;
-            margin-right: 50px;
+            margin-right:50px;
             font-weight: 700;
         }
-
-        .nav_content button {
+        .nav_content button{
             background-color: rgb(69, 135, 201);
             padding-top: 15px;
             padding-bottom: 15px;
@@ -61,13 +57,62 @@
             font-weight: 700;
             color: white;
         }
-
-        .nav_content button:hover {
+        .nav_content button:hover{
             background-color: rgb(255, 255, 255);
             color: rgb(0, 0, 0);
             cursor: pointer;
             border-color: rgb(0, 0, 0);
         }
+        a{
+            text-decoration: none;
+            
+        }
+        #student_button a{
+            color: aliceblue;
+        }
+        
+        a:hover{
+           color:rgb
+
+
+        }
+        footer{
+            background-color: rgb(176, 238, 238);
+            padding-bottom: 30px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+         
+            
+          }
+          #footer{
+           
+            padding-top: 5px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            border-radius: 100px;
+         
+          }
+          #text{
+            padding-top: 210px;
+            font-size: 15px;
+          }
+          #text h1{
+            font-size: 25px
+          }
+          .text1{
+            padding-right: 900px;
+            margin-right: -800px;
+            padding-top: 90px;
+            font-weight: 900;
+            font-size: 35px;
+            font-style: italic;
+            font-stretch: extra-expanded;
+          }
+          .base2{
+            padding-left: 300px;
+          }
+
 
     h1 {
       text-align: center;
@@ -126,89 +171,75 @@
     }
 
     /* Add footer here */
-    footer {
+    footer{
             display: flex;
             justify-content: space-evenly;
-            padding-bottom: 120px;
-            animation: apper linear;
+            padding-bottom: 120px;animation: apper linear;
             animation-timeline: view();
             animation-range: entry 20% cover 10%;
+            font-size: 20px;
             background-color: rgb(255, 255, 255);
-        }
-
-        footer img {
-            border-radius: 15px;
-            animation: apper linear;
+           }
+           footer img{
+            border-radius: 15px;animation: apper linear;
             animation-timeline: view();
             animation-range: entry 20% cover 40%;
-        }
-
-        ul {
+           }
+           ul{
             list-style-type: none;
-
-        }
-
-        ul li h1 {
+           
+           }
+           ul li h1{
             font-size: 20px;
-        }
-
-        ul li {
+           }
+           ul li{
             font-size: 18px;
             padding-top: 5px;
-        }
-
-        #refrence_tools {
+           }
+           #refrence_tools{
             color: black;
-        }
-
-        .element01 {
+           }
+           .element01{
             text-align: center;
             font-size: 29px;
             padding-bottom: 35px;
             background-color: rgb(244, 248, 252);
             padding-top: 15px;
-        }
-
-        .element01 h1 {
+           }
+           .element01 h1{
             font-size: 35px;
-
-        }
-
-        #element01 {
+            
+           }
+           #element01{
             color: red;
-        }
-
-        header {
-            width: 100%;
+           }
+           .contactus {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
         }
-
-        .heading {
-            color: green;
+        .contactus li {
+            margin-right: 10px
         }
 
   </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="nav_logo">
-            <img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png" alt="" id="nav_logo" height="120px" width="270px">
+    <header>
+        <div class="navbar">
+            <div class="nav_logo">
+                <img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png" alt="" id="nav_logo" height="120px" width="270px">
+            </div>
+            <div class="nav-content">
+                <div class="nav_items" id="nav_items"><a href="{% url 'index' %}">Home</a></div>
+                <div class="nav_items" id="nav_items"><a href="{% url 'about' %}">About Us</a></div>
+                <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Course Outline</a></div>
+                <div class="nav_items" id="nav_items"><a href="https://cstutorialpoint.com/computer-science-notes/">PYQs</a></div>
+            </div>
         </div>
-        <div class="nav-content">
-            <div class="nav_items" id="nav_items"><a href="{% url 'index' %}">Home</a></div>
-            <div class="nav_items" id="nav_items"><a href="{% url 'about' %}">About Us</a></div>
-            <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Course Outline</a></div>
-            <div class="nav_items" id="nav_items"><a href="https://cstutorialpoint.com/computer-science-notes/">PYQs</a></div>
-        </div>
-    </div>
-    <main>
+    </header>
+        <main>
         <h1>Courses</h1>
         <div class="course-container">
-            <a href="course1.html" class="card">
+            <a href="{% url 'subjects_btech' %}" class="card">
               <img src="https://via.placeholder.com/300x150" alt="Course 1">
               <div class="card-content">
                 <h3 class="card-title">B. Tech.</h3>

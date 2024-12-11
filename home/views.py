@@ -18,7 +18,7 @@ def about(request):
 def book(request):
     return render(request, '../templates/book.html')
 def notes(request):
-    return render(request, '../templates/notes.html')
+    return render(request, '../templates/notes-courses.html')
 
 def assignment(request):
     return render(request, '../templates/assignment.html')
@@ -75,12 +75,6 @@ def login_view(request):
     
     return render(request, 'login.html')
 
-
-
-
-def courses(request):
-    return render(request, '../templates/courses.html')
-
 def btech(request):
     return render(request, '../templates/btech.html')
 def bba(request):
@@ -110,3 +104,8 @@ def sem1ecepyqs(request):
     return render(request, '../templates/sem1-ece-pyqs.html')
 def sem2mathpyqs(request):
     return render(request, '../templates/sem2-math-pyqs.html')                
+
+
+
+def subjects_btech(request):
+    return render(request, '../templates/subjects-btech.html')
