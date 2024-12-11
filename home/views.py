@@ -97,13 +97,16 @@ def btech_assignment(request):
 
 
 def sem1mathpyqs(request):
-    return render(request, '../templates/sem1-math-pyqs.html')
+    return render(request, '../templates/sem1-math-pyq.html')
+
 def sem1physicspyqs(request):
-    return render(request, '../templates/sem1-physics-pyqs.html')
+    return render(request, '../templates/sem1-physics-pyq.html')
+
 def sem1ecepyqs(request):
-    return render(request, '../templates/sem1-ece-pyqs.html')
+    return render(request, '../templates/sem1-ece-pyq.html')
+
 def sem2mathpyqs(request):
-    return render(request, '../templates/sem2-math-pyqs.html')                
+    return render(request, '../templates/sem2-math-pyq.html')                
 
 
 

@@ -883,16 +883,37 @@
             background-color: #021122;
             color: white;
           }
-       @media (max-width:600px){
+       @media (max-width:412px){
         body{
-            width:600px
+            width:412px;
         }
         #nav_logo{
             height: 50px;
             width:150px;
+            padding-top: 10px;
             margin-left: -80px;
             padding-bottom: -80px;
+            padding-right: -150px;
 
+        }
+        .navbar{
+            width: 412px;
+            display: flex;
+            justify-content: baseline;
+          
+        }
+        #nav_items{
+            opacity: hidden;
+            font-size: 5px;
+            padding-left: -900px;
+        }
+        .nav-content{
+            display: flex;
+         
+
+        }
+        .sectionA{
+            width: 412px;
         }
         .sectionA_content{
             display: block;
@@ -901,11 +922,90 @@
             display: block;
             font-size: 1px;
             margin-left: -120px;
+        
         }
+
         .sectionA_inside p{
             font-size: 2px;
         }
-        
+        #first_content{
+            font-size: 21px;
+            font-weight: 900;
+            margin-left: -5px;
+            
+        }
+        #first_content01{
+            font-size: 12px;
+            margin-left: -25px;
+            text-align: center;
+        }
+        #element{
+            font-size: 23px;text-align: center;
+        }
+        #robot {
+            margin-left: -4px;
+        }
+        #robot img{
+            height: 300px;
+            width: 300px;
+        }
+        .vice_container{
+            margin-left: -170px;
+            margin-top: 80px;
+
+        }
+        #trust_msg1{
+            font-size: 20px;
+        }
+        #trust_msg2{
+            font-size: 12px;
+        }
+        .second_content{
+            margin-left: -25px;
+            width: 412px;
+        }
+        #second_content{
+            font-size: 14px;
+            padding-left: 28px;
+            padding-right: 28px;
+            
+        }
+        .bluebox_content svg{
+            height: 18px;
+            width: 88px;
+            
+        }
+        .bluebox_content{
+            font-size: 15px;
+        }
+        .sectionC{
+            width: 412px;
+        }
+        .speech_msg h3{
+            font-size: 12px;
+            text-align: center;
+        }
+        .main04{
+            display: block;
+        }
+        .msg002{
+            height: 260px;
+            width: 260px;
+            margin-left: -30px;
+            font-size: 11px;
+            
+        }
+        .msg002 h2{
+            margin-top: -50px;
+        }
+        .msg002 img{
+            height: 110px;
+            width: 120px;
+            text-align: center;
+            margin-left: 55px;
+        }
+
+
        }
 
        
@@ -923,9 +1023,6 @@
                     <div class="nav_items" id="nav_items"><a href="{% url 'about' %}">About Us</a></div>
                     <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Course Outline</a></div>
                     <div class="nav_items" id="nav_items"><a href="{% url 'pyq' %}">PYQs</a></div>
-                    
-
-              
             </div>
         </div>
         
@@ -1014,7 +1111,7 @@
                         <p>Our notes are specially desingned by our experts and they contains all the valuable key
                             points and topics, related for upcoming government exams</p>
                         <img src="https://i.ibb.co/4FDzmw8/note-taking.png" alt="" height="150px" width="200px">
-                        <button type="button" id="student_button"><a href="{% url 'notes' %}">Enroll Now</a></button>
+                        <button type="button" id="student_button"><a href="{% url 'courses' %}">Enroll Now</a></button>
                     </div>
                 </div>
                 <div class="students_msg">
