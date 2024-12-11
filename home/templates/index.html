@@ -905,7 +905,30 @@
             background-color: #021122;
             color: white;
           }
-       
+       @media (max-width:600px){
+        body{
+            width:600px
+        }
+        #nav_logo{
+            height: 50px;
+            width:150px;
+            margin-left: -80px;
+            padding-bottom: -80px;
+
+        }
+        .sectionA_content{
+            display: block;
+        }
+        .sectionA_inside{
+            display: block;
+            font-size: 1px;
+            margin-left: -120px;
+        }
+        .sectionA_inside p{
+            font-size: 2px;
+        }
+        
+       }
 
        
     </style>
@@ -1013,7 +1036,7 @@
                         <p>Our notes are specially desingned by our experts and they contains all the valuable key
                             points and topics, related for upcoming government exams</p>
                         <img src="https://i.ibb.co/4FDzmw8/note-taking.png" alt="" height="150px" width="200px">
-                        <button type="button" id="student_button"><a href="{% url 'courses' %}">Enroll Now</a></button>
+                        <button type="button" id="student_button"><a href="{% url 'notes' %}">Enroll Now</a></button>
                     </div>
                 </div>
                 <div class="students_msg">
