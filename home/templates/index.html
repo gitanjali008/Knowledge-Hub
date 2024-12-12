@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”> -->
     <title>Home</title>
     <style>
        
@@ -19,6 +19,14 @@
             box-shadow: 0px 10px rgba(165, 173, 173, 0.491);
             margin-bottom: 2px;
         }
+        #first_content {
+    font-size: 20px; /* Adjust font size */
+    font-weight: bold; /* Make it bold */
+    text-align: center; /* Center text horizontally */
+    margin: 0 auto; /* Center horizontally */
+    padding: 10px; /* Add some padding for spacing */
+    font-family: Arial, sans-serif; /* Add a clean font */
+}
 
         .nav_logo {
             width: auto;
@@ -710,12 +718,45 @@
             color: white;
           }
 
+
+          @media (max-width:480px){
+            body {
+        width: 100%; /* Ensure the body fits within the screen */
+        margin: 0; /* Remove any default margin */
+        padding: 10px; /* Add consistent padding */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        box-sizing: border-box; /* Include padding and border in width calculation */
+        font-size: 14px; /* Adjust font size for readability on smaller screens */
+    }
+    #first_content {
+        font-size: 16px; /* Smaller font size for small screens */
+        margin: 30px auto; /* Add vertical spacing */
+        width: 90%; /* Make the text occupy most of the width */
+        text-align: center; /* Ensure the text remains centered */
+    }
+    .sectionA {
+        width: 100%; /* Ensure section fits within the screen */
+        margin: 0 auto; /* Center-align the section */
+        padding: 10px; /* Add padding for spacing */
+        text-align: center; /* Align content to center */
+    }
+     .ms002 {
+        display: flex;
+        justify-content: center; /* Center the element */
+        align-items: center; /* Vertically align items */
+        width: 100%; /* Ensure no overflow */
+        margin: 10px auto; /* Add spacing */
+    }
+          }
           
-      @media (max-width:412px){
-        body{
-            width:400px;
-            margin-right: -80px;
-        }
+      @media (max-width:768px){
+        html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    width: 100%; /* Ensure it fits the viewport width */
+    box-sizing: border-box; /* Includes padding and borders in width calculations */
+}
         #nav_logo{
             height: 50px;
             width:120px;
@@ -812,6 +853,11 @@
         .bluebox_content{
             font-size: 15px;
         }
+        #first_content {
+        font-size: 18px; /* Smaller font size for medium screens */
+        margin: 20px auto; /* Add vertical spacing */
+        width: 80%; /* Center-align content with reduced width */
+    }
         .sectionC{
             width: 100%;
         }
