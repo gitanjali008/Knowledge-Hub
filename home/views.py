@@ -17,7 +17,7 @@ def about(request):
 
 def book(request):
     return render(request, '../templates/book.html')
-def notes(request):
+def courses(request):
     return render(request, '../templates/notes-courses.html')
 
 def assignment(request):
@@ -97,15 +97,29 @@ def btech_assignment(request):
 
 
 def sem1mathpyqs(request):
-    return render(request, '../templates/sem1-math-pyqs.html')
+    return render(request, '../templates/sem1-math-pyq.html')
+
 def sem1physicspyqs(request):
-    return render(request, '../templates/sem1-physics-pyqs.html')
+    return render(request, '../templates/sem1-physics-pyq.html')
+
 def sem1ecepyqs(request):
-    return render(request, '../templates/sem1-ece-pyqs.html')
+    return render(request, '../templates/sem1-ece-pyq.html')
+
 def sem2mathpyqs(request):
-    return render(request, '../templates/sem2-math-pyqs.html')                
+    return render(request, '../templates/sem2-math-pyq.html')                
 
 
 
 def subjects_btech(request):
     return render(request, '../templates/subjects-btech.html')
+def subjects_bca(request):
+    return render(request, '../templates/subjects-bca.html')
+def subjects_bcom(request):
+    return render(request, '../templates/subjects-bcom.html')
+def subjects_bba(request):
+    return render(request, '../templates/subjects-bba.html')
+def subjects_mba(request):
+    return render(request, '../templates/subjects-mba.html')
+
+def notes(request):
+    return render(request, '../templates/notes.html')

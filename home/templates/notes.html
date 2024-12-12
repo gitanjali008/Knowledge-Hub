@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OOPS Resources</title>
+    <title>{{ subject|title }} Resources</title>
     <style>
         * {
             margin: 0;
@@ -63,6 +63,7 @@
             font-family: 'Arial', sans-serif;
             background-color: #f4f7fa;
             color: #2c3e50;
+            line-height: 1.6;
         }
 
         .subject-heading {
@@ -280,32 +281,32 @@
 
     <main>
         <div class="subject-heading">
-            <h1>OOPS Resources</h1>
+            <h1>{{ subject|title }} Resources</h1>
         </div>
 
         <!-- Notes Section -->
         <section class="section">
             <h2>Notes</h2>
             <div class="grid">
+                {% for note in resources.notes %}
                 <div class="card">
-                    <a href="https://drive.google.com/file/d/1kv9s_cf1XABbb_zoYMyH5lp5bxMEPfNK/view?usp=sharing" target="_blank">
-                        Lecture Notes 1
-                    </a>
+                    <a href="{{ note.url }}" target="_blank">{{ note.name }}</a>
                 </div>
-                <div class="card">
-                    <a href="https://www.tutorialspoint.com/oops/oops_tutorial.pdf" target="_blank">
-                        Lecture Notes 2
-                    </a>
-                </div>
+                {% empty %}
+                <p>No notes available.</p>
+                {% endfor %}
             </div>
         </section>
 
         <!-- Videos Section -->
-        <section class="section notes-section">
+        <section class="section">
             <h2>Lecture Videos</h2>
             <div class="grid">
-                <iframe src="https://www.youtube.com/embed/Vn1Pz0RN5lY" title="Lecture Video 1"></iframe>
-                <iframe src="https://www.youtube.com/embed/T4CSgrT2Qpo" title="Lecture Video 2"></iframe>
+                {% for video in resources.videos %}
+                <iframe src="{{ video.url }}" title="Lecture Video"></iframe>
+                {% empty %}
+                <p>No videos available.</p>
+                {% endfor %}
             </div>
         </section>
 
@@ -313,41 +314,13 @@
         <section class="section">
             <h2>Lecture Playlists</h2>
             <div class="grid">
-                <div class="playlist-card">
-                    <a href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop" target="_blank">
-                        OOPS Playlist 1
-                    </a>
+                {% for playlist in resources.playlists %}
+                <div class="card">
+                    <a href="{{ playlist.url }}" target="_blank">{{ playlist.name }}</a>
                 </div>
-                <div class="playlist-card">
-                    <a href="https://www.youtube.com/playlist?list=PLQjPzqZxCaOYp2oOa5CuSDRJu0Ti5jzF5" target="_blank">
-                        OOPS Playlist 2
-                    </a>
-                </div>
-                <div class="playlist-card">
-                    <a href="https://www.youtube.com/playlist?list=PLqPfjNfSsbwLhQxk9yImYrXc8H4CXYLbd" target="_blank">
-                        OOPS Playlist 3
-                    </a>
-                </div>
-                <div class="playlist-card">
-                    <a href="https://www.youtube.com/playlist?list=PLP9nCWe7JXl5Nh9gL9W2MlC3HkgQmp6cA" target="_blank">
-                        OOPS Playlist 4
-                    </a>
-                </div>
-                <div class="playlist-card">
-                    <a href="https://www.youtube.com/playlist?list=PLP9nCWe7JXl5Nh9gL9W2MlC3HkgQmp6cA" target="_blank">
-                        OOPS Playlist 4
-                    </a>
-                </div>
-                <div class="playlist-card">
-                    <a href="https://www.youtube.com/playlist?list=PLP9nCWe7JXl5Nh9gL9W2MlC3HkgQmp6cA" target="_blank">
-                        OOPS Playlist 4
-                    </a>
-                </div>
-                <div class="playlist-card">
-                    <a href="https://www.youtube.com/playlist?list=PLP9nCWe7JXl5Nh9gL9W2MlC3HkgQmp6cA" target="_blank">
-                        OOPS Playlist 4
-                    </a>
-                </div>
+                {% empty %}
+                <p>No playlists available.</p>
+                {% endfor %}
             </div>
         </section>
     </main>

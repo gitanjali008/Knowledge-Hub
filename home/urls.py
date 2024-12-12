@@ -17,7 +17,7 @@ urlpatterns = [
     path("course_outline/index/", views.index, name='index'),
     path("faculty/index/", views.index, name='index'),
     path("book/", views.book, name='book'),
-    path("notes/", views.notes, name='notes'),
+    path("courses/", views.courses, name='courses'),
     path("assignments/", views.assignment, name='assignment'),
     path("btech/", views.btech, name='btech'),
     path("bba/", views.bba, name='bba'),
@@ -34,5 +34,11 @@ urlpatterns = [
     path("sem1ecepyqs/", views.sem1ecepyqs, name='sem1ecepyqs'),
     path("sem2mathpyqs/", views.sem2mathpyqs, name='sem2mathpyqs'),  
 
-    path("subject-btech/", views.subjects_btech, name='subjects_btech'),
+    path("subjects-btech/", views.subjects_btech, name='subjects_btech'),
+    path("subjects-bca/", views.subjects_bca, name='subjects_bca'),
+    path("subjects-bcom/", views.subjects_bcom, name='subjects_bcom'),
+    path("subjects-bba/", views.subjects_bba, name='subjects_bba'),
+    path("subjects-mba/", views.subjects_mba, name='subjects_mba'),
+
+    path("notes/", views.notes, name='notes'),
 ]
