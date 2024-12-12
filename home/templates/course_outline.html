@@ -12,320 +12,490 @@
       <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
       <title>Course Outline</title>
     <style>
-      * {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        border: border-box;
-      }
-     
-      
-    
-      .navbar{
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        padding-top: 10px;
-        box-shadow: 0px 10px  rgba(165, 173, 173, 0.491);
-        margin-bottom: 2px;
-      }
-    
-    .nav_logo{
-        width: auto;
-        height: auto;
-        padding-left: 80px;
-      }
-    .nav-content{
-        display: flex;
-        justify-content: flex-end;
-        margin-left: 700px;
-        padding-top: 55px;
-    }
-    #nav_items{
-        font-size: 20px;
-        margin-right:50px;
-        font-weight: 700;
-      }
-    .nav_content button{
-        background-color: rgb(69, 135, 201);
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border-color: transparent;
-        border-width: 3px;
-        border-radius: 12px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: -50px;
-        font-weight: 700;
-        color: white;
-    }
-    .nav_content button:hover{
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
-        cursor: pointer;
-        border-color: rgb(0, 0, 0);
-    }
-    a{
-        text-decoration: none;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     }
-    
-     a:hover{
-      color:rgb(255, 51, 0);
-   }
-      .header_msg{
-        background-color: beige;
-        justify-content: center;
-        display: flex;
-        padding-top:20px;
-        padding-bottom:20px;
-       
-      }
-      .first_box{
-        display:flex;
-        align-items: center;
-        justify-content: space-around;
-        font-size: 30px;
-        font-weight: 400;
-        font-display: bold;
-        color: black;border-color: black;
-      }
-    
-     
-        a{
-            text-decoration: none;
-            cursor: pointer;
-          }
-        
-        .hover{
-            color: rgb(255, 255, 255);
-           
-          }
-    
-    
-    
-     .course_outline{
-        height: auto;
-        width: auto;
-        display: block;
-        justify-content: center;
-        
-        color: rgb(255, 255, 255);
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left:80px ;
-        word-spacing: 3px;
-        box-shadow: 120px;
-        transform-box: 2s;
-        background-color: rgb(0, 0, 153);
-     }     
-     .course_outline h3{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        transform: scale3d(1s);
-    
-     }
-     .course_outline h1{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 50px;
-        font-weight: bolder;
-        text-decoration:double;
-        
-     }
-     .course_outline h3{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        
-     }
-     #img_content{
-        width: 350px;
-        height: 500px;
-     }
-     
-    
-     .container{
-        display: flex;
-        justify-content: flex-start;
-     }
-    
-      .course_box{
-        padding-left: 80px;
-        padding-right: 50px;
-        padding-top: 50px;
-        padding-bottom: 80px;
-        justify-content: center;
-    
-     }
-     #boxs{
-        padding-top: 30px;
-        margin-top: 10px;
-        margin-bottom: 5px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 20px;
-        border-radius: 30px;
-        border-style:outset;
-        box-shadow: 80px solid black;
-        font-weight: 600;
-        
-        
-     }
-     .accordion{
-      margin-top: 70px;
-    }
-    .accordion li{
-      list-style: none;
-      margin: 20px;
-      padding: 10px;
-      width: 1000px;
-      border-radius: 10px;
-      background-color: rgb(235, 243, 243);
-      border-color: rgb(0, 0, 0);
-      border-width: 1px;
-    
-    
-    }
-    body{
-      background: rgb(250, 248, 248);
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     }
-    .accordion li label{
-      display: flex;
-      align-items: center;
-      padding: 10px;
-      font-size: 16px;
-      cursor: pointer;
-      font-weight: 600;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    label::before{
-      content: '+';
-      margin-left: 10px;
-    }
-    input[type="radio"]{
-      display: none;
-    }
-    .accordion .content{
-      padding: 0 10px;
-      line-height: 26px;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s, padding 0.5s;
-    }
-    .accordion input[type="radio"]:checked+ label+.content{
-      max-height: 400px;
-      padding: 10px 10px 20px;
-      
-      
-    }
-    .accordion input[type="radio"]:checked+ label::before{
-      content: '-';
-    }
-    #inner_content li{
-      
-      margin: -23px;
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-      font-weight: 400;
-    }
-    
-    
-    
-     #boxs h1{
-        text-align: center;
-     }
-    
-     .base_container{
-       display: flex;
-       justify-content: flex-end;
-       background-color: rgb(1, 1, 24);
-       color: aliceblue;
-       margin-bottom: 10px;
-       border-radius: 500px;
-      
-       
-     }
-     footer{
-       background-color: rgb(176, 238, 238);
-       padding-bottom: 30px;
-       padding-top: 20px;
-       display: flex;
-       justify-content: flex-end;
-    
-       
-     }
-     #footer{
-      
-       padding-top: 5px;
-       padding-right: 20px;
-       padding-bottom: 10px;
-       border-radius: 100px;
-    
-     }
-     #text{
-       padding-top: 210px;
-       font-size: 15px;
-     }
-     #text h1{
-       font-size: 25px
-     }
-     .text1{
-       padding-right: 900px;
-       margin-right: -800px;
-       padding-top: 90px;
-       font-weight: 900;
-       font-size: 35px;
-       font-style: italic;
-       font-stretch: extra-expanded;
-     }
-     .base2{
-       padding-left: 300px;
-     }
-     footer{
-      display: flex;
-      justify-content: space-evenly;
-      padding-bottom: 120px;animation: apper linear;
-      animation-timeline: view();
-      animation-range: entry 20% cover 10%;
-      background-color: rgb(255, 255, 255);
-     }
-     footer img{
-      border-radius: 15px;animation: apper linear;
-      animation-timeline: view();
-      animation-range: entry 20% cover 40%;
-     }
-     ul{
-      list-style-type: none;
-     
-     }
-     ul li h1{
-      font-size: 20px;
-     }
-     ul li{
-      font-size: 18px;
-      padding-top: 5px;
-     }
-     #refrence_tools{
-      color: black;
-     }
-     .accordion li:hover{
-      border-color: #3498db; /* Color when hovered */
-      box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
-     }
+     * {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  border: border-box;
+}
+body {
+    overflow-x: hidden;
+}
 
-     .contactus {
-      display: flex;
-  }
+.navbar {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between; /* Flex layout to make it responsive */
+    padding-top: 10px;
+    box-shadow: 0px 10px rgba(165, 173, 173, 0.491);
+    margin-bottom: 2px;
+}
+.nav_logo {
+    width: 150px; /* Adjust width */
+    height: auto;
+    padding-left: 20px; /* Space from left side */
+}
+#nav_logo {
+    width: 150px;
+    height: 70px; /* Default height */
+    padding-left: 80px;
+}
 
-  .contactus li {
-      margin-right: 10px
-  }
+.nav-content {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 55px;
+}
 
-  .reserve{
-    text-align: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #007BFF;
+#nav_items {
+    font-size: 20px;
+    margin-right: 50px;
+    font-weight: 700;
+}
+
+.nav_content button {
+    background-color: rgb(69, 135, 201);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-color: transparent;
+    border-width: 3px;
+    border-radius: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 700;
     color: white;
+}
+
+.nav_content button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a:hover {
+  color: rgb(255, 51, 0);
+}
+
+.header_msg {
+  background-color: beige;
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.first_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+  border-color: black;
+}
+
+.course_outline {
+  height: auto;
+  width: auto;
+  display: block;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  word-spacing: 3px;
+  box-shadow: 120px;
+  transform-box: 2s;
+  background-color: rgb(0, 0, 153);
+}
+
+.course_outline h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.course_outline h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 50px;
+  font-weight: bolder;
+  text-decoration: double;
+}
+
+#img_content {
+  width: 350px;
+  height: 500px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.course_box {
+  padding-left: 80px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  justify-content: center;
+}
+
+#boxs {
+  padding-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  border-radius: 30px;
+  border-style: outset;
+  box-shadow: 80px solid black;
+  font-weight: 600;
+}
+
+.accordion {
+  margin-top: 70px;
+}
+
+.accordion li {
+  list-style: none;
+  margin: 20px;
+  padding: 10px;
+  width: 1000px;
+  border-radius: 10px;
+  background-color: rgb(235, 243, 243);
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+}
+
+body {
+  background: rgb(250, 248, 248);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+label::before {
+  content: '+';
+  margin-left: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.accordion .content {
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::before {
+  content: '-';
+}
+
+#inner_content li {
+  margin: -23px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 400;
+}
+
+#boxs h1 {
+  text-align: center;
+}
+
+.base_container {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(1, 1, 24);
+  color: aliceblue;
+  margin-bottom: 10px;
+  border-radius: 500px;
+}
+
+footer {
+  background-color: rgb(176, 238, 238);
+  padding-bottom: 30px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#footer {
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-radius: 100px;
+}
+
+#text {
+  padding-top: 210px;
+  font-size: 15px;
+}
+
+#text h1 {
+  font-size: 25px;
+}
+
+.text1 {
+  padding-right: 900px;
+  margin-right: -800px;
+  padding-top: 90px;
+  font-weight: 900;
+  font-size: 35px;
+  font-style: italic;
+  font-stretch: extra-expanded;
+}
+
+.base2 {
+  padding-left: 300px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 120px;
+  animation: apper linear;
+  animation-timeline: view();
+  animation-range: entry 20% cover 10%;
+  background-color: rgb(255, 255, 255);
+}
+
+footer img {
+  border-radius: 15px;
+  animation: apper linear;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li h1 {
+  font-size: 20px;
+}
+
+ul li {
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+#refrence_tools {
+  color: black;
+}
+
+.accordion li:hover {
+  border-color: #3498db;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.contactus {
+  display: flex;
+}
+
+.contactus li {
+  margin-right: 10px;
+}
+
+.reserve {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-content {
+        justify-content: center;
+        padding-top: 20px;
+    }
+    
+    #nav_logo {
+        height: 90px; /* Adjust height */
+        width: 90%;
+        padding-left: 40px; /* Adjust padding */
+    }
+
+    #nav_items {
+        font-size: 18px; /* Adjust font size */
+        margin-right: 30px; /* Reduce margin */
+    }
+    .nav_content button {
+        padding: 12px 15px;
+        font-size: 16px; /* Adjust font size */
+        margin-top: 10px;
+    }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .course_box {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .course_outline {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: xx-small;
+  }
+
+  #boxs {
+    width: 100%;
+  }
+
+  .first_box {
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  footer {
+        flex-direction: column; /* Stack footer items vertically */
+        align-items: center;
+        padding: 20px;
+    }
+    footer img {
+        max-width: 150px; /* Reduce image size */
+    }
+
+  .base_container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text1 {
+    font-size: 25px;
+    text-align: center;
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+        flex-direction: row; /* Stack items vertically */
+        align-items: center;
+        padding: 10px;
+    }
+    .nav_logo {
+        width: 120px; /* Adjust logo width */
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+    #img_content{
+      width: 90%;
+      height: 350px;
+    }
+    #nav_logo {
+        height: 40px; /* Adjust height */
+        width: max-content;
+        padding-left: 20px; /* Adjust padding */
+    }
+    .nav-content {
+        justify-content: center;
+        padding-top: 10px;
+       
+    }
+
+    #nav_items {
+      font-size: 10px; /* Further reduce font size */
+        margin-right: 20px; /* Reduce margin */
+    }
+    .nav_content button {
+        padding: 10px 12px;
+        font-size: 14px; /* Adjust font size for smaller screens */
+        margin-top: 8px;
+    }
+
+  .container {
+    padding: 10px;
+    width: 90%;;
+  }
+
+  .course_outline {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: xx-small;
+  }
+
+  .course_box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .first_box {
+    font-size: 16px;
+  }
+
+  .reserve {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+
+  footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    footer img {
+        width: 90%; /* Further reduce image size */
+        height: 70px;
+    }
+  .text1 {
+    font-size: 20px;
+  }
+
+  #footer {
+    padding-right: 10px;
+  }
+
+  .base2 {
+    padding-left: 0;
+  }
+  .accordion{
+    margin-right: 20px;
+
+  }
+
+  .accordion li {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-right: 10px;
+    font-size: 10px;
+  }
+}
+
     </style>        
 </head>
 <body>
@@ -344,7 +514,7 @@
     
     <div class="header_msg ">
         <div class="msg">
-            <p>"we are here to train you to face the future!! All The Best</p>
+            <p>"we are here to train you to face the future!! All The Best"</p>
         </div>
     </div>
     <div class="course_outline">
@@ -384,6 +554,86 @@
                 </ul>
               </div>
           </li>
+          <li>
+            <input type="radio" name="accordion" id="computer_network">
+            <label for="computer_network">Computer Networks</label>
+            <div class="content">
+                <ul id="inner_content">
+                    <li>A branch of computer science that deals with communication between computers and other devices over a network. It covers protocols, network design, routing, switching, and security.</li>
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <input type="radio" name="accordion" id="operating_system">
+            <label for="operating_system">Operating Systems</label>
+            <div class="content">
+                <ul id="inner_content">
+                    <li>An OS is system software that manages hardware, software resources, and provides common services for computer programs. Key topics include process management, memory management, and file systems.</li>
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <input type="radio" name="accordion" id="dbms">
+            <label for="dbms">Database Management Systems (DBMS)</label>
+            <div class="content">
+                <ul id="inner_content">
+                    <li>DBMS refers to software that manages databases and allows users to create, read, update, and delete data. It includes relational, object-oriented, and NoSQL databases.</li>
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <input type="radio" name="accordion" id="software_engineering">
+            <label for="software_engineering">Software Engineering</label>
+            <div class="content">
+                <ul id="inner_content">
+                    <li>Software Engineering focuses on the design, development, maintenance, and management of software applications. It involves methodologies like Agile, Waterfall, and testing practices.</li>
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <input type="radio" name="accordion" id="data_structures">
+            <label for="data_structures">Data Structures</label>
+            <div class="content">
+                <ul id="inner_content">
+                    <li>Data structures are a way to organize and store data for efficient access and modification. Key data structures include arrays, linked lists, stacks, queues, trees, and graphs.</li>
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <input type="radio" name="accordion" id="algorithms">
+            <label for="algorithms">Algorithms</label>
+            <div class="content">
+                <ul id="inner_content">
+                    <li>Algorithms are step-by-step procedures for solving problems. Topics include sorting, searching, dynamic programming, greedy algorithms, and graph algorithms.</li>
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <input type="radio" name="accordion" id="computer_organization">
+            <label for="computer_organization">Computer Organization</label>
+            <div class="content">
+                <ul id="inner_content">
+                    <li>Computer Organization focuses on the internal workings of computers, including processor architecture, memory, and input/output systems.</li>
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <input type="radio" name="accordion" id="theory_of_computation">
+            <label for="theory_of_computation">Theory of Computation</label>
+            <div class="content">
+                <ul id="inner_content">
+                    <li>Theory of Computation involves the study of formal languages, automata theory, and computational complexity to understand what problems can be solved algorithmically.</li>
+                </ul>
+            </div>
+        </li>
+        
           <li>
               <input type="radio" name="accordion" id="third">
               <label for="third">Java</label>
@@ -429,6 +679,36 @@
             </div>
           </li>
           <li>
+            <input type="radio" name="accordion" id="computer_network">
+            <label for="computer_network">Computer Networks</label>
+            <div class="content">
+                <ul id="inner_content">
+                    <li>A branch of computer science that deals with communication between computers and other devices over a network. It covers protocols, network design, routing, switching, and security.</li>
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <input type="radio" name="accordion" id="operating_system">
+            <label for="operating_system">Operating Systems</label>
+            <div class="content">
+                <ul id="inner_content">
+                    <li>An OS is system software that manages hardware, software resources, and provides common services for computer programs. Key topics include process management, memory management, and file systems.</li>
+                </ul>
+            </div>
+        </li>
+        
+        <li>
+            <input type="radio" name="accordion" id="dbms">
+            <label for="dbms">Database Management Systems (DBMS)</label>
+            <div class="content">
+                <ul id="inner_content">
+                    <li>DBMS refers to software that manages databases and allows users to create, read, update, and delete data. It includes relational, object-oriented, and NoSQL databases.</li>
+                </ul>
+            </div>
+        </li>
+        
+          <li>
             <input type="radio" name="accordion" id="eight">
             <label for="eight">Engineering Mathametics</label>
             <div class="content">
@@ -459,6 +739,137 @@
               </ul>
             </div>
           </li>
+          <li>
+            <input type="radio" name="accordion" id="software_engineering">
+            <label for="software_engineering">Software Engineering</label>
+            <div class="content">
+                <ul id="inner_content">
+                    <li>A discipline that applies engineering principles to the design, development, maintenance, and management of software applications, focusing on quality and efficiency.</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="software_engineering">
+          <label for="software_engineering">Software Engineering</label>
+          <div class="content">
+              <ul id="inner_content">
+                  <li>A discipline that applies engineering principles to the design, development, maintenance, and management of software applications, focusing on quality and efficiency.</li>
+              </ul>
+          </div>
+      </li>
+     
+      
+     
+      
+   
+      
+   
+      
+      <li>
+          <input type="radio" name="accordion" id="android_development">
+          <label for="android_development">Android Development</label>
+          <div class="content">
+              <ul id="inner_content">
+                  <li>Android Development involves creating mobile applications for Android devices using Java/Kotlin and Android Studio. Topics include UI/UX design, APIs, and Firebase integration.</li>
+              </ul>
+          </div>
+      </li>
+      
+      <li>
+          <input type="radio" name="accordion" id="networking">
+          <label for="networking">Networking</label>
+          <div class="content">
+              <ul id="inner_content">
+                  <li>Networking involves the communication between computers through protocols like TCP/IP. Key concepts include routers, switches, network security, and network layers.</li>
+              </ul>
+          </div>
+      </li>
+      <li>
+        <input type="radio" name="accordion" id="business_management">
+        <label for="business_management">Business Management</label>
+        <div class="content">
+            <ul id="inner_content">
+                <li>Business management involves planning, organizing, leading, and controlling business operations. It covers areas like finance, marketing, human resources, and strategic planning.</li>
+            </ul>
+        </div>
+    </li>
+    
+    
+    
+   
+    
+    <li>
+        <input type="radio" name="accordion" id="human_resource_management">
+        <label for="human_resource_management">Human Resource Management</label>
+        <div class="content">
+            <ul id="inner_content">
+                <li>HRM focuses on managing and developing the workforce in organizations. Topics include recruitment, training, performance management, and employee relations.</li>
+            </ul>
+        </div>
+    </li>
+    
+    <li>
+        <input type="radio" name="accordion" id="marketing_management">
+        <label for="marketing_management">Marketing Management</label>
+        <div class="content">
+            <ul id="inner_content">
+                <li>Marketing Management involves the strategic planning and execution of marketing activities to promote products or services, including market research, product development, and advertising.</li>
+            </ul>
+        </div>
+    </li>
+    
+    <li>
+        <input type="radio" name="accordion" id="international_business">
+        <label for="international_business">International Business</label>
+        <div class="content">
+            <ul id="inner_content">
+                <li>International Business focuses on managing global operations and understanding cross-cultural differences. Topics include global trade, international marketing, and foreign investment.</li>
+            </ul>
+        </div>
+    </li>
+    
+    <li>
+        <input type="radio" name="accordion" id="entrepreneurship">
+        <label for="entrepreneurship">Entrepreneurship</label>
+        <div class="content">
+            <ul id="inner_content">
+                <li>Entrepreneurship is the study of starting, managing, and growing new businesses. Topics include business planning, funding, innovation, and market entry strategies.</li>
+            </ul>
+        </div>
+    </li>
+    
+      
+        <li>
+          <input type="radio" name="accordion" id="business_management">
+          <label for="business_management">Business Management</label>
+          <div class="content">
+              <ul id="inner_content">
+                  <li>Business management involves planning, organizing, leading, and controlling business operations. It covers areas like finance, marketing, human resources, and strategic planning.</li>
+              </ul>
+          </div>
+      </li>
+      
+      <li>
+          <input type="radio" name="accordion" id="accounting">
+          <label for="accounting">Accounting</label>
+          <div class="content">
+              <ul id="inner_content">
+                  <li>Accounting is the process of recording financial transactions, summarizing them, and analyzing financial statements to help businesses make informed decisions.</li>
+              </ul>
+          </div>
+      </li>
+      
+      <li>
+          <input type="radio" name="accordion" id="business_analytics">
+          <label for="business_analytics">Business Analytics</label>
+          <div class="content">
+              <ul id="inner_content">
+                  <li>Business analytics involves using data analysis and statistical models to drive decision-making, improve performance, and forecast business trends.</li>
+              </ul>
+          </div>
+      </li>
+      
+        
         </ul>
         
     </main>
