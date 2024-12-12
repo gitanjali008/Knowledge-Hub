@@ -140,7 +140,33 @@
         footer p {
             margin: 0;
         }
+        @media (max-width: 768px) { /* For mobile devices */
+            .card {
+                width: 90%; /* Reduce card width to fit smaller screens */
+                margin: 10px auto; /* Center cards */
+                padding: 10px; /* Adjust padding */
+            }
+        
+            .card h3 {
+                font-size: 0.9rem; /* Reduce font size for better fit */
+                word-wrap: break-word; /* Ensure long text breaks properly */
+                overflow-wrap: break-word;
+                text-align: center; /* Center align text */
+            }
+        
+            .container {
+                display: flex;
+                flex-direction: column; /* Stack cards vertically */
+                align-items: center; /* Center align cards */
+            }
+            .card button {
+                font-size: 0.9rem; /* Adjust font size */
+                padding: 6px 10px; /* Adjust button padding */
+            }
+        }
+        
     </style>
+
 </head>
 <body>
     <header>
