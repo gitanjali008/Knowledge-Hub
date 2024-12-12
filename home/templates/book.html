@@ -133,20 +133,12 @@
         }
         
         .course-section {
-            /* Main container for each course */
-.course-section {
-    margin-bottom: 20px; /* Add space between sections */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent items from wrapping */
-}
-
-/* Card styling */
-.card {
-    display: inline-block; /* Cards appear inline for scrolling */
-    margin-right: 10px; /* Space between cards */
-    width: 200px; /* Set a fixed width for consistency */
-}
-;
+            margin-top: 40px;
+        }
+        
+        .course-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
         }
         
         /* Enable horizontal scrolling for each course section */
@@ -322,12 +314,9 @@
             margin-right: 10px
         }
         @media (max-width: 768px) {
-            .course-section {
-                overflow-x: auto; /* Allow horizontal scrolling */
-            }
-        
-            .card {
-                width: 150px; /* Reduce card width for smaller screens */
+            .courses-container {
+                max-height: 80vh; /* Adjust based on your design */
+                overflow-y: auto;
             }
         }
         
