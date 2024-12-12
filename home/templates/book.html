@@ -12,337 +12,319 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <title>Books</title>
     <style>
-         /* @keyframes apper{
-            from{
-                opacity: 0;
-                scale: 0.8;
-            }
-            to{
-                opacity: 1;
-                scale: 1;
-            }
-        }
-        @keyframes mymove {
-            from {
-                opacity: 0;
-            left: 800px;}
-            to {left: 00px;
-            opacity: 1;}
-          }  */
+         */
+        
          
-        .navbar{
-            background-color: rgb(255, 255, 255);
-            display: flex;
-            padding-top: 10px;
-            box-shadow: 0px 10px  rgba(165, 173, 173, 0.491);
-            margin-bottom: 2px;
-        }
-        
-        .nav_logo{
-            width: auto;
-            height: auto;
-            padding-left: 80px;
-        }
-        .nav-content{
-            display: flex;
-            justify-content: flex-end;
-            margin-left: 500px;
-            padding-top: 55px;
-        }
-        #nav_items{
-            font-size: 18px;
-            margin-right:50px;
-            font-weight: 700;
-        }
-        .nav_content button{
-            background-color: rgb(69, 135, 201);
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border-color: transparent;
-            border-width: 3px;
-            border-radius: 12px;
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-top: -50px;
-            font-weight: 700;
-            color: white;
-        }
-        .nav_content button:hover{
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            cursor: pointer;
-            border-color: rgb(0, 0, 0);
-        }
-        a{
-            text-decoration: none;
-            
-        }
-        #student_button a{
-            color: aliceblue;
-        }
-        
-        a:hover{
-           color:rgb
+         .navbar{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding-top: 10px;
+    box-shadow: 0px 10px rgba(165, 173, 173, 0.491);
+    margin-bottom: 2px;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.nav_logo{
+    width: 150px;
+    height: 50px;
+    padding-left: 80px;
+}
+#nav_logo{
+    height: 90px;
+    width: auto;
+}
 
-        }
-        footer{
-            background-color: rgb(176, 238, 238);
-            padding-bottom: 30px;
-            padding-top: 20px;
-            display: flex;
-            justify-content: flex-end;
-         
-            
-          }
-          #footer{
-           
-            padding-top: 5px;
-            padding-right: 20px;
-            padding-bottom: 10px;
-            border-radius: 100px;
-         
-          }
-          #text{
-            padding-top: 210px;
-            font-size: 15px;
-          }
-          #text h1{
-            font-size: 25px
-          }
-          .text1{
-            padding-right: 900px;
-            margin-right: -800px;
-            padding-top: 90px;
-            font-weight: 900;
-            font-size: 35px;
-            font-style: italic;
-            font-stretch: extra-expanded;
-          }
-          .base2{
-            padding-left: 300px;
-          }
+.nav-content{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: px;
+    padding-bottom: 50px;
+}
 
+#nav_items{
+    font-size: 18px;
+    margin-right:50px;
+    font-weight: 700;
+}
 
-          
+.nav_content button{
+    background-color: rgb(69, 135, 201);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-color: transparent;
+    border-width: 3px;
+    border-radius: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 700;
+    color: white;
+}
 
+.nav_content button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-color: rgb(0, 0, 0);
+}
 
+a{
+    text-decoration: none;
+}
 
-          .courses-container {
-            display: flex; /* Ensures child items are aligned in a row */
-            overflow-x: auto; /* Enables horizontal scrolling */
-            white-space: nowrap; /* Prevents items from wrapping to the next line */
-            scroll-behavior: smooth; /* Enables smooth scrolling (optional) */
-        }
-        
-        .courses-container::-webkit-scrollbar {
-            height: 8px; /* Adjust scrollbar height */
-        }
-        
-        .courses-container::-webkit-scrollbar-thumb {
-            background: #888; /* Customize scrollbar color */
-            border-radius: 10px;
-        }
-        
-        .courses-container::-webkit-scrollbar-thumb:hover {
-            background: #555; /* Darker on hover */
-        }
-        
-        
-        .course-section {
-            margin-top: 40px;
-        }
-        
-        .course-section h2 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-        
-        /* Enable horizontal scrolling for each course section */
-        .card-container {
-            display: flex;
-            overflow-x: auto;
-            gap: 20px;
-            padding-bottom: 10px; /* Add some padding for scroll area */
-        }
-        
-        .card-container::-webkit-scrollbar {
-            height: 8px; /* Custom scrollbar height */
-        }
-        
-        .card-container::-webkit-scrollbar-thumb {
-            background-color: #888;
-            border-radius: 4px;
-        }
-        
-        .card-container::-webkit-scrollbar-thumb:hover {
-            background-color: #555;
-        }
-        
-        .card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            width: 200px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            position: relative;
-            flex: 0 0 auto; /* Prevent cards from shrinking and enable horizontal layout */
-        }
-        
-        .card img {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
-        
-        .tag {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.8em;
-            color: white;
-        }
-        
-        /* Different tag colors for categories */
-        .trending {
-            background-color: #28a745; /* Green for Trending */
-        }
-        
-        .bestselling {
-            background-color: #007bff; /* Blue for Bestselling */
-        }
-        
-        .teachers-pick {
-            background-color: #ffc107; /* Yellow for Teacher's Pick */
-        }
-        
-        .new-release {
-            background-color: #dc3545; /* Red for New Release */
-        }
-        
-        .new {
-            background-color: #6c63ff; /* Purple for New */
-        }
-        
-        .card h3 {
-            font-size: 1em;
-            margin: 10px 0;
-        }
-        
-        .card a {
-            color: #6c63ff;
-            text-decoration: none;
-            font-weight: bold;
-            display: block;
-            margin-top: 5px;
-        }
-        
-        .price {
-            font-size: 1.1em;
-            color: #333;
-        }
-        
-        .discount {
-            color: #28a745; /* Green for discount */
-        }
-        
-        .old-price {
-            text-decoration: line-through;
-            color: #888;
-            font-size: 0.9em;
-        }
-        
-        .rating {
-            color: #f39c12; /* Gold color for rating stars */
-            font-weight: bold;
-            margin-top: 5px;
-        }
-        
-        
+#student_button a{
+    color: aliceblue;
+}
 
+footer{
+    background-color: rgb(176, 238, 238);
+    padding-bottom: 30px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+}
 
+#footer{
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-radius: 100px;
+}
 
+#text{
+    font-size: 15px;
+}
 
+#text h1{
+    font-size: 25px;
+}
 
+.text1{
+    padding-right: 900px;
+    margin-right: -800px;
+    padding-top: 90px;
+    font-weight: 900;
+    font-size: 35px;
+    font-style: italic;
+    font-stretch: extra-expanded;
+}
 
+.courses-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
 
+.courses-container::-webkit-scrollbar {
+    height: 8px;
+}
 
+.courses-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
 
+.courses-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
+.card-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+}
 
+.card-container::-webkit-scrollbar {
+    height: 8px;
+}
 
+.card-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
 
+.card-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
 
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    flex: 0 0 auto;
+}
 
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
 
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    color: white;
+}
 
+.trending {
+    background-color: #28a745;
+}
 
+.bestselling {
+    background-color: #007bff;
+}
 
+.teachers-pick {
+    background-color: #ffc107;
+}
 
-          footer{
-            display: flex;
-            justify-content: space-evenly;
-            padding-bottom: 120px;animation: apper linear;
-            animation-timeline: view();
-            animation-range: entry 20% cover 10%;
-            font-size: 20px;
-            background-color: rgb(255, 255, 255);
-           }
-           footer img{
-            border-radius: 15px;animation: apper linear;
-            animation-timeline: view();
-            animation-range: entry 20% cover 40%;
-           }
-           ul{
-            list-style-type: none;
-           
-           }
-           ul li h1{
-            font-size: 20px;
-           }
-           ul li{
-            font-size: 18px;
-            padding-top: 5px;
-           }
-           #refrence_tools{
-            color: black;
-           }
-           .element01{
-            text-align: center;
-            font-size: 29px;
-            padding-bottom: 35px;
-            background-color: rgb(244, 248, 252);
-            padding-top: 15px;
-           }
-           .element01 h1{
-            font-size: 35px;
-            
-           }
-           #element01{
-            color: red;
-           }
-           .contactus {
-            display: flex;
-        }
-        .contactus li {
-            margin-right: 10px
-        }
-        @media (max-width: 768px) {
-            .courses-container {
-                overflow-x: auto;
-                display: flex;
-                white-space: nowrap;
-                padding: 10px;
-            }
-        
-            .card {
-                flex: 0 0 auto; /* Ensures cards do not shrink or grow */
-                margin-right: 10px; /* Adds spacing between cards */
-            }
-        }
+.new-release {
+    background-color: #dc3545;
+}
+
+.new {
+    background-color: #6c63ff;
+}
+
+.card h3 {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.card a {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+.price {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.discount {
+    color: #28a745;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.rating {
+    color: #f39c12;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+@media (max-width: 786px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .nav-logo {
+        padding-left: 0;
+    }
+    
+    .nav-content {
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    #nav_items {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .nav_content button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    footer {
+        flex-direction: column;
+        padding-top: 30px;
+        font-size: 16px;
+    }
+
+    .courses-container {
+        padding: 5px;
+    }
+
+    .card {
+        margin-right: 15px;
+        width: 150px;
+    }
+    .card img{
+        height: 200px;
+        width: auto;
+        margin: 0 100px;
+    }
+    .card h3{
+        font-size: 14px;
+        text-align: center;
+    }
+    .card a{
+        text-align: center;
+    }
+    .rating{
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .nav-content {
+        padding-top: 10px;
+    }
+
+    #nav_items {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .nav_content button {
+        width: 100%;
+        margin-top: 5px;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding-top: 20px;
+    }
+
+    .courses-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
             
         
 
