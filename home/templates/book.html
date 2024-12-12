@@ -83,8 +83,17 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 20px;
+    font-size: 12px;
     background-color: rgb(255, 255, 255);
+}
+.contactus{
+    font-size: 10px;
+    display: flex;
+    margin-top: 0;
+
+}
+.contactus svg{
+    margin-left: 10px;
 }
 
 #footer{
@@ -93,7 +102,14 @@ footer{
     padding-bottom: 10px;
     border-radius: 100px;
 }
+.refrence{
+    margin-top: 60px;
 
+}
+.footer img{
+    height: 50px;
+    width: auto;
+}
 #text{
     font-size: 15px;
 }
@@ -263,6 +279,10 @@ footer{
         padding-top: 30px;
         font-size: 16px;
     }
+    #footer_img{
+        height: 80px;
+        width: auto;
+    }
 
     .courses-container {
         padding: 5px;
@@ -287,7 +307,16 @@ footer{
     .rating{
         text-align: center;
     }
-}
+    .contactus svg{
+        height: 30px;
+    }
+    .refrence h1{
+        font-size:16px ;
+    }
+    .contactus h1{
+        font-size: 16px;
+    }
+    
 
 @media (max-width: 480px) {
     .navbar {
@@ -829,8 +858,8 @@ footer{
 
         </main>
     <footer>
-        <div><img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png" alt="" height="150px" width="350px"></div>
-        <div>
+        <div><img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png"  id="footer_img" alt="" height="150px" width="350px"></div>
+        <div class="refrence">
             <ul>
                 <li><h1>REFERANCE CHANNELS</h1></li>
                 <br>
@@ -859,7 +888,7 @@ footer{
             
         </div>
        
-        <div>
+        <div class="contactus">
             <ul>
                 <li><h1>CONTACT US</h1></li>
                 <br>
