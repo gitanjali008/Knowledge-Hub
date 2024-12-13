@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTech - PYQs</title>
+    <title>BTech - Assignments</title>
     <style>
         /* General Reset */
         * {
@@ -14,194 +14,183 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
+            background-color: #f9fafc;
             color: #333;
             line-height: 1.6;
         }
 
         header {
             text-align: center;
-            background-color: #021f3f;
+            background: linear-gradient(135deg, #457b9d, #1d3557);
             color: white;
-            padding: 1.5rem 0;
+            padding: 2rem 0;
         }
 
         header h1 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
 
         header p {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
 
-     
         footer {
             text-align: center;
-            margin-top: 40rem;
+            margin-top: 2rem;
             padding: 1rem;
-            background-color: #01162c;
+            background-color: #1d3557;
             color: white;
+            font-size: 0.9rem;
         }
 
-        footer p {
-            margin: 0;
+        .year-section {
+            width: 80%;
+            margin: 2rem auto;
+        }
+
+        .year h2 {
+            cursor: pointer;
+            padding: 1.2rem;
+            background: #457b9d;
+            color: white;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .year h2:hover {
+            background: #1d3557;
+        }
+
+        .year-content {
+            display: none;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 5px;
+            background: #f1faee;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .card h3 {
+            margin-bottom: 0.8rem;
+            color: #1d3557;
+        }
+
+        .card a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #e63946;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #b31e30;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>BTech Assignment</h1>
-        <p>Explore subjects under BTech and access their Assignments by semester.</p>
+        <h1>BTech Assignments</h1>
+        <p>Explore and download assignments year-wise for BTech courses.</p>
     </header>
-    <main class="container">
-        <!-- Semester 1 -->
-        <section class="semester">
-            <h2 onclick="toggleSemester(1)">
-                Semester 1
-                <span id="arrow-1" class="arrow">▼</span>
+
+    <main class="year-section">
+        <!-- First Year -->
+        <section class="year">
+            <h2 onclick="toggleYear(1)">
+                First Year
+                <span id="arrow-1" class="arrow">&#9660;</span>
             </h2>
-            <div id="semester-content-1" class="semester-content">
-                <div class="subjects">
-                    <div class="card">
-                        <h3>Physics</h3>
-                        <a href="https://drive.google.com/file/d/1duWI4TH8eqXBGzDRBm1CSBLYXk1-H3us/view?usp=sharing" class="btn">Assignment</a>
-                    </div>
-                    
+            <div id="year-content-1" class="year-content">
+                <div class="card">
+                    <h3>First Year Assignments</h3>
+                    <a href="https://drive.google.com/file/d/1exampleFirstYear/view?usp=sharing" class="btn">View Assignment</a>
                 </div>
             </div>
         </section>
 
-        <!-- Semester 2 -->
-        <section class="semester">
-            <h2 onclick="toggleSemester(2)">
-                Semester 2
-                <span id="arrow-2" class="arrow">▼</span>
+        <!-- Second Year -->
+        <section class="year">
+            <h2 onclick="toggleYear(2)">
+                Second Year
+                <span id="arrow-2" class="arrow">&#9660;</span>
             </h2>
-            <div id="semester-content-2" class="semester-content">
-                <div class="subjects">
-                    <div class="card">
-                        <h3>Computer Science</h3>
-                        <a href="https://drive.google.com/file/d/1lcQ83dzD5wiLxCosVNnXwumyAeabHFIQ/view?usp=sharing" class="btn">Assignment</a>
-                    </div>
-                    
+            <div id="year-content-2" class="year-content">
+                <div class="card">
+                    <h3>Second Year Assignments</h3>
+                    <a href="https://drive.google.com/file/d/1exampleSecondYear/view?usp=sharing" class="btn">View Assignment</a>
                 </div>
             </div>
         </section>
 
-        <!-- Semester 3 -->
-        <section class="semester">
-            <h2 onclick="toggleSemester(3)">
-                Semester 3
-                <span id="arrow-3" class="arrow">▼</span>
+        <!-- Third Year -->
+        <section class="year">
+            <h2 onclick="toggleYear(3)">
+                Third Year
+                <span id="arrow-3" class="arrow">&#9660;</span>
             </h2>
-            <div id="semester-content-3" class="semester-content">
-                <div class="subjects">
-                    <div class="card">
-                        <h3>Computer Science</h3>
-                        <a href="https://drive.google.com/file/d/1PwvmYE6RXrE-27SYHkbTAk9FEZjrr_RT/view?usp=drive_link" class="btn">Assignment</a>
-                    </div>
-                    
-                    
+            <div id="year-content-3" class="year-content">
+                <div class="card">
+                    <h3>Third Year Assignments</h3>
+                    <a href="https://drive.google.com/file/d/1exampleThirdYear/view?usp=sharing" class="btn">View Assignment</a>
                 </div>
             </div>
         </section>
 
-        <!-- Semester 4 -->
-        <section class="semester">
-            <h2 onclick="toggleSemester(4)">
-                Semester 4
-                <span id="arrow-4" class="arrow">▼</span>
+        <!-- Fourth Year -->
+        <section class="year">
+            <h2 onclick="toggleYear(4)">
+                Fourth Year
+                <span id="arrow-4" class="arrow">&#9660;</span>
             </h2>
-            <div id="semester-content-4" class="semester-content">
-                <div class="subjects">
-                    <div class="card">
-                        <h3>CS</h3>
-                        <a href="https://drive.google.com/file/d/1EnBdcqwolFtPOaeEGbj8gShgCGqCHyFv/view?usp=sharing" class="btn">Assignment</a>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <!-- Semester 5 -->
-        <section class="semester">
-            <h2 onclick="toggleSemester(5)">
-                Semester 5
-                <span id="arrow-5" class="arrow">▼</span>
-            </h2>
-            <div id="semester-content-5" class="semester-content">
-                <div class="subjects">
-                
-                    <div class="card">
-                        <h3>CS</h3>
-                        <a href="https://drive.google.com/file/d/1NSr5mhr8PJDyw_OG8R2nvsQtCn5FvqPv/view?usp=sharing" class="btn">Assignment</a>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <!-- Semester 6 -->
-        <section class="semester">
-            <h2 onclick="toggleSemester(6)">
-                Semester 6
-                <span id="arrow-6" class="arrow">▼</span>
-            </h2>
-            <div id="semester-content-6" class="semester-content">
-                <div class="subjects">
-                    <div class="card">
-                        <h3>CS</h3>
-                        <a href="https://drive.google.com/file/d/1jd7BvowwejiPKPQT58LeIECOqMPOzGld/view?usp=sharing" class="btn">Assignment</a>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <!-- Semester 7 -->
-        <section class="semester">
-            <h2 onclick="toggleSemester(7)">
-                Semester 7
-                <span id="arrow-7" class="arrow">▼</span>
-            </h2>
-            <div id="semester-content-7" class="semester-content">
-                <div class="subjects">
-                    <div class="card">
-                        <h3>CS</h3>
-                        <a href="https://drive.google.com/file/d/1RYez9fsub4MzF4dIq9fQiZ9JhABsybNn/view?usp=sharing" class="btn">Assignment</a>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <!-- Semester 8 -->
-        <section class="semester">
-            <h2 onclick="toggleSemester(8)">
-                Semester 8
-                <span id="arrow-8" class="arrow">▼</span>
-            </h2>
-            <div id="semester-content-8" class="semester-content">
-                <div class="subjects">
-                    <div class="card">
-                        <h3>CCS</h3>
-                        <a href="https://drive.google.com/file/d/11ZtnzqeOOo9pbKaE1xB2gQZgYxRBo7vE/view?usp=sharing" class="btn">Assignment</a>
-                    </div>
-                    
-                    
+            <div id="year-content-4" class="year-content">
+                <div class="card">
+                    <h3>Fourth Year Assignments</h3>
+                    <a href="https://drive.google.com/file/d/1exampleFourthYear/view?usp=sharing" class="btn">View Assignment</a>
                 </div>
             </div>
         </section>
     </main>
 
-
-   
-
     <footer>
         <p>&copy; 2024 Knowledge-Hub. All rights reserved.</p>
     </footer>
 
-   
+    <script>
+        function toggleYear(year) {
+            const content = document.getElementById(`year-content-${year}`);
+            const arrow = document.getElementById(`arrow-${year}`);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                arrow.innerHTML = "&#9650;"; // Up arrow
+            } else {
+                content.style.display = "none";
+                arrow.innerHTML = "&#9660;"; // Down arrow
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            for (let i = 1; i <= 4; i++) {
+                const content = document.getElementById(`year-content-${i}`);
+                if (content) content.style.display = "none";
+            }
+        });
+    </script>
 </body>
 </html>
