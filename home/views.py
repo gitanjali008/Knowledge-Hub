@@ -96,6 +96,18 @@ def bca(request):
 def btech_assignment(request):
     return render(request, '../templates/btech_assignment.html')    
 
+def bba_assignment(request):
+    return render(request, '../templates/bba_assignment.html')    
+
+def bca_assignment(request):
+    return render(request, '../templates/bca_assignment.html')    
+
+def bcom_assignment(request):
+    return render(request, '../templates/bcom_assignment.html')    
+def mcom_assignment(request):
+    return render(request, '../templates/mcom_assignment.html')    
+                   
+
 
 
 def sem1mathpyqs(request):
@@ -124,7 +136,7 @@ def subjects_mba(request):
     return render(request, '../templates/subjects-mba.html')
 
 def notes(request):
-    return render(request, '../templates/notes.html')
+    return rendassignmenter(request, '../templates/notes.html')
 
 def resources_page(request, course, subject):
     with open('home/resources.json') as f:
