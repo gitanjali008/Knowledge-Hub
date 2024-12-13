@@ -227,7 +227,6 @@
       </div>
       <div class="dropdown" id="dropdown1">
         <a href="{% url 'resources_page' 'btech' 'mathematics i' %}">Mathematics I</a>
-        <a href="{% url 'notes' %}">Physics</a>
         <a href="{% url 'resources_page' 'btech' 'chemistry' %}">Chemistry</a>
         <a href="{% url 'notes' %}">Computer Programming</a>
         <a href="{% url 'notes' %}">Engineering Drawing</a>
@@ -242,9 +241,9 @@
         <div class="card-title">Semester 2</div>
       </div>
       <div class="dropdown" id="dropdown2">
-        <a href="mathematics2.html">Mathematics II</a>
+        <a href="{% url 'resources_page' 'btech' 'mathematics ii' %}">Mathematics II</a>
+        <a href="{% url 'resources_page' 'btech' 'physics' %}">Physics</a>
         <a href="electronics.html">Electronics</a>
-        <a href="material-science.html">Material Science</a>
         <a href="data-structures.html">Data Structures</a>
         <a href="mechanics.html">Mechanics</a>
         <a href="thermodynamics.html">Thermodynamics</a>

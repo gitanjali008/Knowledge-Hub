@@ -3,14 +3,17 @@
         "mathematics i": {
             "notes": [
                 {"name": "Matrix Notes", "url": "https://drive.google.com/file/d/1obVis0hMHuNrVUnyFIn_Vn8mkil8ve8v/view?usp=sharing"},
-                {"name": "Chapter 2 Notes", "url": "https://drive.google.com/example2"}
+                {"name": "Exponential Series Notes", "url": "https://drive.google.com/file/d/1NNUkb85xBAukZHKSzVqN66XNg20ansto/view?usp=sharing"},
+                {"name": "Fourier Series Notes", "url": "https://drive.google.com/file/d/1V683c7GlkaYott6-q2lLvvirY5WRVuET/view?usp=sharing"},
+                {"name": "Infinite Series Notes", "url": "https://drive.google.com/file/d/1toHX9o91f3FPmUoVOoLrHfJT0qSPEcni/view?usp=sharing"},
+                {"name": "Integral Area Notes", "url": "https://drive.google.com/file/d/1PtTicdNl3j4cyWv1LkPoouULEv-opkfO/view?usp=sharing"}
             ],
             "videos": [
-                {"url": "https://www.youtube.com/embed/example_video1"},
-                {"url": "https://www.youtube.com/embed/example_video2"}
+                {"name": "Matrix", "url": "https://youtu.be/eTp5wq-cSXY?si=8GEMw2MMnnlxeKJp"},
+                {"name": "Matrix 2", "url": "https://youtu.be/bTs7ncA_AtY?si=ySin5Am3pgEqn_5s"}
             ],
             "playlists": [
-                {"name": "Mathematics Playlist", "url": "https://youtube.com/playlist?list=example1"}
+                {"name": "Mathematics Playlist", "url": "https://youtube.com/playlist?list=PLKS7ZMKnbPrT-Gy4k0r8jAr0mX2K32yyV&si=CLCuLjEQLOeZOWI6"}
             ]
         },
         "chemistry": {
@@ -22,6 +25,32 @@
             ],
             "playlists": [
                 {"name": "Physics Playlist", "url": "https://youtube.com/playlist?list=example2"}
+            ]
+        },
+        "mathematics ii": {
+            "notes": [
+                {"name": "Matrix Notes", "url": "https://drive.google.com/file/d/1obVis0hMHuNrVUnyFIn_Vn8mkil8ve8v/view?usp=sharing"},
+                {"name": "Infinite Series Notes", "url": "https://drive.google.com/file/d/1toHX9o91f3FPmUoVOoLrHfJT0qSPEcni/view?usp=sharing"}
+            ],
+            "videos": [
+                {"url": "https://www.youtube.com/embed/example_video1"},
+                {"url": "https://www.youtube.com/embed/example_video2"}
+            ],
+            "playlists": [
+                {"name": "Mathematics Playlist", "url": "https://youtube.com/playlist?list=example1"}
+            ]
+        },
+        "physics": {
+            "notes": [
+                {"name": "Matrix Notes", "url": "https://drive.google.com/file/d/1obVis0hMHuNrVUnyFIn_Vn8mkil8ve8v/view?usp=sharing"},
+                {"name": "Chapter 2 Notes", "url": "https://drive.google.com/example2"}
+            ],
+            "videos": [
+                {"url": "https://www.youtube.com/embed/example_video1"},
+                {"url": "https://www.youtube.com/embed/example_video2"}
+            ],
+            "playlists": [
+                {"name": "Mathematics Playlist", "url": "https://youtube.com/playlist?list=example1"}
             ]
         }
     },

@@ -130,14 +130,13 @@
         .grid {
             display: flex;
             gap: 20px;
-            overflow-x: auto;
-            overflow-y: hidden; 
+            overflow-x: auto; /* Enable horizontal scrolling */
+            overflow-y: hidden; /* Prevent vertical scrollbars */
             padding-bottom: 10px;
-            scroll-snap-type: x mandatory;
         }
 
         .grid::-webkit-scrollbar {
-            height: 8px;
+            height: 8px; /* Set scrollbar height */
         }
 
         .grid::-webkit-scrollbar-thumb {
@@ -161,6 +160,9 @@
             width: 250px;
             height: auto;
             flex-shrink: 0;
+        }
+        main {
+            max-width: 100%;
         }
 
         .card:hover, .playlist-card:hover {
@@ -325,7 +327,9 @@
             <h2>Lecture Videos</h2>
             <div class="grid">
                 {% for video in resources.videos %}
-                <iframe src="{{ video.url }}" title="Lecture Video"></iframe>
+                <div class="card">
+                    <a href="{{ video.url }}" target="_blank">{{ video.name }}</a>
+                </div>
                 {% empty %}
                 <p>No videos available.</p>
                 {% endfor %}
