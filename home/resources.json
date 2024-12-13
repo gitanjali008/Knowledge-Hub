@@ -18,13 +18,19 @@
         },
         "chemistry": {
             "notes": [
-                {"name": "Acid Base concept", "url": "https://drive.google.com/file/d/15z0NAXwC5brraVjluS_a7rIsGxRXcQni/view?usp=sharing"}
+                {"name": "Acid Base concept", "url": "https://drive.google.com/file/d/15z0NAXwC5brraVjluS_a7rIsGxRXcQni/view?usp=sharing"},
+                {"name": "Atomic Structure", "url": "https://drive.google.com/file/d/1NNUkb85xBAukZHKSzVqN66XNg20ansto/view?usp=sharing"},
+                {"name": "Periodic Properties", "url": "https://drive.google.com/file/d/1V683c7GlkaYott6-q2lLvvirY5WRVuET/view?usp=sharing"},
+                {"name": "Water Chemistry", "url": "https://drive.google.com/file/d/1toHX9o91f3FPmUoVOoLrHfJT0qSPEcni/view?usp=sharing"},
+                {"name": "Fuels", "url": "https://drive.google.com/file/d/1PtTicdNl3j4cyWv1LkPoouULEv-opkfO/view?usp=sharing"}
+                
             ],
             "videos": [
-                {"url": "https://www.youtube.com/embed/example_video3"}
+                {"name": "Acid Base", "url": "https://youtu.be/eTp5wq-cSXY?si=8GEMw2MMnnlxeKJp"},
+                {"name": "Water Chemistry", "url": "https://youtu.be/bTs7ncA_AtY?si=ySin5Am3pgEqn_5s"}
             ],
             "playlists": [
-                {"name": "Physics Playlist", "url": "https://youtube.com/playlist?list=example2"}
+                {"name": "Chemistry Playlist", "url": "https://youtube.com/playlist?list=example2"}
             ]
         },
         "mathematics ii": {
