@@ -129,25 +129,8 @@
 
 
           .courses-container {
-            display: flex; /* Ensures child items are aligned in a row */
-            overflow-x: auto; /* Enables horizontal scrolling */
-            white-space: nowrap; /* Prevents items from wrapping to the next line */
-            scroll-behavior: smooth; /* Enables smooth scrolling (optional) */
+            margin: 20px;
         }
-        
-        .courses-container::-webkit-scrollbar {
-            height: 8px; /* Adjust scrollbar height */
-        }
-        
-        .courses-container::-webkit-scrollbar-thumb {
-            background: #888; /* Customize scrollbar color */
-            border-radius: 10px;
-        }
-        
-        .courses-container::-webkit-scrollbar-thumb:hover {
-            background: #555; /* Darker on hover */
-        }
-        
         
         .course-section {
             margin-top: 40px;
@@ -330,21 +313,6 @@
         .contactus li {
             margin-right: 10px
         }
-        @media (max-width: 768px) {
-            .courses-container {
-                overflow-x: auto;
-                display: flex;
-                white-space: nowrap;
-                padding: 10px;
-            }
-        
-            .card {
-                flex: 0 0 auto; /* Ensures cards do not shrink or grow */
-                margin-right: 10px; /* Adds spacing between cards */
-            }
-        }
-            
-        
 
         </style>
     </head>
