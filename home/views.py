@@ -5,6 +5,8 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth.hashers import check_password, make_password
 from django.contrib.auth.decorators import login_required
+import json
+
 
 
 
@@ -123,3 +125,11 @@ def subjects_mba(request):
 
 def notes(request):
     return render(request, '../templates/notes.html')
+
+def resources_page(request, course, subject):
+    with open('home/resources.json') as f:
+        data = json.load(f)
+    course_data = data.get(course.lower(), {})
+    resources = course_data.get(subject.lower(), {'notes': [], 'videos': [], 'playlists': []})
+
+    return render(request, 'notes.html', {'course': course, 'subject': subject, 'resources': resources})

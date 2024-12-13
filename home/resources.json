@@ -1,0 +1,76 @@
+{
+    "btech": {
+        "mathematics i": {
+            "notes": [
+                {"name": "Matrix Notes", "url": "https://drive.google.com/file/d/1obVis0hMHuNrVUnyFIn_Vn8mkil8ve8v/view?usp=sharing"},
+                {"name": "Chapter 2 Notes", "url": "https://drive.google.com/example2"}
+            ],
+            "videos": [
+                {"url": "https://www.youtube.com/embed/example_video1"},
+                {"url": "https://www.youtube.com/embed/example_video2"}
+            ],
+            "playlists": [
+                {"name": "Mathematics Playlist", "url": "https://youtube.com/playlist?list=example1"}
+            ]
+        },
+        "chemistry": {
+            "notes": [
+                {"name": "Acid Base concept", "url": "https://drive.google.com/file/d/15z0NAXwC5brraVjluS_a7rIsGxRXcQni/view?usp=sharing"}
+            ],
+            "videos": [
+                {"url": "https://www.youtube.com/embed/example_video3"}
+            ],
+            "playlists": [
+                {"name": "Physics Playlist", "url": "https://youtube.com/playlist?list=example2"}
+            ]
+        }
+    },
+    "bca": {
+        "programming": {
+            "notes": [
+                {"name": "Intro to Programming Notes", "url": "https://drive.google.com/example4"}
+            ],
+            "videos": [
+                {"url": "https://www.youtube.com/embed/example_video4"}
+            ],
+            "playlists": [
+                {"name": "Programming Playlist", "url": "https://youtube.com/playlist?list=example3"}
+            ]
+        },
+        "data structures": {
+            "notes": [
+                {"name": "Data Structures Notes", "url": "https://drive.google.com/example5"}
+            ],
+            "videos": [
+                {"url": "https://www.youtube.com/embed/example_video5"}
+            ],
+            "playlists": [
+                {"name": "Data Structures Playlist", "url": "https://youtube.com/playlist?list=example4"}
+            ]
+        }
+    },
+    "mba": {
+        "marketing": {
+            "notes": [
+                {"name": "Marketing Notes", "url": "https://drive.google.com/example6"}
+            ],
+            "videos": [
+                {"url": "https://www.youtube.com/embed/example_video6"}
+            ],
+            "playlists": [
+                {"name": "Marketing Playlist", "url": "https://youtube.com/playlist?list=example5"}
+            ]
+        },
+        "finance": {
+            "notes": [
+                {"name": "Finance Notes", "url": "https://drive.google.com/example7"}
+            ],
+            "videos": [
+                {"url": "https://www.youtube.com/embed/example_video7"}
+            ],
+            "playlists": [
+                {"name": "Finance Playlist", "url": "https://youtube.com/playlist?list=example6"}
+            ]
+        }
+    }
+}

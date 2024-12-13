@@ -93,21 +93,10 @@
             margin-bottom: 40px;
         }
 
-        .grid {
-            display: flex;
-            gap: 20px;
-            overflow-x: auto;
-            padding-bottom: 10px;
-            scroll-snap-type: x mandatory;
-        }
 
         .notes-section .grid {
-            display: flex;
-            gap: 20px;
-            justify-content: center; 
-            align-items: center; 
-            flex-wrap: wrap; 
-            padding-bottom: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .notes-section .card {
@@ -138,6 +127,15 @@
             height: 100%;
         }
 
+        .grid {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            overflow-y: hidden; 
+            padding-bottom: 10px;
+            scroll-snap-type: x mandatory;
+        }
+
         .grid::-webkit-scrollbar {
             height: 8px;
         }
@@ -151,6 +149,7 @@
             background-color: #ecf0f1;
         }
 
+
         .card, .playlist-card {
             background-color: white;
             border: 1px solid #ddd;
@@ -160,13 +159,22 @@
             text-align: center;
             padding: 20px;
             width: 250px;
-            height: 250px;
-            flex-shrink: 0; /* Prevent the items from shrinking */
+            height: auto;
+            flex-shrink: 0;
         }
 
         .card:hover, .playlist-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .card a, .playlist-card a {
@@ -178,14 +186,6 @@
             justify-content: center;
             align-items: center;
             height: 100%;
-        }
-
-        iframe {
-            width: 100%;
-            height: 200px;
-            border-radius: 10px;
-            border: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         footer {
@@ -258,8 +258,30 @@
         }
 
         @media (max-width: 768px) {
+            .card, .playlist-card {
+                width: 100%;
+                height: auto;
+            }
+
             .grid {
-                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .navbar {
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+
+            .nav-content {
+                margin-left: 0;
+                flex: 1;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main {
+                padding: 10px;
             }
         }
     </style>
@@ -281,11 +303,11 @@
 
     <main>
         <div class="subject-heading">
-            <h1>{{ subject|title }} Resources</h1>
+            <h1>{{ subject }}</h1>
         </div>
 
         <!-- Notes Section -->
-        <section class="section">
+        <section class="resources-section">
             <h2>Notes</h2>
             <div class="grid">
                 {% for note in resources.notes %}
@@ -297,9 +319,9 @@
                 {% endfor %}
             </div>
         </section>
-
+        
         <!-- Videos Section -->
-        <section class="section">
+        <section class="resources-section">
             <h2>Lecture Videos</h2>
             <div class="grid">
                 {% for video in resources.videos %}
@@ -309,9 +331,9 @@
                 {% endfor %}
             </div>
         </section>
-
+        
         <!-- Playlists Section -->
-        <section class="section">
+        <section class="resources-section">
             <h2>Lecture Playlists</h2>
             <div class="grid">
                 {% for playlist in resources.playlists %}

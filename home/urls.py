@@ -41,4 +41,6 @@ urlpatterns = [
     path("subjects-mba/", views.subjects_mba, name='subjects_mba'),
 
     path("notes/", views.notes, name='notes'),
+
+    path('resources/<str:course>/<str:subject>/', views.resources_page, name='resources_page'),
 ]
