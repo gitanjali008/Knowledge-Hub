@@ -35,7 +35,7 @@ def contact(request):
 
         # Check if all required fields are present
         if not username or not course or not email or not password:
-            error_message = "All fields are required."
+            error_message = "Enter the correct password or username."
             return render(request, 'login.html', {'error_message': error_message})
         
         # Check if the username already exists in the database
