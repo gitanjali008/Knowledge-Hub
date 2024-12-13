@@ -12,122 +12,67 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <title>Books</title>
     <style>
-         /* @keyframes apper{
-            from{
-                opacity: 0;
-                scale: 0.8;
-            }
-            to{
-                opacity: 1;
-                scale: 1;
-            }
-        }
-        @keyframes mymove {
-            from {
-                opacity: 0;
-            left: 800px;}
-            to {left: 00px;
-            opacity: 1;}
-          }  */
-         
-        .navbar{
-            background-color: rgb(255, 255, 255);
-            display: flex;
-            padding-top: 10px;
-            box-shadow: 0px 10px  rgba(165, 173, 173, 0.491);
-            margin-bottom: 2px;
-        }
+         */
         
-        .nav_logo{
-            width: auto;
-            height: auto;
-            padding-left: 80px;
-        }
-        .nav-content{
-            display: flex;
-            justify-content: flex-end;
-            margin-left: 500px;
-            padding-top: 55px;
-        }
-        #nav_items{
-            font-size: 18px;
-            margin-right:50px;
-            font-weight: 700;
-        }
-        .nav_content button{
-            background-color: rgb(69, 135, 201);
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border-color: transparent;
-            border-width: 3px;
-            border-radius: 12px;
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-top: -50px;
-            font-weight: 700;
-            color: white;
-        }
-        .nav_content button:hover{
-            background-color: rgb(255, 255, 255);
-            color: rgb(0, 0, 0);
-            cursor: pointer;
-            border-color: rgb(0, 0, 0);
-        }
-        a{
-            text-decoration: none;
-            
-        }
-        #student_button a{
-            color: aliceblue;
-        }
-        
-        a:hover{
-           color:rgb
-
-
-        }
-        footer{
-            background-color: rgb(176, 238, 238);
-            padding-bottom: 30px;
-            padding-top: 20px;
-            display: flex;
-            justify-content: flex-end;
          
-            
-          }
-          #footer{
-           
-            padding-top: 5px;
-            padding-right: 20px;
-            padding-bottom: 10px;
-            border-radius: 100px;
-         
-          }
-          #text{
-            padding-top: 210px;
-            font-size: 15px;
-          }
-          #text h1{
-            font-size: 25px
-          }
-          .text1{
-            padding-right: 900px;
-            margin-right: -800px;
-            padding-top: 90px;
-            font-weight: 900;
-            font-size: 35px;
-            font-style: italic;
-            font-stretch: extra-expanded;
-          }
-          .base2{
-            padding-left: 300px;
-          }
+         .navbar{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding-top: 10px;
+    box-shadow: 0px 10px rgba(165, 173, 173, 0.491);
+    margin-bottom: 2px;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.nav_logo{
+    width: 150px;
+    height: 50px;
+    padding-left: 80px;
+}
+#nav_logo{
+    height: 90px;
+    width: auto;
+}
 
-          
+.nav-content{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: px;
+    padding-bottom: 50px;
+}
 
+#nav_items{
+    font-size: 18px;
+    margin-right:50px;
+    font-weight: 700;
+}
 
+.nav_content button{
+    background-color: rgb(69, 135, 201);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-color: transparent;
+    border-width: 3px;
+    border-radius: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 700;
+    color: white;
+}
 
+.nav_content button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-color: rgb(0, 0, 0);
+}
+
+a{
+    text-decoration: none;
+}
+
+<<<<<<< HEAD
           .courses-container {
             margin: 20px;
         }
@@ -245,26 +190,291 @@
         }
         
         
+=======
+#student_button a{
+    color: aliceblue;
+}
+>>>>>>> d6d592a7d16b72e9f93da1cea1f74deb82bb04f2
 
+footer{
+    background-color: rgb(176, 238, 238);
+    padding-bottom: 30px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 12px;
+    background-color: rgb(255, 255, 255);
+}
+.contactus{
+    font-size: 10px;
+    display: flex;
+    margin-top: 0;
 
+}
+.contactus svg{
+    margin-left: 10px;
+}
 
+#footer{
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-radius: 100px;
+}
+.refrence{
+    margin-top: 60px;
 
+}
+.footer img{
+    height: 50px;
+    width: auto;
+}
+#text{
+    font-size: 15px;
+}
 
+#text h1{
+    font-size: 25px;
+}
 
+.text1{
+    padding-right: 900px;
+    margin-right: -800px;
+    padding-top: 90px;
+    font-weight: 900;
+    font-size: 35px;
+    font-style: italic;
+    font-stretch: extra-expanded;
+}
 
+.courses-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
 
+.courses-container::-webkit-scrollbar {
+    height: 8px;
+}
 
+.courses-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
 
+.courses-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
+.card-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+}
 
+.card-container::-webkit-scrollbar {
+    height: 8px;
+}
 
+.card-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
 
+.card-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
 
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    flex: 0 0 auto;
+}
 
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
 
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    color: white;
+}
 
+.trending {
+    background-color: #28a745;
+}
 
+.bestselling {
+    background-color: #007bff;
+}
 
+.teachers-pick {
+    background-color: #ffc107;
+}
+
+.new-release {
+    background-color: #dc3545;
+}
+
+.new {
+    background-color: #6c63ff;
+}
+
+.card h3 {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.card a {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+.price {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.discount {
+    color: #28a745;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.rating {
+    color: #f39c12;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+@media (max-width: 786px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .nav-logo {
+        padding-left: 0;
+    }
+    
+    .nav-content {
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    #nav_items {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .nav_content button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    footer {
+        flex-direction: column;
+        padding-top: 30px;
+        font-size: 16px;
+    }
+    #footer_img{
+        height: 80px;
+        width: auto;
+    }
+
+    .courses-container {
+        padding: 5px;
+    }
+
+    .card {
+        margin-right: 15px;
+        width: 150px;
+    }
+    .card img{
+        height: 200px;
+        width: auto;
+        margin: 0 100px;
+    }
+    .card h3{
+        font-size: 14px;
+        text-align: center;
+    }
+    .card a{
+        text-align: center;
+    }
+    .rating{
+        text-align: center;
+    }
+    .contactus svg{
+        height: 30px;
+    }
+    .refrence h1{
+        font-size:16px ;
+    }
+    .contactus h1{
+        font-size: 16px;
+    }
+    
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .nav-content {
+        padding-top: 10px;
+    }
+
+    #nav_items {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .nav_content button {
+        width: 100%;
+        margin-top: 5px;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding-top: 20px;
+    }
+
+    .courses-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+<<<<<<< HEAD
           footer{
             display: flex;
             justify-content: space-evenly;
@@ -313,6 +523,10 @@
         .contactus li {
             margin-right: 10px
         }
+=======
+            
+        
+>>>>>>> d6d592a7d16b72e9f93da1cea1f74deb82bb04f2
 
         </style>
     </head>
@@ -815,8 +1029,8 @@
 
         </main>
     <footer>
-        <div><img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png" alt="" height="150px" width="350px"></div>
-        <div>
+        <div><img src="https://i.ibb.co/1f9JtDk/Knowledge-Hub-1.png"  id="footer_img" alt="" height="150px" width="350px"></div>
+        <div class="refrence">
             <ul>
                 <li><h1>REFERANCE CHANNELS</h1></li>
                 <br>
@@ -844,38 +1058,8 @@
             </ul>
             
         </div>
-        <div>
-            <ul>
-                <li><h1>REFERANCE CHANNELS</h1></li>
-                <br>
-                <li><a href="https://youtube.com/@apnacollegeofficial?si=jElVgglaE4JtYsra" id="refrence_tools">Apna College</a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
-                    <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
-                  </svg></li>
-                <li><a href="https://youtube.com/@collegewallahbypw?si=6F2RGxVGjkwKccUS"  id="refrence_tools">College Wallah</a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
-                    <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
-                  </svg>
-                </li>
-                <li><a href="https://youtube.com/playlist?list=PLlZ7BIwcRm1BAbqQyOl8Jwzqya5ja4cxl&si=2B3BtNGQb1H4Z8Xf"id="refrence_tools">Akhay Rajput</a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
-                    <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
-                  </svg>
-                </li>
-                <li><a href="https://youtube.com/@geuashishgarg?si=I0v0XMzCM6Ys9h_o"id="refrence_tools">Ashish Garg</a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
-                    <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
-                  </svg>
-                </li>
-                <li><a href="https://youtube.com/@codewithharry?si=wnO_bk7kkNLMXM-_"id="refrence_tools">Code With Harry</a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
-                    <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
-                  </svg>
-                </li>
-            </ul>
-            
-        </div>
-        <div>
+       
+        <div class="contactus">
             <ul>
                 <li><h1>CONTACT US</h1></li>
                 <br>
