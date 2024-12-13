@@ -27,23 +27,35 @@ def assignment(request):
 
 def contact(request):
     if request.method == 'POST':
-        username = request.POST['username']
-        course = request.POST['course']
-        email = request.POST['email']
-        password = request.POST['password']
+        # Get the fields from the POST data using .get() to avoid errors if a field is missing
+        username = request.POST.get('username')
+        course = request.POST.get('course')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+
+        # Check if all required fields are present
+        if not username or not course or not email or not password:
+            error_message = "All fields are required."
+            return render(request, 'login.html', {'error_message': error_message})
         
-    
+        # Check if the username already exists in the database
+        if Contact.objects.filter(username=username).exists():
+            error_message = "This username already exists. Please try another."
+            return render(request, 'login.html', {'error_message': error_message})
+
         # Hash the password before saving it
         hashed_password = make_password(password)
         
-        # Save the contact in the Contact model (not the User model)
+        # Save the contact in the Contact model
         contact = Contact.objects.create(username=username, course=course, email=email, password=hashed_password)
         contact.save()
 
-        # Redirect to the index page after registration
+        # Redirect to the login page after successful registration
         return redirect('login')
 
-    return render(request, 'contact.html')
+    return render(request, 'login.html')
+
+
 
 def pyq(request):
     return render(request, '../templates/pyqs.html')   
@@ -53,7 +65,6 @@ def course_outline(request):
 
 def faculty(request):
     return render(request, '../faculty.html')
-
 
 
 def login_view(request):
@@ -76,6 +87,7 @@ def login_view(request):
             return render(request, 'login.html', {'error_message': error_message})
     
     return render(request, 'login.html')
+
 
 def btech(request):
     return render(request, '../templates/btech.html')

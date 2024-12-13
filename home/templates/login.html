@@ -229,9 +229,7 @@
 
 <body>
     <div class="wrapper">
-        {% if error_message %}
-        <p class="error-message">{{ error_message }}</p>
-        {% endif %}
+      
         <!-- Login Form -->
         <div class="form-wrapper login" id="login-form">
             <form method="post">
@@ -296,6 +294,9 @@
                 wrapper.classList.remove('active');
             }
         }
+        {% if error_message %}
+        alert("{{ error_message }}");
+        {% endif %}
     </script>
 </body>
 
