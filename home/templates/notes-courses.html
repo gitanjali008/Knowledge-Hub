@@ -14,8 +14,9 @@
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      background-color: #f4f4f9;
+      background-color: #ffffff;
       color: #333;
+      
     }
 
     /* Add header here */
@@ -24,8 +25,8 @@
             background-color: rgb(255, 255, 255);
             display: flex;
             padding-top: 10px;
-            box-shadow: 0px 10px  rgba(165, 173, 173, 0.491);
-            margin-bottom: 2px;
+            box-shadow: 0px 1px  rgba(165, 173, 173, 0.491);
+            margin-bottom: 1px;
         }
         
         .nav_logo{
@@ -36,7 +37,7 @@
         .nav-content{
             display: flex;
             justify-content: flex-end;
-            margin-left: 500px;
+            margin-left: 800px;
             padding-top: 55px;
         }
         #nav_items{
@@ -82,6 +83,7 @@
             padding-top: 20px;
             display: flex;
             justify-content: flex-end;
+            margin-top: 40px;
          
             
           }
@@ -136,12 +138,11 @@
       width: calc(100% / 2 - 40px);
       max-width: 300px;
       text-decoration: none;
+      height: 300px;
+      text-align: center;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    }
+   
 
     .card img {
       width: 100%;
@@ -167,6 +168,7 @@
     @media (max-width: 768px) {
       .card {
         width: 100%;
+        text-align: center;
       }
     }
 
@@ -231,7 +233,7 @@
             <div class="nav-content">
                 <div class="nav_items" id="nav_items"><a href="{% url 'index' %}">Home</a></div>
                 <div class="nav_items" id="nav_items"><a href="{% url 'about' %}">About Us</a></div>
-                <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Course Outline</a></div>
+                <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Viva Questions</a></div>
                 <div class="nav_items" id="nav_items"><a href="https://cstutorialpoint.com/computer-science-notes/">PYQs</a></div>
             </div>
         </div>
@@ -240,7 +242,7 @@
         <h1>Courses</h1>
         <div class="course-container">
             <a href="{% url 'subjects_btech' %}" class="card">
-              <img src="https://i.ibb.co/ZgpDF6L/images.jpg" alt="Course 1">
+              <img src="https://i.ibb.co/2ZFvNTb/producttech-btech.png" alt="Course 1">
               <div class="card-content">
                 <h3 class="card-title">B. Tech.</h3>
                 <p class="card-description"></p>
@@ -248,7 +250,7 @@
             </a>
         
             <a href="{% url 'subjects_bca' %}" class="card">
-              <img src="https://i.ibb.co/P95rj7w/BCA.jpg" alt="Course 2">
+              <img src="https://i.ibb.co/YXvSTrr/1709635694-BCA.jpg" alt="Course 2">
               <div class="card-content">
                 <h3 class="card-title">BCA</h3>
                 <p class="card-description"></p>
@@ -256,7 +258,7 @@
             </a>
         
             <a href="{% url 'subjects_bcom' %}" class="card">
-              <img src="https://i.ibb.co/B2kzQFW/bcom.jpg" alt="Course 3">
+              <img src="https://i.ibb.co/tMhgXn4/Bcom3-Group.png" alt="Course 3">
               <div class="card-content">
                 <h3 class="card-title">B. Com.</h3>
                 <p class="card-description"></p>
@@ -272,7 +274,7 @@
             </a>
         
             <a href="{% url 'subjects_mba' %}" class="card">
-              <img src="https://i.ibb.co/CKdg76B/mba.jpg" alt="Course 5">
+              <img src="https://i.ibb.co/SxMcBf9/four-4-reasons-an-mba-is-valuable.png" alt="Course 5">
               <div class="card-content">
                 <h3 class="card-title">MBA</h3>
                 <p class="card-description"></p>

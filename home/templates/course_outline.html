@@ -10,7 +10,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"/>
       <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
-      <title>Course Outline</title>
+      <title>Viva Questions</title>
     <style>
      * {
   margin: 0;
@@ -336,6 +336,9 @@ ul li {
         justify-content: center;
         padding-top: 20px;
     }
+    .msg p{
+      font-size: 10px;
+    }
     
     #nav_logo {
         height: 90px; /* Adjust height */
@@ -381,11 +384,11 @@ ul li {
 
   footer {
         flex-direction: column; /* Stack footer items vertically */
-        align-items: center;
+        align-items: left;
         padding: 20px;
     }
     footer img {
-        max-width: 150px; /* Reduce image size */
+        width: 100%; /* Reduce image size */
     }
 
   .base_container {
@@ -407,11 +410,18 @@ ul li {
         align-items: center;
         padding: 10px;
     }
+    body{
+      overflow-x: hidden;
+    }
     .nav_logo {
         width: 120px; /* Adjust logo width */
         padding-left: 0;
         margin-bottom: 10px;
     }
+    .msg p{
+      font-size: 10px;
+    }
+    
     #img_content{
       width: 90%;
       height: 350px;
@@ -438,7 +448,8 @@ ul li {
     }
 
   .container {
-    padding: 10px;
+    padding: 1px;
+   
     width: 90%;;
   }
 
@@ -464,12 +475,14 @@ ul li {
 
   footer {
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         padding: 15px;
+        margin-bottom: 50px;
     }
     footer img {
-        width: 90%; /* Further reduce image size */
-        height: 70px;
+        width: 50%; /* Reduce image size */
+        height: 100%;
+        margin: 50px;
     }
   .text1 {
     font-size: 20px;
@@ -507,7 +520,7 @@ ul li {
     <div class="nav-content">
             <div class="nav_items" id="nav_items"><a href="{% url 'index' %}">Home</a></div>
             <div class="nav_items" id="nav_items"><a href="{% url 'about' %}">About Us</a></div>
-            <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Course Outline</a></div>
+            <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Viva Questions</a></div>
             <div class="nav_items" id="nav_items"><a href="{% url 'pyq' %}">PYQ</a></div>
     </div>
 </div>
@@ -518,9 +531,9 @@ ul li {
         </div>
     </div>
     <div class="course_outline">
-      <div><h3>Home / Course ouline</h3> </div>
-      <div> <h1>Course Outline</h1></div>
-      <div><h3>This course outline is basically designed for the batch of engineering students who are appering for in thier semisters exams and placement preparations.</h3></div>
+      <div><h3>Home / Viva Questions</h3> </div>
+      <div> <h1>All the best for your Viva !!</h1></div>
+      <div><h3>There are some most frquently viva questions , whihc can make you viva ready at the last moment</h3></div>
     </div>
     </header>
 

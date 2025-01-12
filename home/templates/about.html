@@ -72,7 +72,7 @@ a:hover {
 }
 
 header {
-    background-color: rgb(238, 247, 244);
+    background-color: rgb(255, 255, 255);
     padding: 40px;
     border-style: inset;
     border-radius: 20px;
@@ -105,7 +105,7 @@ header {
 }
 
 .forth {
-    background-color: rgb(236, 255, 183);
+    background-color: rgba(252, 136, 221, 0);
     border-radius: 10px;
     border-style: outset;
     padding: 20px;
@@ -290,9 +290,9 @@ ul li {
 
 /* Media Queries for responsiveness */
 @media (max-width: 786px) {
-  body{
-    font-size: xx-small;
+    body{
     overflow-x: hidden;
+    width: 100%;
   }
     .nav-content {
         margin-left: 0px;
@@ -343,8 +343,8 @@ ul li {
         font-size: 10px;
     }
     .third img{
-      height: 190px;
-      width: auto;
+      height: 200px;
+      width: 100%;
       margin-top: 80px;
     }
 
@@ -356,6 +356,9 @@ ul li {
     .fifth {
         font-size: 24px;
         padding: 40px;
+        width: 100%;
+              border-radius: 0px;
+
     }
 
     footer {
@@ -371,6 +374,7 @@ ul li {
 @media (max-width: 480px) {
   body{
     overflow-x: hidden;
+    width: 100%;
   }
     #details p {
         font-size: 10px;
@@ -379,6 +383,7 @@ ul li {
     #about_us{
       font-size: 12px;
     }
+   
 
     .nav_logo {
         padding-left: 10px;
@@ -397,6 +402,11 @@ ul li {
         padding: 15px;
         height: fit-content;
     }
+    .third img{
+      height: 200px;
+      width: 100%;
+      margin-top: 80px;
+    }
 .forth img{
   height: 50px;
   width: auto;
@@ -407,8 +417,13 @@ ul li {
 
 
       }
+     
       .fifth{
         height: 700px;
+        width: 100%;
+        padding: 10px;
+        margin: 0.1px;
+        border-radius: 0px;
       }
     .seven img{
       height: 170px;
@@ -458,7 +473,7 @@ ul li {
   <div class="nav-content">
           <div class="nav_items" id="nav_items"><a href="{% url 'index' %}">Home</a></div>
           <div class="nav_items" id="nav_items"><a href="{% url 'about' %}">About Us</a></div>
-          <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Course Outline</a></div>
+          <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Viva Questions</a></div>
           <div class="nav_items" id="nav_items"><a href="{% url 'pyq' %}">PYQs</a></div>
           
 
@@ -483,7 +498,7 @@ ul li {
             </div>
             <div class="third">
                 <div>
-                    <img src="https://i.ibb.co/Tm3hy7b/pngegg.png"  id="third" alt="" height="420px" width="370px" >
+                    <img src="https://i.ibb.co/5TVwksd/images.jpg"  id="third" alt="" height="420px" width="370px" >
                 </div>
             </div>
         </div>
