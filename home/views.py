@@ -89,6 +89,7 @@ def login_view(request):
     return render(request, 'login.html')
 
 
+#assignments
 def btech(request):
     return render(request, '../templates/btech.html')
 def bba(request):
@@ -122,6 +123,8 @@ def mcom_assignment(request):
 
 
 
+#previous year question paper 
+
 def sem1mathpyqs(request):
     return render(request, '../templates/sem1-math-pyq.html')
 
@@ -132,111 +135,162 @@ def sem1ecepyqs(request):
     return render(request, '../templates/sem1-ece-pyq.html')
 
 def sem2mathpyqs(request):
-    return render(request, '../templates/sem2-math-pyq.html')                
+    return render(request, '../templates/sem2-math-pyq.html')  
+
 def sem2chemistrypyqs(request):
-    return render(request, '../templates/sem2-chemistry-pyqs.html')   
+    return render(request, '../templates/sem2-chemistry-pyq.html') 
+
 def sem2evspyqs(request):
-    return render(request, '../templates/sem2-evs-pyqs.html')   
+    return render(request, '../templates/sem2-evs-pyq.html') 
+
 def sem3OOPSpyqs(request):
-    return render(request, '../templates/sem3-OOPS-pyqs.html')   
+    return render(request, '../templates/sem3-OOPS-pyq.html') 
+
 def sem3dspyqs(request):
-    return render(request, '../templates/sem3-ds-pyqs.html')   
+    return render(request, '../templates/sem3-ds-pyq.html') 
+
 def sem3digitallogicpyqs(request):
-    return render(request, '../templates/sem3-digital-logic-pyqs.html')   
+    return render(request, '../templates/sem3-digital-logic-pyq.html')
+
 def sem4javapyqs(request):
-    return render(request, '../templates/sem4-java-pyqs.html')   
+    return render(request, '../templates/sem4-java-pyq.html')  
+
 def sem4micropyqs(request):
-    return render(request, '../templates/sem4-micro-pyqs.html')   
+    return render(request, '../templates/sem4-micro-pyq.html')
+
 def sem4Automatapyqs(request):
-    return render(request, '../templates/sem4-Automata-pyqs.html')   
+    return render(request, '../templates/sem4-Automata-pyq.html') 
+
 def sem5mlpyqs(request):
-    return render(request, '../templates/sem5-ml-pyqs.html')   
+    return render(request, '../templates/sem5-ml-pyq.html')  
+
 def sem5databasepyqs(request):
-    return render(request, '../templates/sem5-database-pyqs.html')   
+    return render(request, '../templates/sem5-database-pyq.html') 
+
 def sem5ospyqs(request):
-    return render(request, '../templates/sem5-os-pyqs.html')   
+    return render(request, '../templates/sem5-os-pyq.html')  
+
 def sem6compilerpyqs(request):
-    return render(request, '../templates/sem6-compiler-pyqs.html')   
+    return render(request, '../templates/sem6-compiler-pyq.html') 
+
 def sem6sepyqs(request):
-    return render(request, '../templates/sem6-se-pyqs.html')   
+    return render(request, '../templates/sem6-se-pyq.html')  
+
 def sem6networksecuritypyqs(request):
-    return render(request, '../templates/sem6-network-security-pyqs.html')   
+    return render(request, '../templates/sem6-network-security-pyq.html') 
+
 def sem7Softpyqs(request):
-    return render(request, '../templates/sem7-Soft-pyqs.html')   
+    return render(request, '../templates/sem7-soft-pyq.html')   
+
 def sem7bipyqs(request):
-    return render(request, '../templates/sem7-bi-pyqs.html')   
+    return render(request, '../templates/sem7-bi-pyq.html') 
+
 def sem7cgpyqs(request):
-    return render(request, '../templates/sem7-cg-pyqs.html')   
+    return render(request, '../templates/sem7-cg-pyq.html') 
+
 def sem8ccpyqs(request):
-    return render(request, '../templates/sem8-cc-pyqs.html')  
+    return render(request, '../templates/sem8-cc-pyq.html') 
+
 def sem8mbpyqs(request):
-    return render(request, '../templates/sem8-mb-pyqs.html')   
+    return render(request, '../templates/sem8-mb-pyq.html') 
+
 def sem8dmpyqs(request):
-    return render(request, '../templates/sem8-dm-pyqs.html')   
+    return render(request, '../templates/sem8-dm-pyq.html') 
+
 def sem1physicspyqs(request):
-    return render(request, '../templates/sem1-physics-pyqs.html')   
+    return render(request, '../templates/sem1-physics-pyq.html') 
+
 def sem1chemistrypyqs(request):
-    return render(request, '../templates/sem1-chemistry-pyqs.html')   
+    return render(request, '../templates/sem1-chemistry-pyq.html')
+
 def sem1mathpyqs(request):
-    return render(request, '../templates/sem1-math-pyqs.html')   
+    return render(request, '../templates/sem1-math-pyq.html')  
+
 def sem1englishpyqs(request):
-    return render(request, '../templates/sem1-english-pyqs.html')   
+    return render(request, '../templates/sem1-english-pyq.html') 
+
 def sem2physicspyqs(request):
-    return render(request, '../templates/sem2-physics-pyqs.html')   
+    return render(request, '../templates/sem2-physics-pyq.html') 
+
 def sem2chemistrypyqs(request):
-    return render(request, '../templates/sem2-chemistry-pyqs.html')   
+    return render(request, '../templates/sem2-chemistry-pyq.html') 
+
 def sem2mathpyqs(request):
-    return render(request, '../templates/sem2-math-pyqs.html')   
+    return render(request, '../templates/sem2-math-pyq.html')  
+
 def sem2csbasicspyqs(request):
-    return render(request, '../templates/sem2-cs-basics-pyqs.html')   
+    return render(request, '../templates/sem2-cs-basics-pyq.html')
+
 def sem3mechanicspyqs(request):
-    return render(request, '../templates/sem3-mechanics-pyqs.html')   
+    return render(request, '../templates/sem3-mechanics-pyq.html') 
+
 def sem3organicchempyqs(request):
-    return render(request, '../templates/sem3-organic-chem-pyqs.html')   
+    return render(request, '../templates/sem3-organic-chem-pyq.html')
+       
 def sem3discretemathpyqs(request):
-    return render(request, '../templates/sem3-discrete-math-pyqs.html')   
+    return render(request, '../templates/sem3-discrete-math-pyq.html')   
 def sem3introtocomputingpyqs(request):
-    return render(request, '../templates/sem3-intro-to-computing-pyqs.html')   
+    return render(request, '../templates/sem3-intro-to-computing-pyq.html')
+
 def sem4electromagnetismpyqs(request):
-    return render(request, '../templates/sem4-electromagnetism-pyqs.html')   
+    return render(request, '../templates/sem4-electromagnetism-pyq.html')
+
 def sem4physicalchempyqs(request):
-    return render(request, '../templates/sem4-physical-chem-pyqs.html')   
+    return render(request, '../templates/sem4-physical-chem-pyq.html')  
+
 def sem4linearalgebrapyqs(request):
-    return render(request, '../templates/sem4-linear-algebra-pyqs.html')   
+    return render(request, '../templates/sem4-linear-algebra-pyq.html')
+
 def sem4datastructurespyqs(request):
-    return render(request, '../templates/sem4-data-structures-pyqs.html')   
+    return render(request, '../templates/sem4-data-structures-pyq.html') 
+
 def sem5quantummechanicspyqs(request):
-    return render(request, '../templates/sem5-quantum-mechanics-pyqs.html')   
+    return render(request, '../templates/sem5-quantum-mechanics-pyq.html')
+
 def sem5inorganicchempyqs(request):
-    return render(request, '../templates/sem5-inorganic-chem-pyqs.html')   
+    return render(request, '../templates/sem5-inorganic-chem-pyq.html') 
+
 def sem5dbmspyqs(request):
-    return render(request, '../templates/sem5-dbms-pyqs.html')   
+    return render(request, '../templates/sem5-dbms-pyq.html') 
+
 def sem5ospyqs(request):
-    return render(request, '../templates/sem5-os-pyqs.html')   
+    return render(request, '../templates/sem5-os-pyq.html') 
+
 def sem6relativitypyqs(request):
-    return render(request, '../templates/sem6-relativity-pyqs.html')   
+    return render(request, '../templates/sem6-relativity-pyq.html') 
+
 def sem6thermodynamicspyqs(request):
-    return render(request, '../templates/sem6-thermodynamics-pyqs.html')   
+    return render(request, '../templates/sem6-thermodynamics-pyq.html') 
+
 def sem6compilerdesignpyqs(request):
-    return render(request, '../templates/sem6-compiler-design-pyqs.html')   
+    return render(request, '../templates/sem6-compiler-design-pyq.html')
+
 def sem6softwareengineeringpyqs(request):
-    return render(request, '../templates/sem6-software-engineering-pyqs.html') 
+    return render(request, '../templates/sem6-software-engineering-pyq.html')
+
 def sem7particlephysicspyqs(request):
-    return render(request, '../templates/sem7-particle-physics-pyqs.html') 
+    return render(request, '../templates/sem7-particle-physics-pyq.html') 
+
 def sem7biochemistrypyqs(request):
-    return render(request, '../templates/sem7-biochemistry-pyqs.html') 
+    return render(request, '../templates/sem7-biochemistry-pyq.html') 
+
 def sem7advanceddspyqs(request):
-    return render(request, '../templates/sem7-advanced-ds-pyqs.html') 
+    return render(request, '../templates/sem7-advanced-ds-pyq.html')
+
 def sem7aipyqs(request):
-    return render(request, '../templates/sem7-ai-pyqs.html') 
+    return render(request, '../templates/sem7-ai-pyq.html') 
+
 def sem8astrophysicspyqs(request):
-    return render(request, '../templates/sem8-astrophysics-pyqs.html') 
+    return render(request, '../templates/sem8-astrophysics-pyq.html') 
+
 def sem8appliedchemistrypyqs(request):
-    return render(request, '../templates/sem8-applied-chemistry-pyqs.html') 
+    return render(request, '../templates/sem8-applied-chemistry-pyq.html')
+
 def sem8mlpyqs(request):
-    return render(request, '../templates/sem8-ml-pyqs.html') 
+    return render(request, '../templates/sem8-ml-pyq.html') 
+
 def sem8cloudcomputingpyqs(request):
-    return render(request, '../templates/sem8-cloud-computing-pyqs.html') 
+    return render(request, '../templates/sem8-cloud-computing-pyq.html')
 
 
 
@@ -247,6 +301,7 @@ def sem8cloudcomputingpyqs(request):
 
 
 
+#notes 
 def subjects_btech(request):
     return render(request, '../templates/subjects-btech.html')
 def subjects_bca(request):

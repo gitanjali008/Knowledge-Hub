@@ -33,6 +33,10 @@ urlpatterns = [
     path("bcom_assignment/", views.bcom_assignment, name='bcom_assignment'),
     path("mcom_assignment/", views.mcom_assignment, name='mcom_assignment'),
 
+
+
+
+
     path("sem1mathpyqs/", views.sem1mathpyqs, name='sem1mathpyqs'),
     path("sem1physicspyqs/", views.sem1physicspyqs, name='sem1physicspyqs'),
     path("sem1ecepyqs/", views.sem1ecepyqs, name='sem1ecepyqs'),
