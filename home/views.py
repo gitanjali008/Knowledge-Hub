@@ -180,7 +180,7 @@ def sem6networksecuritypyqs(request):
     return render(request, '../templates/sem6-network-security-pyq.html') 
 
 def sem7Softpyqs(request):
-    return render(request, '../templates/sem7-soft-pyq.html')   
+    return render(request, '../templates/sem7-s oft-pyq.html')   
 
 def sem7bipyqs(request):
     return render(request, '../templates/sem7-bi-pyq.html') 
@@ -228,7 +228,8 @@ def sem3organicchempyqs(request):
     return render(request, '../templates/sem3-organic-chem-pyq.html')
        
 def sem3discretemathpyqs(request):
-    return render(request, '../templates/sem3-discrete-math-pyq.html')   
+    return render(request, '../templates/sem3-discrete-math-pyq.html')  
+
 def sem3introtocomputingpyqs(request):
     return render(request, '../templates/sem3-intro-to-computing-pyq.html')
 
