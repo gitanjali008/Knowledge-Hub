@@ -292,6 +292,54 @@ def sem8mlpyqs(request):
 
 def sem8cloudcomputingpyqs(request):
     return render(request, '../templates/sem8-cloud-computing-pyq.html')
+def sem1computerfundamental(request):
+    return render(request, '../templates/bca-sem1-computerfundamental-pyq.html') 
+def sem1maths(request):
+    return render(request, '../templates/bca-sem1-maths-pyq.html') 
+def sem1programminginc(request):
+    return render(request, '../templates/bca-sem1-programming.pyq.html') 
+def sem2maths(request):
+    return render(request, '../templates/bca-sem2-math-pyq.html') 
+def sem2datastructure(request):
+    return render(request, '../templates/bca-sem2-datastructure-pyq.html') 
+def sem2dbmspyqs(request):
+    return render(request, '../templates/bca-sem2-dbms-pyq.html') 
+def sem3os(request):
+    return render(request, '../templates/bca-sem3-os-pyq.html') 
+def sem3oop(request):
+    return render(request, '../templates/bca-sem3-oop-pyq.html') 
+def sem3computernetwork(request):
+    return render(request, '../templates/bca-sem3-computernetwork-pyq.html') 
+def sem3softwareengineering(request):
+    return render(request, '../templates/bca-sem3-softwareengineering-pyq.html') 
+def sem4dda(request):
+    return render(request, '../templates/bca-sem4-dda-pyq.html') 
+def sem4softwaredevelopment(request):
+    return render(request, '../templates/bca-sem4-softwaredevelopment-pyq.html') 
+def sem4computerarchietecture(request):
+    return render(request, '../templates/bca-sem4-computerarchietecture-pyq.html') 
+def sem4evs(request):
+    return render(request, '../templates/bca-sem4-evs-pyq.html') 
+def sem5webtech(request):
+    return render(request, '../templates/bca-sem5-webtechnologies-pyq.html') 
+def sem5mobilecomputing(request):
+    return render(request, '../templates/bca-sem5-mobiletech-pyq.html') 
+def sem5networksecurity(request):
+    return render(request, '../templates/bca-sem5-networksequrity-pyq.html') 
+def sem5ai(request):
+    return render(request, '../templates/bca-sem5-AI-pyq.html') 
+def sem6bigdataanalysis(request):
+    return render(request, '../templates/bca-sem6-bigdata-pyq.html') 
+def sem6cloudcomputing(request):
+    return render(request, '../templates/bca-sem6-cloudcomputing-pyq.html') 
+def sem6projectmanagement(request):
+    return render(request, '../templates/bca-sem6-projectmanagement-pyq.html') 
+def sem6datascience(request):
+    return render(request, '../templates/bca-sem6-datascience-pyq.html') 
+
+
+
+
 
 
 
