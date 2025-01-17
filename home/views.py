@@ -336,6 +336,52 @@ def sem6projectmanagement(request):
     return render(request, '../templates/bca-sem6-projectmanagement-pyq.html') 
 def sem6datascience(request):
     return render(request, '../templates/bca-sem6-datascience-pyq.html') 
+def bbasem1buisnessmaths(request):
+    return render(request, '../templates/bba-sem1-buisnessmathe-pyq.html') 
+def bbasem1finalcialaccounting(request):
+    return render(request, '../templates/bba-sem1-finacialacco-pyq.html') 
+def bbasem1microeco(request):
+    return render(request, '../templates/bba-sem1-microeconomics-pyq.html') 
+def bbasem1principlemanagement(request):
+    return render(request, '../templates/bba-sem1-priciplemanagemenet-pyq.html') 
+def bbasem2buisnesscommunication(request):
+    return render(request, '../templates/bba-sem2-businnescommunication-pyq.html') 
+def bbasem2humanresource(request):
+    return render(request, '../templates/bba-sem2-humanresource-pyq.html') 
+def bbasem2macroeconomics(request):
+    return render(request, '../templates/bba-sem2-macroeconomics-pyq.html') 
+def bbasem2origanization(request):
+    return render(request, '../templates/bba-sem2-organizationalbehavior-pyq.html') 
+def bbasem3buisnesslaw(request):
+    return render(request, '../templates/bba-sem3-businesslaw-pyq.html') 
+def bbasem3corporateaccoun(request):
+    return render(request, '../templates/bba-sem3-corporateaccounting-pyq.html') 
+def bbasem3managementaccount(request):
+    return render(request, '../templates/bba-sem3-managementaccounting-pyq.html') 
+def bbasem3marketing(request):
+    return render(request, '../templates/bba-sem3-marketing-pyq.html') 
+def bbasem4businesseco(request):
+    return render(request, '../templates/bba-sem4-businesseconomics-pyq.html') 
+def bbasem4costaccounting(request):
+    return render(request, '../templates/bba-sem4-costaccounting-pyq.html') 
+def bbasem4production(request):
+    return render(request, '../templates/bba-sem4-production-pyq.html') 
+def bbasem4quantitative(request):
+    return render(request, '../templates/bba-sem4-quantitativetechniques-pyq.html') 
+def bbasem5enterpreneuship(request):
+    return render(request, '../templates/bba-sem5-enterpreneurship-pyq.html') 
+def bbasem5internationalbusiness(request):
+    return render(request, '../templates/bba-sem5-internationalbusiness-pyq.html') 
+def bbasem5investmentmanagement(request):
+    return render(request, '../templates/bba-sem5-investmentmanagement-py.html') 
+def bbasem5strategicmanagement(request):
+    return render(request, '../templates/bba-sem5-startegicmanagement-pyq.html') 
+def bbasem6finacialmanagement(request):
+    return render(request, '../templates/bba-sem6-finacialmanagement-pyq.html') 
+def bbasem6marketing(request):
+    return render(request, '../templates/bba-sem6-marketingresearch-pyq.html') 
+def bbasem6organization(request):
+    return render(request, '../templates/bba-sem6-organizationaldevelopment-pyq.html') 
 
 
 

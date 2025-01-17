@@ -34,9 +34,6 @@ urlpatterns = [
     path("mcom_assignment/", views.mcom_assignment, name='mcom_assignment'),
 
 
-
-
-
     path("sem1mathpyqs/", views.sem1mathpyqs, name='sem1mathpyqs'),
     path("sem1physicspyqs/", views.sem1physicspyqs, name='sem1physicspyqs'),
     path("sem1ecepyqs/", views.sem1ecepyqs, name='sem1ecepyqs'),
@@ -115,6 +112,33 @@ urlpatterns = [
     path("sem6cloudcomputing/", views.sem6cloudcomputing, name='sem6cloudcomputing'),
     path("sem6projectmanagement/", views.sem6projectmanagement, name='sem6projectmanagement'),
     path("sem6datascience/", views.sem6datascience, name='sem6datascience'),
+
+    
+    path("bbasem1buisnessmaths/", views.bbasem1buisnessmaths, name='bbasem1buisnessmaths'),
+    path("bbasem1finalcialaccounting/", views.bbasem1finalcialaccounting, name='bbasem1finalcialaccounting'),
+    path("bbasem1microeco/", views.bbasem1microeco, name='bbasem1microeco'),
+    path("bbasem1principlemanagement/", views.bbasem1principlemanagement, name='bbasem1principlemanagement'),
+    path("bbasem2buisnesscommunication/", views.bbasem2buisnesscommunication, name='bbasem2buisnesscommunication'),
+    path("bbasem2humanresource/", views.bbasem2humanresource, name='bbasem2humanresource'),
+    path("bbasem2macroeconomics/", views.bbasem2macroeconomics, name='bbasem2macroeconomics'),
+    path("bbasem2origanization/", views.bbasem2origanization, name='bbasem2origanization'),
+    path("bbasem3buisnesslaw/", views.bbasem3buisnesslaw, name='bbasem3buisnesslaw'),
+    path("bbasem3corporateaccoun/", views.bbasem3corporateaccoun, name='bbasem3corporateaccoun'),
+    path("bbasem3managementaccount/", views.bbasem3managementaccount, name='bbasem3managementaccount'),
+    path("bbasem3marketing/", views.bbasem3marketing, name='bbasem3marketing'),
+    path("bbasem4businesseco/", views.bbasem4businesseco, name='bbasem4businesseco'),
+    path("bbasem4costaccounting/", views.bbasem4costaccounting, name='bbasem4costaccounting'),
+    path("bbasem4production/", views.bbasem4production, name='bbasem4production'),
+    path("bbasem4quantitative/", views.bbasem4quantitative, name='bbasem4quantitative'),
+    path("bbasem5enterpreneuship/", views.bbasem5enterpreneuship, name='bbasem5enterpreneuship'),
+    path("bbasem5internationalbusiness/", views.bbasem5internationalbusiness, name='bbasem5internationalbusiness'),
+    path("bbasem5investmentmanagement/", views.bbasem5investmentmanagement, name='bbasem5investmentmanagement'),
+    path("bbasem5strategicmanagement/", views.bbasem5strategicmanagement, name='bbasem5strategicmanagement'),
+    path("bbasem6finacialmanagement/", views.bbasem6finacialmanagement, name='bbasem6finacialmanagement'),
+    path("bbasem6marketing/", views.bbasem6marketing, name='bbasem6marketing'),
+    path("bbasem6organization/", views.bbasem6organization, name='bbasem6organization'),
+    
+
 
     
     
