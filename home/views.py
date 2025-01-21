@@ -398,15 +398,15 @@ def bbasem6organization(request):
 
 #notes 
 def subjects_btech(request):
-    return render(request, '../templates/subjects-btech.html')
+    return render(request, '../templates/btech-notes.html')
 def subjects_bca(request):
-    return render(request, '../templates/subjects-bca.html')
+    return render(request, '../templates/bca-notes.html')
 def subjects_bcom(request):
-    return render(request, '../templates/subjects-bcom.html')
+    return render(request, '../templates/bcom-notes.html')
 def subjects_bba(request):
-    return render(request, '../templates/subjects-bba.html')
+    return render(request, '../templates/bba-notes.html')
 def subjects_mba(request):
-    return render(request, '../templates/subjects-mba.html')
+    return render(request, '../templates/mba-notes.html')
 
 def notes(request):
     return rendassignmenter(request, '../templates/notes.html')

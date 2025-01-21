@@ -294,34 +294,34 @@
 
     <main>
         <div class="subject-heading">
-            <h1>{{ subject }}</h1>
+            <h1><h1>Chemistry</h1></h1>
         </div>
 
         <!-- Notes Section -->
         <section class="resources-section">
             <h2>Notes</h2>
             <div class="grid">
-                {% for note in resources.notes %}
+                
                 <div class="card">
-                    <a href="{{ note.url }}" target="_blank">{{ note.name }}</a>
+                    <h1>Chemistry</h1>
                 </div>
-                {% empty %}
-                <p>No notes available.</p>
-                {% endfor %}
+                
+                
+               
             </div>
         </section>
         
         <!-- Videos Section -->
         <section class="resources-section">
-            <h2>Lecture Videos</h2>
+            <h2>Oneshort Videos</h2>
             <div class="grid">
-                {% for video in resources.videos %}
+               
                 <div class="card">
-                    <a href="{{ video.url }}" target="_blank">{{ video.name }}</a>
+                    <a href="" target="_blank"> video.name </a>
                 </div>
-                {% empty %}
-                <p>No videos available.</p>
-                {% endfor %}
+                
+                
+                
             </div>
         </section>
         
@@ -329,13 +329,13 @@
         <section class="resources-section">
             <h2>Lecture Playlists</h2>
             <div class="grid">
-                {% for playlist in resources.playlists %}
+                
                 <div class="card">
-                    <a href="{{ playlist.url }}" target="_blank">{{ playlist.name }}</a>
+                    <a href="" target="_blank"> playlist.name </a>
                 </div>
-                {% empty %}
-                <p>No playlists available.</p>
-                {% endfor %}
+               
+               
+                
             </div>
         </section>
     </main>
