@@ -91,9 +91,9 @@ def login_view(request):
 
 #assignments
 def btech(request):
-    return render(request, '../templates/btech.html')
+    return render(request, '../templates/pyqs/btech pyqs/btech.html')
 def bba(request):
-    return render(request, '../templates/bba.html')
+    return render(request, '../templates/pyqs/mba pyqs/mba.html')
 def mba(request):
     return render(request, '../templates/mba.html')
 def bsc(request):
@@ -126,16 +126,16 @@ def mcom_assignment(request):
 #previous year question paper 
 
 def sem1mathpyqs(request):
-    return render(request, '../templates/sem1-math-pyq.html')
+    return render(request, '/templates/pyqs/btech pyqs/sem1-math-pyq.html')
 
 def sem1physicspyqs(request):
-    return render(request, '../templates/sem1-physics-pyq.html')
+    return render(request, '../templates/pyqs/btech pyqs/sem1-physics-pyq.html')
 
 def sem1ecepyqs(request):
-    return render(request, '../templates/sem1-ece-pyq.html')
+    return render(request, 'home/templates/pyqs/btech pyqs/sem1-ece-pyq.html')
 
 def sem2mathpyqs(request):
-    return render(request, '../templates/sem2-math-pyq.html')  
+    return render(request, 'home/templates/pyqs/btech pyqs/sem2-math-pyq.html')  
 
 def sem2chemistrypyqs(request):
     return render(request, '../templates/sem2-chemistry-pyq.html') 
