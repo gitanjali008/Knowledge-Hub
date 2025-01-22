@@ -32,8 +32,6 @@ urlpatterns = [
     path("bca_assignment/", views.bca_assignment, name='bca_assignment'),
     path("bcom_assignment/", views.bcom_assignment, name='bcom_assignment'),
     path("mcom_assignment/", views.mcom_assignment, name='mcom_assignment'),
-
-
     path("sem1mathpyqs/", views.sem1mathpyqs, name='sem1mathpyqs'),
     path("sem1physicspyqs/", views.sem1physicspyqs, name='sem1physicspyqs'),
     path("sem1ecepyqs/", views.sem1ecepyqs, name='sem1ecepyqs'),
@@ -112,8 +110,6 @@ urlpatterns = [
     path("sem6cloudcomputing/", views.sem6cloudcomputing, name='sem6cloudcomputing'),
     path("sem6projectmanagement/", views.sem6projectmanagement, name='sem6projectmanagement'),
     path("sem6datascience/", views.sem6datascience, name='sem6datascience'),
-
-    
     path("bbasem1buisnessmaths/", views.bbasem1buisnessmaths, name='bbasem1buisnessmaths'),
     path("bbasem1finalcialaccounting/", views.bbasem1finalcialaccounting, name='bbasem1finalcialaccounting'),
     path("bbasem1microeco/", views.bbasem1microeco, name='bbasem1microeco'),
@@ -137,17 +133,24 @@ urlpatterns = [
     path("bbasem6finacialmanagement/", views.bbasem6finacialmanagement, name='bbasem6finacialmanagement'),
     path("bbasem6marketing/", views.bbasem6marketing, name='bbasem6marketing'),
     path("bbasem6organization/", views.bbasem6organization, name='bbasem6organization'),
+    path("sem1managerialeconomicspyqs/", views.sem1managerialeconomicspyqs, name='sem1managerialeconomicspyqs'),
+    path("sem1organizationalbehaviorpyqs/", views.sem1organizationalbehaviorpyqs, name='sem1organizationalbehaviorpyqs'),
+    path("sem1accountingformanagerspyqs/", views.sem1accountingformanagerspyqs, name='sem1accountingformanagerspyqs'),
+    path("sem1quantitativemethodspyqs/", views.sem1quantitativemethodspyqs, name='sem1quantitativemethodspyqs'),
+    path("sem2financialmanagementpyqs/", views.sem2financialmanagementpyqs, name='sem2financialmanagementpyqs'),
+    path("sem2marketingmanagementpyqs/", views.sem2marketingmanagementpyqs, name='sem2marketingmanagementpyqs'),
+    path("sem2operationsmanagementpyqs/", views.sem2operationsmanagementpyqs, name='sem2operationsmanagementpyqs'),
+    path("sem2hrmpyqs/", views.sem2hrmpyqs, name='sem2hrmpyqs'),
+    path("sem3businessresearchmethodspyqs/", views.sem3businessresearchmethodspyqs, name='sem3businessresearchmethodspyqs'),
+    path("sem3strategicmanagementpyqs/", views.sem3strategicmanagementpyqs, name='sem3strategicmanagementpyqs'),
+    path("sem3internationalbusinesspyqs/", views.sem3internationalbusinesspyqs, name='sem3internationalbusinesspyqs'),
+    path("sem3businessethicspyqs/", views.sem3businessethicspyqs, name='sem3businessethicspyqs'),
+    path("sem4corporategovernancepyqs/", views.sem4corporategovernancepyqs, name='sem4corporategovernancepyqs'),
+    path("sem4projectmanagementpyqs/", views.sem4projectmanagementpyqs, name='sem4projectmanagementpyqs'),
+    path("sem4investmentmanagementpyqs/", views.sem4investmentmanagementpyqs, name='sem4investmentmanagementpyqs'),
+    path("sem4entrepreneurshippyqs/", views.sem4entrepreneurshippyqs, name='sem4entrepreneurshippyqs'),
     
-
-
     
-    
-
-
-
-
-
-
 
 
 

@@ -77,6 +77,11 @@
 
 
         }
+        #notes-course{
+          height: 100px;
+          width: 200px;
+          margin-top: 5rem;
+        }
         footer{
             background-color: rgb(176, 238, 238);
             padding-bottom: 30px;
@@ -214,7 +219,7 @@
             <div class="nav-content">
                 <div class="nav_items" id="nav_items"><a href="{% url 'index' %}">Home</a></div>
                 <div class="nav_items" id="nav_items"><a href="{% url 'about' %}">About Us</a></div>
-                <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Viva Questions</a></div>
+                <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Placements PYQ</a></div>
                 <div class="nav_items" id="nav_items"><a href="https://cstutorialpoint.com/computer-science-notes/">PYQs</a></div>
             </div>
         </div>
@@ -223,7 +228,7 @@
         <h1>Courses</h1>
         <div class="course-container">
             <a href="{% url 'subjects_btech' %}" class="card">
-              <img src="https://i.ibb.co/2ZFvNTb/producttech-btech.png" alt="Course 1">
+              <img src="https://i.ibb.co/2ZFvNTb/producttech-btech.png" id="notes-course" alt="Course 1">
               <div class="card-content">
                 <h3 class="card-title">B. Tech.</h3>
                 <p class="card-description"></p>
@@ -231,7 +236,7 @@
             </a>
         
             <a href="{% url 'subjects_bca' %}" class="card">
-              <img src="https://i.ibb.co/YXvSTrr/1709635694-BCA.jpg" alt="Course 2">
+              <img src="https://i.ibb.co/YXvSTrr/1709635694-BCA.jpg" id="notes-course" alt="Course 2">
               <div class="card-content">
                 <h3 class="card-title">BCA</h3>
                 <p class="card-description"></p>
@@ -239,7 +244,7 @@
             </a>
         
             <a href="{% url 'subjects_bcom' %}" class="card">
-              <img src="https://i.ibb.co/tMhgXn4/Bcom3-Group.png" alt="Course 3">
+              <img src="https://i.ibb.co/tMhgXn4/Bcom3-Group.png"  id="notes-course" alt="Course 3">
               <div class="card-content">
                 <h3 class="card-title">B. Com.</h3>
                 <p class="card-description"></p>
@@ -247,7 +252,7 @@
             </a>
         
             <a href="{% url 'subjects_bba' %}" class="card">
-              <img src="https://i.ibb.co/sqJzkFH/bba.jpg" alt="Course 4">
+              <img src="https://i.ibb.co/sqJzkFH/bba.jpg" id="notes-course" alt="Course 4">
               <div class="card-content">
                 <h3 class="card-title">BBA</h3>
                 <p class="card-description"></p>
@@ -255,7 +260,7 @@
             </a>
         
             <a href="{% url 'subjects_mba' %}" class="card">
-              <img src="https://i.ibb.co/SxMcBf9/four-4-reasons-an-mba-is-valuable.png" alt="Course 5">
+              <img src="https://i.ibb.co/SxMcBf9/four-4-reasons-an-mba-is-valuable.png" id="notes-course" alt="Course 5">
               <div class="card-content">
                 <h3 class="card-title">MBA</h3>
                 <p class="card-description"></p>

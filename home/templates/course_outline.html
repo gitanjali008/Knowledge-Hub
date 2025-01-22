@@ -128,8 +128,8 @@ a:hover {
 }
 
 #img_content {
-  width: 350px;
-  height: 500px;
+  width: 80;
+  height: 300px;
 }
 
 .container {
@@ -159,8 +159,10 @@ a:hover {
 }
 
 .accordion {
-  margin-top: 70px;
+  margin-top: 10px;
+  
 }
+
 
 .accordion li {
   list-style: none;
@@ -168,9 +170,11 @@ a:hover {
   padding: 10px;
   width: 1000px;
   border-radius: 10px;
-  background-color: rgb(235, 243, 243);
-  border-color: rgb(0, 0, 0);
+  background-color: rgb(25, 43, 104);
+  border-color: rgb(248, 219, 0);
   border-width: 1px;
+ color: aliceblue;
+  margin-left: 320px;
 }
 
 body {
@@ -520,7 +524,7 @@ ul li {
     <div class="nav-content">
             <div class="nav_items" id="nav_items"><a href="{% url 'index' %}">Home</a></div>
             <div class="nav_items" id="nav_items"><a href="{% url 'about' %}">About Us</a></div>
-            <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Viva Questions</a></div>
+            <div class="nav_items" id="nav_items"><a href="{% url 'course_outline' %}">Placements PYQ</a></div>
             <div class="nav_items" id="nav_items"><a href="{% url 'pyq' %}">PYQ</a></div>
     </div>
 </div>
@@ -531,27 +535,24 @@ ul li {
         </div>
     </div>
     <div class="course_outline">
-      <div><h3>Home / Viva Questions</h3> </div>
-      <div> <h1>All the best for your Viva !!</h1></div>
-      <div><h3>There are some most frquently viva questions , whihc can make you viva ready at the last moment</h3></div>
+      <div><h3>Home / Placements Questions</h3> </div>
+      <div> <h1>All the best for your Placements !!</h1></div>
+      <div><h3>There are some most frquently ask questions in placements, which can make you placements ready at the last moment</h3></div>
     </div>
     </header>
 
     <main>
       <div class="container">
-        <div class="side_box1" id="img_content">
-          <div class="img_content" id="img_content">
-            <img src="https://i.ibb.co/Jnk0961/pngegg-2.png"  id="img_content"alt="" >
-
-          </div>
-        </div>
+        
         <ul class="accordion">
           <li>
               <input type="radio" name="accordion" id="first" >
-              <label for="first">Web Development</label>
+              <label for="first">Explain the difference between stack and heap memory.</label>
               <div class="content">
                 <ul id="inner_content">
-                  <li>Involves building and maintaining websites, focusing on front-end (user interface) and back-end (server, database) development. Technologies include HTML, CSS, JavaScript, and frameworks like React.js for front-end and Node.js, Django for back-end.</li>
+                  <li>Stack Memory: Used for static memory allocation, such as function calls and local variables. It follows a LIFO structure and is faster.
+                    Heap Memory: Used for dynamic memory allocation, such as objects and data at runtime. It is slower but provides flexibility.
+                    </li>
                   
                 </ul>
                  
@@ -559,110 +560,164 @@ ul li {
           </li>
           <li>
               <input type="radio" name="accordion" id="second">
-              <label for="second">Data Structure and Algorithm</label>
+              <label for="second">Explain the difference between a compiled language and an interpreted language.</label>
               <div class="content">
                 <ul id="inner_content">
-                  <li>Fundamental concepts for organizing and storing data in computers to facilitate efficient access and modification. Key structures include arrays, linked lists, stacks, queues, trees, graphs, hash tables, and heaps.</li>
+                  <li>Compiled Language: Translates the entire code into machine code before execution (e.g., C, C++). Faster execution but slower compilation.,
+                    Interpreted Language: Translates code line-by-line during runtime (e.g., Python, JavaScript). Easier debugging but slower execution.
+                    
+                    </li>
                   
                 </ul>
               </div>
           </li>
           <li>
             <input type="radio" name="accordion" id="computer_network">
-            <label for="computer_network">Computer Networks</label>
+            <label for="computer_network">Explain OOP principles (Inheritance, Polymorphism, Encapsulation, Abstraction).</label>
             <div class="content">
                 <ul id="inner_content">
-                    <li>A branch of computer science that deals with communication between computers and other devices over a network. It covers protocols, network design, routing, switching, and security.</li>
+                    <li>Inheritance: Reuse properties/methods of a parent class in a child class.,
+                      Polymorphism: One function can behave differently based on input (method overriding/overloading).,
+                      Encapsulation: Wrapping data and methods into a single unit (class) and restricting access using access modifiers.,
+                      Abstraction: Hiding implementation details and exposing only necessary functionality.
+                      </li>
                 </ul>
             </div>
         </li>
         
         <li>
             <input type="radio" name="accordion" id="operating_system">
-            <label for="operating_system">Operating Systems</label>
+            <label for="operating_system">What is a binary search tree, and how is it different from a binary tree?</label>
             <div class="content">
                 <ul id="inner_content">
-                    <li>An OS is system software that manages hardware, software resources, and provides common services for computer programs. Key topics include process management, memory management, and file systems.</li>
+                    <li>Binary Tree: A tree where each node has at most two children (left and right).,
+                      Binary Search Tree (BST): A binary tree where the left child contains values less than the parent, and the right child contains values greater than the parent.
+                      </li>
                 </ul>
             </div>
         </li>
         
         <li>
             <input type="radio" name="accordion" id="dbms">
-            <label for="dbms">Database Management Systems (DBMS)</label>
+            <label for="dbms"> What is normalization in databases, and why is it important?</label>
             <div class="content">
                 <ul id="inner_content">
-                    <li>DBMS refers to software that manages databases and allows users to create, read, update, and delete data. It includes relational, object-oriented, and NoSQL databases.</li>
+                    <li>Normalization: The process of organizing data to reduce redundancy and improve integrity.,
+                      Importance: It eliminates duplicate data, ensures data dependencies are logical, and improves database performance.
+                      </li>
                 </ul>
             </div>
         </li>
         
         <li>
             <input type="radio" name="accordion" id="software_engineering">
-            <label for="software_engineering">Software Engineering</label>
+            <label for="software_engineering"> What is the difference between process and thread?</label>
             <div class="content">
                 <ul id="inner_content">
-                    <li>Software Engineering focuses on the design, development, maintenance, and management of software applications. It involves methodologies like Agile, Waterfall, and testing practices.</li>
+                    <li>Process: Independent execution unit with its own memory space.,
+                      Thread: Subset of a process sharing the same memory but executing independently.
+                      </li>
                 </ul>
             </div>
         </li>
         
         <li>
             <input type="radio" name="accordion" id="data_structures">
-            <label for="data_structures">Data Structures</label>
+            <label for="data_structures">Explain deadlock and how to prevent it.</label>
             <div class="content">
                 <ul id="inner_content">
-                    <li>Data structures are a way to organize and store data for efficient access and modification. Key data structures include arrays, linked lists, stacks, queues, trees, and graphs.</li>
+                    <li>Deadlock: A situation where processes are waiting for each other indefinitely, causing a halt.,
+                      Prevention: Avoid circular waits, allocate resources carefully, and use resource ordering.
+                      </li>
                 </ul>
             </div>
         </li>
         
         <li>
             <input type="radio" name="accordion" id="algorithms">
-            <label for="algorithms">Algorithms</label>
+            <label for="algorithms"> What is the OSI model?</label>
             <div class="content">
                 <ul id="inner_content">
-                    <li>Algorithms are step-by-step procedures for solving problems. Topics include sorting, searching, dynamic programming, greedy algorithms, and graph algorithms.</li>
+                    <li>OSI Model: A conceptual framework with 7 layers (Physical, Data Link, Network, Transport, Session, Presentation, Application) for standardizing network communication.
+                      .</li>
                 </ul>
             </div>
         </li>
         
         <li>
             <input type="radio" name="accordion" id="computer_organization">
-            <label for="computer_organization">Computer Organization</label>
+            <label for="computer_organization">What are ACID properties in databases?
+            </label>
             <div class="content">
                 <ul id="inner_content">
-                    <li>Computer Organization focuses on the internal workings of computers, including processor architecture, memory, and input/output systems.</li>
+                    <li>Atomicity: Transactions are all or nothing.,
+                      Consistency: Ensures data integrity.,
+                      Isolation: Transactions are independent.,
+                      Durability: Changes are permanent after a commit.
+                      </li>
                 </ul>
             </div>
         </li>
         
         <li>
             <input type="radio" name="accordion" id="theory_of_computation">
-            <label for="theory_of_computation">Theory of Computation</label>
+            <label for="theory_of_computation">Explain sorting algorithms like QuickSort, MergeSort, and their complexities.
+            </label>
             <div class="content">
                 <ul id="inner_content">
-                    <li>Theory of Computation involves the study of formal languages, automata theory, and computational complexity to understand what problems can be solved algorithmically.</li>
+                    <li>QuickSort: Divide-and-conquer; pivot-based partitioning.
+                      Average: 
+                      𝑂
+                      (
+                      𝑛
+                      log
+                      ⁡
+                      𝑛
+                      )
+                      O(nlogn), Worst: 
+                      𝑂
+                      (
+                      𝑛
+                      2
+                      )
+                      O(n 
+                      2
+                       ).,
+                      MergeSort: Divide-and-conquer; merges sorted halves.
+                      Always 
+                      𝑂
+                      (
+                      𝑛
+                      log
+                      ⁡
+                      𝑛
+                      )
+                      O(nlogn).
+                      Use Case: QuickSort is faster for small datasets; MergeSort is stable and preferred for linked lists.
+                      </li>
                 </ul>
             </div>
         </li>
         
           <li>
               <input type="radio" name="accordion" id="third">
-              <label for="third">Java</label>
+              <label for="third">What is the difference between SQL and NoSQL databases?</label>
               <div class="content">
                 <ul id="inner_content">
-                  <li>A high-level, object-oriented programming language known for its portability across platforms. Key concepts include classes, objects, inheritance, polymorphism, and the Java Standard Library.</li>
+                  <li>SQL: Relational; structured data; uses tables (e.g., MySQL).,
+                    NoSQL: Non-relational; flexible schema; suited for unstructured data (e.g., MongoDB).
+                    </li>
                  
                 </ul>
               </div>
           </li>
           <li>
               <input type="radio" name="accordion" id="fourth">
-              <label for="fourth">Javascript</label>
+              <label for="fourth">What is virtual memory?</label>
               <div class="content">
                 <ul id="inner_content">
-                  <li>A scripting language primarily used to create dynamic and interactive content on websites. It supports event-driven programming, closures, asynchronous operations, and frameworks like Angular, React, and Vue.js.</li>
+                  <li>A memory management technique using disk space to simulate additional RAM. Allows running large programs on limited physical memory.
+                  </li>
                   
                 </ul>
               </div>
@@ -670,63 +725,76 @@ ul li {
           
           <li>
             <input type="radio" name="accordion" id="six">
-            <label for="six">   C\C++</label>
+            <label for="six">Explain the SDLC (Software Development Life Cycle).
+            </label>
             <div class="content">
               <ul id="inner_content">
-                <li>A general-purpose programming language that offers low-level access to memory and efficient execution. It is widely used in system/software development, operating systems, and embedded systems.</li>
+                <li>Requirement Analysis,
+                  Design,
+                  Implementation,
+                  Testing,
+                  Deployment,
+                  Maintenance
+                  .</li>
                 <br>
-                <li>An extension of C that introduces object-oriented programming features like classes, objects, inheritance, polymorphism, and templates. It is commonly used in game development, high-performance software, and applications requiring real-time processing.
-                </li>
+               
                 
               </ul>
             </div>
           </li>
           <li>
             <input type="radio" name="accordion" id="seven">
-            <label for="seven">Phyton</label>
+            <label for="seven">What are microservices, and how do they differ from monolithic architecture?</label>
             <div class="content">
               <ul id="inner_content">
-                <li>A high-level, interpreted language known for its simplicity and readability. It is widely used in web development, data analysis, machine learning, automation, and scripting, with libraries like pandas, NumPy, scikit-learn, and Django.</li>
+                <li>Microservices: Small, independent services that communicate via APIs.,
+                  Monolithic: Single application with tightly coupled components.,
+                  Difference: Microservices offer better scalability and fault isolation.</li>
                
               </ul>
             </div>
           </li>
           <li>
             <input type="radio" name="accordion" id="computer_network">
-            <label for="computer_network">Computer Networks</label>
+            <label for="computer_network">What is version control, and why is Git popular?</label>
             <div class="content">
                 <ul id="inner_content">
-                    <li>A branch of computer science that deals with communication between computers and other devices over a network. It covers protocols, network design, routing, switching, and security.</li>
+                    <li>Version Control: Tracks code changes, facilitates collaboration.,
+                      Git: Distributed, fast, and integrates with platforms like GitHub.
+                      </li>
                 </ul>
             </div>
         </li>
         
         <li>
             <input type="radio" name="accordion" id="operating_system">
-            <label for="operating_system">Operating Systems</label>
+            <label for="operating_system">Explain memory management in Java.</label>
             <div class="content">
                 <ul id="inner_content">
-                    <li>An OS is system software that manages hardware, software resources, and provides common services for computer programs. Key topics include process management, memory management, and file systems.</li>
+                    <li>Uses Garbage Collection to manage memory. Divided into heap and stack memory.</li>
                 </ul>
             </div>
         </li>
         
         <li>
             <input type="radio" name="accordion" id="dbms">
-            <label for="dbms">Database Management Systems (DBMS)</label>
+            <label for="dbms">What are Python's key features?</label>
             <div class="content">
                 <ul id="inner_content">
-                    <li>DBMS refers to software that manages databases and allows users to create, read, update, and delete data. It includes relational, object-oriented, and NoSQL databases.</li>
+                    <li>Interpreted, dynamically typed, easy syntax, extensive libraries, and support for OOP and functional programming.
+                    </li>
                 </ul>
             </div>
         </li>
         
           <li>
             <input type="radio" name="accordion" id="eight">
-            <label for="eight">Engineering Mathametics</label>
+            <label for="eight">What are the different types of trees? Explain binary trees, AVL trees, and B-trees.</label>
             <div class="content">
               <ul id="inner_content">
-                <li>Involves mathematical methods and techniques used in engineering problem-solving, including calculus, differential equations, linear algebra, probability, and statistics.
+                <li>Binary Tree: Each node has ≤ 2 children.,
+                  AVL Tree: Self-balancing binary search tree.,
+                  B-Tree: Multi-way tree optimized for disk storage.
                 </li>
                 
               </ul>
@@ -734,39 +802,42 @@ ul li {
           </li>
           <li>
             <input type="radio" name="accordion" id="nine">
-            <label for="nine">Engineering Chemistry</label>
+            <label for="nine">What is the difference between a graph and a tree?</label>
             <div class="content">
               <ul id="inner_content">
-                <li>Focuses on the chemical principles and processes relevant to engineering, including materials science, electrochemistry, thermodynamics, and organic/inorganic chemistry applications.</li>
+                <li>Tree: Hierarchical structure, no cycles, one root.,
+                  Graph: General structure, may have cycles, multiple connections.
+                  </li>
                 
               </ul>
             </div>
           </li>
           <li>
             <input type="radio" name="accordion" id="ten">
-            <label for="ten">Engineering Physics</label>
+            <label for="ten">Explain how a priority queue is implemented.</label>
             <div class="content">
               <ul id="inner_content">
-                <li>Combines principles of physics with engineering, covering topics such as mechanics, electromagnetism, quantum mechanics, thermodynamics, and materials science, emphasizing their application in technology and engineering solutions.</li>
+                <li>Implemented using a heap. Min-heap for lowest priority first; max-heap for highest priority first.</li>
                 
               </ul>
             </div>
           </li>
           <li>
             <input type="radio" name="accordion" id="software_engineering">
-            <label for="software_engineering">Software Engineering</label>
+            <label for="software_engineering">How does dynamic programming differ from greedy algorithms?</label>
             <div class="content">
                 <ul id="inner_content">
-                    <li>A discipline that applies engineering principles to the design, development, maintenance, and management of software applications, focusing on quality and efficiency.</li>
+                    <li>Dynamic Programming: Solves subproblems, stores results for reuse.,
+                      Greedy: Makes optimal local choices for a global solution.</li>
                 </ul>
             </div>
         </li>
         <li>
           <input type="radio" name="accordion" id="software_engineering">
-          <label for="software_engineering">Software Engineering</label>
+          <label for="software_engineering">Explain the KMP (Knuth-Morris-Pratt) string matching algorithm.</label>
           <div class="content">
               <ul id="inner_content">
-                  <li>A discipline that applies engineering principles to the design, development, maintenance, and management of software applications, focusing on quality and efficiency.</li>
+                  <li>Efficient string matching using a partial match table to avoid redundant comparisons.</li>
               </ul>
           </div>
       </li>
@@ -780,29 +851,33 @@ ul li {
       
       <li>
           <input type="radio" name="accordion" id="android_development">
-          <label for="android_development">Android Development</label>
+          <label for="android_development">What is a database transaction? How is it managed?</label>
           <div class="content">
               <ul id="inner_content">
-                  <li>Android Development involves creating mobile applications for Android devices using Java/Kotlin and Android Studio. Topics include UI/UX design, APIs, and Firebase integration.</li>
+                  <li>A sequence of operations treated as a single unit. Managed using ACID properties (Atomicity, Consistency, Isolation, Durability).</li>
               </ul>
           </div>
       </li>
       
       <li>
           <input type="radio" name="accordion" id="networking">
-          <label for="networking">Networking</label>
+          <label for="networking">What is the difference between clustered and non-clustered indexes?</label>
           <div class="content">
               <ul id="inner_content">
-                  <li>Networking involves the communication between computers through protocols like TCP/IP. Key concepts include routers, switches, network security, and network layers.</li>
+                  <li>Clustered: Data stored in index order.,
+                    Non-clustered: Separate structure, contains pointers to data.</li>
               </ul>
           </div>
       </li>
       <li>
         <input type="radio" name="accordion" id="business_management">
-        <label for="business_management">Business Management</label>
+        <label for="business_management">What are the types of JOINs in SQL? Provide examples.</label>
         <div class="content">
             <ul id="inner_content">
-                <li>Business management involves planning, organizing, leading, and controlling business operations. It covers areas like finance, marketing, human resources, and strategic planning.</li>
+                <li>INNER JOIN: Common data in both tables.,
+                  LEFT JOIN: All from left table, matching right table.,
+                  RIGHT JOIN: All from right table, matching left table.,
+                  FULL JOIN: Combines LEFT and RIGHT.</li>
             </ul>
         </div>
     </li>
@@ -813,40 +888,45 @@ ul li {
     
     <li>
         <input type="radio" name="accordion" id="human_resource_management">
-        <label for="human_resource_management">Human Resource Management</label>
+        <label for="human_resource_management">What is the difference between multitasking, multithreading, and multiprocessing?</label>
         <div class="content">
             <ul id="inner_content">
-                <li>HRM focuses on managing and developing the workforce in organizations. Topics include recruitment, training, performance management, and employee relations.</li>
+                <li>Multitasking: Running multiple processes.,
+                  Multithreading: Multiple threads in a single process.,
+                  Multiprocessing: Multiple processes in separate memory spaces..</li>
             </ul>
         </div>
     </li>
     
     <li>
         <input type="radio" name="accordion" id="marketing_management">
-        <label for="marketing_management">Marketing Management</label>
+        <label for="marketing_management">Explain the concept of paging and segmentation in memory management.</label>
         <div class="content">
             <ul id="inner_content">
-                <li>Marketing Management involves the strategic planning and execution of marketing activities to promote products or services, including market research, product development, and advertising.</li>
+                <li>Paging: Fixed-size memory blocks.,
+                  Segmentation: Variable-sized memory blocks (logical division).
+                  </li>
             </ul>
         </div>
     </li>
     
     <li>
         <input type="radio" name="accordion" id="international_business">
-        <label for="international_business">International Business</label>
+        <label for="international_business">What are semaphores? How are they used in process synchronization?</label>
         <div class="content">
             <ul id="inner_content">
-                <li>International Business focuses on managing global operations and understanding cross-cultural differences. Topics include global trade, international marketing, and foreign investment.</li>
+                <li>Used in process synchronization to control resource access using counters.</li>
             </ul>
         </div>
     </li>
     
     <li>
         <input type="radio" name="accordion" id="entrepreneurship">
-        <label for="entrepreneurship">Entrepreneurship</label>
+        <label for="entrepreneurship">Explain the difference between a preemptive and non-preemptive scheduling algorithm.</label>
         <div class="content">
             <ul id="inner_content">
-                <li>Entrepreneurship is the study of starting, managing, and growing new businesses. Topics include business planning, funding, innovation, and market entry strategies.</li>
+                <li>Preemptive: Processes can be interrupted (e.g., Round Robin).,
+                  Non-preemptive: Runs to completion (e.g., FCFS).</li>
             </ul>
         </div>
     </li>
@@ -854,30 +934,34 @@ ul li {
       
         <li>
           <input type="radio" name="accordion" id="business_management">
-          <label for="business_management">Business Management</label>
+          <label for="business_management">What are the differences between a hub, switch, and router?</label>
           <div class="content">
               <ul id="inner_content">
-                  <li>Business management involves planning, organizing, leading, and controlling business operations. It covers areas like finance, marketing, human resources, and strategic planning.</li>
+                  <li>Hub: Broadcasts data to all devices.,
+                    Switch: Directs data to specific devices.,
+                    Router: Connects networks</li>
               </ul>
           </div>
       </li>
       
       <li>
           <input type="radio" name="accordion" id="accounting">
-          <label for="accounting">Accounting</label>
+          <label for="accounting">What is a firewall, and how does it enhance security?</label>
           <div class="content">
               <ul id="inner_content">
-                  <li>Accounting is the process of recording financial transactions, summarizing them, and analyzing financial statements to help businesses make informed decisions.</li>
+                  <li>Security system that monitors and controls network traffic based on rules.</li>
               </ul>
           </div>
       </li>
       
       <li>
           <input type="radio" name="accordion" id="business_analytics">
-          <label for="business_analytics">Business Analytics</label>
+          <label for="business_analytics">What is CI/CD in DevOps? How is it implemented?</label>
           <div class="content">
               <ul id="inner_content">
-                  <li>Business analytics involves using data analysis and statistical models to drive decision-making, improve performance, and forecast business trends.</li>
+                  <li>CI (Continuous Integration): Automates code integration/testing.,
+                    CD (Continuous Delivery/Deployment): Automates code release to production.
+                    </li>
               </ul>
           </div>
       </li>

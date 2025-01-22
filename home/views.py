@@ -23,7 +23,7 @@ def courses(request):
     return render(request, '../templates/notes-courses.html')
 
 def assignment(request):
-    return render(request, '../templates/assignment.html')
+    return render(request, '../templates/assignments/assignment.html')
 
 def contact(request):
     if request.method == 'POST':
@@ -107,18 +107,18 @@ def bcom(request):
 def bca(request):
     return render(request, '../templates/pyqs/bca pyqs/bca.html')
 def btech_assignment(request):
-    return render(request, '../templates/btech_assignment.html')    
+    return render(request, '../templates/assignments/btech_assignment.html')    
 
 def bba_assignment(request):
-    return render(request, '../templates/bba_assignment.html')    
+    return render(request, '../templates/assignments/bba_assignment.html')    
 
 def bca_assignment(request):
-    return render(request, '../templates/bca_assignment.html')    
+    return render(request, '../templates/assignments/bca_assignment.html')    
 
 def bcom_assignment(request):
-    return render(request, '../templates/bcom_assignment.html')    
+    return render(request, '../templates/assignments/bcom_assignment.html')    
 def mcom_assignment(request):
-    return render(request, '../templates/mcom_assignment.html')    
+    return render(request, '../templates/assignments/mcom_assignment.html')    
                    
 
 
@@ -385,7 +385,38 @@ def bbasem6marketing(request):
 def bbasem6organization(request):
     return render(request, '../templates/pyqs/bba pyqs/bba-sem6-organizationaldevelopment-pyq.html') 
 
-
+def sem1managerialeconomicspyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem1-managerial-economicspyq.html')
+def sem1organizationalbehaviorpyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem1-oraganizationalbehaviourpyq.html')
+def sem1accountingformanagerspyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem1-accoutingformanagerpyq.html')
+def sem1quantitativemethodspyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem1-quantitativemethodspyq.html')
+def sem2financialmanagementpyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem2-finacialmanagement-pyq.html')
+def sem2marketingmanagementpyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem2-marketingmanagement-pyq.html')
+def sem2operationsmanagementpyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem2-operationmanagement-pyq.html')
+def sem2hrmpyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem2-humanresourcemanagemenet-pyq.html')
+def sem3businessresearchmethodspyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem3-businessresearchmethods-pyq.html')
+def sem3strategicmanagementpyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem3-strategicmanagement-pyq.html')
+def sem3internationalbusinesspyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem3-internationalbusiness-pyq.html')
+def sem3businessethicspyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem3-businessethics-pyq.html')
+def sem4corporategovernancepyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem4-corporategovernance-pyq.html')
+def sem4projectmanagementpyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem4-projectmanagement-pyq.html')
+def sem4investmentmanagementpyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem4-investmentmanagemenet-pyq.html')
+def sem4entrepreneurshippyqs(request):
+    return render(request, '../templates/pyqs/mba pyqs/mba-sem4-entrepreneurship-pyq.html')
 
 
 
