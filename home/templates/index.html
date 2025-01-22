@@ -1269,21 +1269,25 @@ input, textarea {
         <p>&copy; 2024 Knowledge-Hub. All rights reserved.</p>
       </div>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: [' Web development', 'Data Structure', 'Python/AI', 'Graphic Designing', 'C/C++', 'Java/Javascript', 'Machine Learning'],
-            typeSpeed: 60,
-        });
-
-        var type = new Typed('#element01', {
-            strings: ['@YouTube', '@FaceBook', '@Trend', '@LinkedIn', '@Instagram', '@Twitter'],
-            typeSpeed: 70,
-        });
-
-   
-    </script>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+          var typed = new Typed('#element', {
+              strings: ['Bachelor of Technology', 'Bachelor of Commerce', 'Bachelor of Business Administration', 'Bachelor of Computer Application', 'Master of Business Administration', 'Master of Computer Application'],
+              typeSpeed: 60,
+              backSpeed: 40, // Speed of erasing
+              backDelay: 1000, // Delay after typing before erasing
+              loop: true // Enables infinite looping
+          });
+      
+          var type = new Typed('#element01', {
+              strings: ['@YouTube', '@FaceBook', '@Trend', '@LinkedIn', '@Instagram', '@Twitter'],
+              typeSpeed: 70,
+              backSpeed: 50, // Speed of erasing
+              backDelay: 1000, // Delay after typing before erasing
+              loop: true // Enables infinite looping
+          });
+      </script>
+      
 </body>
 
 </html>
