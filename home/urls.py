@@ -150,7 +150,21 @@ urlpatterns = [
     path("sem4investmentmanagementpyqs/", views.sem4investmentmanagementpyqs, name='sem4investmentmanagementpyqs'),
     path("sem4entrepreneurshippyqs/", views.sem4entrepreneurshippyqs, name='sem4entrepreneurshippyqs'),
     
-    
+    path("financialaccountingpyqs/", views.financialaccountingpyqs, name='financialaccountingpyqs'),
+    path("businesseconomicspyqs/", views.businesseconomicspyqs, name='businesseconomicspyqs'),
+    path("managementaccountingpyqs/", views.managementaccountingpyqs, name='managementaccountingpyqs'),
+    path("businesslawpyqs/", views.businesslawpyqs, name='businesslawpyqs'),
+    path("organizationalbehaviorpyqs/", views.organizationalbehaviorpyqs, name='organizationalbehaviorpyqs'),
+    path("financialmanagementpyqs/", views.financialmanagementpyqs, name='financialmanagementpyqs'),
+    path("marketingmanagementpyqs/", views.marketingmanagementpyqs, name='marketingmanagementpyqs'),
+    path("corporatetaxationpyqs/", views.corporatetaxationpyqs, name='corporatetaxationpyqs'),
+    path("businesscommunicationpyqs/", views.businesscommunicationpyqs, name='businesscommunicationpyqs'),
+    path("costaccountingpyqs/", views.costaccountingpyqs, name='costaccountingpyqs'),
+    path("humanresourcemanagementpyqs/", views.humanresourcemanagementpyqs, name='humanresourcemanagementpyqs'),
+    path("internationalbusinesspyqs/", views.internationalbusinesspyqs, name='internationalbusinesspyqs'),
+    path("principlesofmanagementpyqs/", views.principlesofmanagementpyqs, name='principlesofmanagementpyqs'),
+    path("businessmathematicspyqs/", views.businessmathematicspyqs, name='businessmathematicspyqs'),
+    path("investmentmanagementpyqs/", views.investmentmanagementpyqs, name='investmentmanagementpyqs'),
 
 
 

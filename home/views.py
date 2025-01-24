@@ -101,7 +101,7 @@ def bsc(request):
 def mca(request):
     return render(request, '../templates/pyqs/mca pyqs/mca.html')
 def mcom(request):
-    return render(request, '../templates/mcom.html')
+    return render(request, '../templates/pyqs/mcom pyqs/mcom.html')
 def bcom(request):
     return render(request, '../templates/bcom.html')
 def bca(request):
@@ -417,6 +417,37 @@ def sem4investmentmanagementpyqs(request):
     return render(request, '../templates/pyqs/mba pyqs/mba-sem4-investmentmanagemenet-pyq.html')
 def sem4entrepreneurshippyqs(request):
     return render(request, '../templates/pyqs/mba pyqs/mba-sem4-entrepreneurship-pyq.html')
+
+def financialaccountingpyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcome-financialaccournting -pyq.html')
+def businesseconomicspyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcome-businesseconomics-pyq.html')
+def managementaccountingpyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcome-managementaccounting-pyq.html')
+def businesslawpyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcom-businesslaw-pyq.html')
+def organizationalbehaviorpyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcom-organisationalbehaviour-pyq.html')
+def financialmanagementpyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcom-financialmanagement-pyq.html')
+def marketingmanagementpyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcom-marketingmanagement-pyq.html')
+def corporatetaxationpyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcom-corporatetaxation-pyq.html')
+def businesscommunicationpyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcom-businesscommunication-pyq.html')
+def costaccountingpyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcom-costaccounting-pyq.html')
+def humanresourcemanagementpyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcom-hrm-pyq.html')
+def internationalbusinesspyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcom-internationalbusiness-pyq.html')
+def principlesofmanagementpyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcom-principle-pyq.html')
+def businessmathematicspyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcom-businessmaths-pyq.html')
+def investmentmanagementpyqs(request):
+    return render(request, '../templates/pyqs/mcom pyqs/bcom-investmentmanagement-pyq.html')
 
 
 
