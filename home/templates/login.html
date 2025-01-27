@@ -20,229 +20,212 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-           
-            background-size: cover;
-            background-position: center;
-            filter: blur(0px);
-            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Video background styles */
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
+            height: 100%;
+            filter: blur(2.1px);
+            object-fit: cover;
+            z-index: -1;
+            /* Ensures the video stays behind the content */
+        }
 
+        .wrapper {
+            position: relative;
+            width: 400px;
+           margin-left: 900px;
+            height: 600px;
+            border-radius: 20px;
+            border: 1px dotted #000;
+            padding: 30px;
+            overflow: hidden;
+            color: #ffffff;
+            background: transparent;/ z-index: 1;
+            box-shadow: 0 0 20px 5px rgba(180, 180, 180, 0.8),
+                /* Pink outer glow */
+                0 0 40px 10px rgba(147, 146, 146, 0.6);
+            
+        }
+
+        #avatar {
+            margin-left: 160px;
+            margin-right: 150px;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: rgb(238, 231, 231);
+            border-radius: 100px;
+            color: rgb(255, 255, 255);
+
+            /* This will make the image appear white */
+        }
+
+        .toggle-btn:hover {
+            text-decoration: underline;
+        }
+
+        .signUp-link {
+            font-size: 14px;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .signUp-link p {
+            color: #ffffff;
+        }
+
+        .signUp-link p a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        .signUp-link p a:hover {
+            text-decoration: underline;
+        }
+
+        .form-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: transform 1s ease-in-out;
+        }
+
+        .form-wrapper.register {
+            transform: translateY(100%);
+        }
+
+        .wrapper.active .form-wrapper.login {
+            transform: translateY(-100%);
+        }
+
+        .wrapper.active .form-wrapper.register {
+            transform: translateY(0);
+        }
+
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .input-group {
+            position: relative;
+            margin: 20px 40px;
+            border-bottom: 2px solid #ffffff;
+        }
+
+        .input-group label {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            transform: translateY(-50%);
+            font-size: 16px;
+            color: #ffffff;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+
+        .input-group input {
+            width: 100%;
+            height: 40px;
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 0px 15px;
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+
+        .input-group input:focus~label,
+        .input-group input:valid~label {
+            top: -5px;
+        }
+
+        button {
+            position: relative;
+            width: 300px;
+            margin: 20px auto;
+            height: 40px;
+            background: rgb(255, 119, 0);
+            font-size: 16px;
+            color: #000;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 30px;
+            border: none;
+            border-style: dotted;
+            border-width: 1px;
+            outline: none;
+            display: block;
+        }
+
+        .toggle-btn {
+            cursor: pointer;
+            color: #0ef;
+            font-size: 14px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .toggle-btn:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 412px) {
             .wrapper {
-                position: relative;
-                width: 400px;
-                height: 600px;
-                /* Increased height of container */
-               
-                /* Darkened background color */
-                border-radius: 20px;
-                border-width: 1px;
-                border-style: dotted;
-                padding: 30px;
-                overflow: hidden;
-                color: rgb(255, 255, 255);
-                filter: blur(0px);
-                border-color: #000000;
-            }
-
-            .form-wrapper {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                transition: transform 1s ease-in-out;
-              
-                border-color: #000000;
-            }
-
-            /* Initially the register form is hidden below */
-            .form-wrapper.register {
-                transform: translateY(100%);
-            }
-
-            /* When active, the login form will scroll up and register will appear */
-            .wrapper.active .form-wrapper.login {
-                transform: translateY(-100%);
-            }
-
-            .wrapper.active .form-wrapper.register {
-                transform: translateY(0);
-            }
-
-            h2 {
-                font-size: 30px;
-                text-align: center;
-                color: #000000;
-            }
-
-            .input-group {
-                position: relative;
-                margin: 20px 40px;
-                border-bottom: 2px solid #000000;
-            }
-
-            .input-group label {
-                position: absolute;
-                top: 5px;
-                left: 5px;
-                transform: translateY(-50%);
-                font-size: 16px;
-                color: #000000;
-                pointer-events: none;
-                transition: .5s;
-            }
-
-            .input-group input {
-                width: 100%;
-                /* Changed width to 100% for better layout */
-                height: 40px;
-                font-size: 16px;
-                color: #bc4200;
-                font-weight: 600;
-                padding: 0px 15px;
-                /* Added padding on the left and right sides */
-                background: transparent;
-                border: none;
-                outline: none;
-            }
-
-            .input-group input:focus~label,
-            .input-group input:valid~label {
-                top: -5px;
-            }
-
-            .remember {
-                margin: -5px 0 15px 5px;
-            }
-
-            .remember label {
-                font-size: 14px;
-                color: #000000;
-            }
-
-            .remember label input {
-                accent-color: #0ef;
-            }
-
-            button {
-                position: relative;
-                width: 300px;
-                margin-left: 50px;
-                margin-right: 50px;
-                height: 40px;
-                background: rgb(255, 115, 0);
-                font-size: 16px;
-                color: #000;
-                font-weight: 500;
-                cursor: pointer;
-                border-radius: 30px;
-                border: none;
-                outline: none;
-            }
-
-            .toggle-btn {
-                cursor: pointer;
-                color: #0ef;
-                font-size: 14px;
-                text-decoration: none;
-                text-align: center;
-                display: block;
-                margin-top: 10px;
-                /* Increased the margin to add space between the link and avatar */
-            }
-
-            .toggle-btn:hover {
-                text-decoration: underline;
-            }
-
-            .signUp-link {
-                font-size: 14px;
-                text-align: center;
-                margin: 15px 0;
-            }
-
-            .signUp-link p {
-                color: #000000;
-            }
-
-            .signUp-link p a {
-                color: rgb(227, 116, 32);
-                text-decoration: none;
-                font-weight: 800;
-            }
-
-            .signUp-link p a:hover {
-                text-decoration: underline;
+                width: 290px;
+                height: 500px;
+                margin-top: -50px;
             }
 
             #avatar {
-                margin-left: 160px;
-                margin-right: 150px;
-                margin-bottom: 10px;
-                margin-top: 30px;
-                padding: 15px;
-                background-color: rgb(255, 115, 0);
-                border-radius: 100px;
-                color: rgb(0, 0, 0);
-                
-                /* This will make the image appear white */
+                width: 60px;
+                height: 60px;
+                margin-left: 150px;
+                margin-top: 5px;
             }
 
-            .error-message {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                margin-top: 10px;
-                padding: 10px;
-                background-color: #ffffff;
-                color: #721c24;
-                border: 1px solid #f5c6cb;
-                border-radius: 5px;
-                width: 80%;
-                /* Adjust this value as needed */
-                margin-left: auto;
-                margin-right: auto;
+            .input-group {
+                height: 30px;
+                width: 250px;
+                margin-left: 60px;
             }
 
-            @media (max-width:412px)
-            {
-                .wrapper{
-                    width: 290px;
-                    height: 500px;
-                    margin-top: -50px;
-                }
-                #avatar{
-                    width: 60px;
-                    height: 60px;
-                    margin-left: 150px;
-                    margin-top: 5px;
-                }
-                .input-group{
-                    height: 30px;
-                    width: 250px;
-                    margin-left: 60px;
-                }
-                button{
-                    width: 100px;
-                    margin-left: 130px;
-                }
-
-                
+            button {
+                width: 100px;
+                margin-left: 130px;
             }
+        }
     </style>
 </head>
 
 <body>
+    <!-- Video Background -->
+    <video autoplay muted loop id="bg-video">
+        <source src="https://cdn.dribbble.com/userupload/6060953/file/original-88cc20dd3c35b15139b56f516354c05d.mp4"
+            type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <div class="wrapper">
-      
         <!-- Login Form -->
         <div class="form-wrapper login" id="login-form">
             <form method="post">
-                {% csrf_token %}
                 <img src="https://i.ibb.co/m0HNzqc/pngegg-2.png" id="avatar" height="80px" width="80px">
                 <h2>Login</h2>
 
@@ -261,11 +244,10 @@
                 </div>
             </form>
         </div>
-<br>
+
         <!-- Register Form -->
         <div class="form-wrapper register" id="register-form">
             <form action="/contact/" method="POST">
-                {% csrf_token %}
                 <img src="https://i.ibb.co/m0HNzqc/pngegg-2.png" id="avatar" height="80px" width="80px">
                 <h2>Register</h2>
 
@@ -303,9 +285,7 @@
                 wrapper.classList.remove('active');
             }
         }
-        {% if error_message %}
-        alert("{{ error_message }}");
-        {% endif %}
+
     </script>
 </body>
 
