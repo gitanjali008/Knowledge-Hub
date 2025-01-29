@@ -462,15 +462,15 @@ def investmentmanagementpyqs(request):
 
 #notes 
 def subjects_btech(request):
-    return render(request, '../templates/btech-notes.html')
+    return render(request, '../templates/notes /btech_notes.html')
 def subjects_bca(request):
-    return render(request, '../templates/bca-notes.html')
+    return render(request, '../templates/notes /bca_notes.html')
 def subjects_bcom(request):
-    return render(request, '../templates/bcom-notes.html')
+    return render(request, '../templates/notes /bcom_notes.html')
 def subjects_bba(request):
-    return render(request, '../templates/bba-notes.html')
+    return render(request, '../templates/notes /bba_notes.html')
 def subjects_mba(request):
-    return render(request, '../templates/mba-notes.html')
+    return render(request, '../templates/notes /mba_notes.html')
 
 def notes(request):
     return rendassignmenter(request, '../templates/notes.html')

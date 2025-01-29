@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semesters Overview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #021122;
+            margin-bottom: 20px;
+        }
+
+        .semester-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card-container {
+            margin-bottom: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card {
+            padding: 15px 20px;
+            background: #021122;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .card:hover {
+            background: #020f1f;
+        }
+
+        .card-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .dropdown {
+            display: none;
+            background: #f9f9f9;
+            padding: 10px 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        .dropdown a {
+            display: block;
+            text-decoration: none;
+            color: #031325;
+            margin: 8px 0;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dropdown a:hover {
+            background: #021122;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        footer a {
+            color: #021122;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BCA Course</h1>
+    <div class="semester-container">
+        <!-- Semester 1 -->
+        <div class="card-container">
+            <div class="card" onclick="toggleDropdown('dropdown1')">
+                <div class="card-title">Semester 1</div>
+            </div>
+            <div class="dropdown" id="dropdown1">
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject1')">
+                        <div class="card-title">Mathematics</div>
+                    </div>
+                    <div class="dropdown" id="subject1">
+                        <a href="https://drive.google.com/drive/folders/1rR_INTG4p_Ccmf5BV3kWP7XyZASM52v5?usp=drive_link">Notes</a>
+
+                        <a href="https://youtube.com/playlist?list=PLEHGYFbPuuMFDudlsFe2mMq7KQC1tRvP5&si=albfBBrOi3HKIdAr"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist
+                            1 - Dream Maths</a>
+
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject2')">
+                        <div class="card-title">Digital Electronics</div>
+                    </div>
+                    <div class="dropdown" id="subject2">
+                        <a href="https://drive.google.com/drive/folders/1NCQB20e-bC0c-GGs0ejmnYJD0uaUoN5d?usp=drive_link">Notes</a>
+
+                        <a href="https://youtube.com/playlist?list=PLyHNqAaJ5m-vpBCgE_o3dYPZGNPfnbrMH&si=pPSdXz3sOgiraeAu"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist
+                            1 - Flyhigh Tutorials</a>
+                        <a href="https://youtube.com/playlist?list=PLmXKhU9FNesSfX1PVt4VGm-wbIKfemUWK&si=Ee9kb71K7YpuukOy"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist
+                            2 - KnowledgeGate</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject3')">
+                        <div class="card-title">Programming Fundamentals</div>
+                    </div>
+                    <div class="dropdown" id="subject3">
+                        <a href="https://drive.google.com/drive/folders/1ZNROnM_xMbLH1LgHPPnIy3Ppc39F-lw1?usp=drive_link">Notes</a>
+
+                        <a href="https://youtube.com/playlist?list=PLWZSrVtEtn3iv1jbOQYXsM43zOcXKeVZC&si=heb0DAAvXjcM6RzS"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist
+                            1 - Vikas Suhag</a>
+                        <a href="https://youtu.be/aZb0iu4uGwA?si=GloTPPNrlsWzLQgf" target="_blank"
+                            rel="noopener noreferrer">Lecture Playlist
+                            2 - CodeWithHarry</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject4')">
+                        <div class="card-title">Business Communication</div>
+                    </div>
+                    <div class="dropdown" id="subject4">
+                        <a href="https://drive.google.com/drive/folders/1WbvyO5a14Tls5-26OZi7qojskPTLkAqg?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PL9dEomJZklDpx4odNXIi6ZoCcogIOmz7b&si=MTdM06Z4Kn3bdmdv"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist
+                            1 - Mahaveer PG College</a>
+                        <a href="https://youtube.com/playlist?list=PLnyJK8kcdCduqkQ7rWxHyIic6_nOeUS5W&si=oCL3ijt2g4COrja7"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist
+                            2 - Accounting Seekho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Semester 2 -->
+        <div class="card-container">
+            <div class="card" onclick="toggleDropdown('dropdown2')">
+                <div class="card-title">Semester 2</div>
+            </div>
+            <div class="dropdown" id="dropdown2">
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject5')">
+                        <div class="card-title">Data Structures/div>
+                        </div>
+                        <div class="dropdown" id="subject5">
+                            <a href="https://drive.google.com/drive/folders/1LiZ4Gz9EfzQe9PJIUQt0jPrQIMnOSmNI?usp=drive_link">Notes</a>
+                            <a href="https://youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi&si=sckcoIaXIkh-W6NJ"
+                                target="_blank" rel="noopener noreferrer">Lecture
+                                Playlist
+                                1 - CodeWithHarry</a>
+                            <a href="https://youtube.com/playlist?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&si=cvElcohEFIf8SACc"
+                                target="_blank" rel="noopener noreferrer">Lecture
+                                Playlist
+                                2 - TakeUForward (Striver)</a>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card" onclick="toggleDropdown('subject6')">
+                            <div class="card-title">Operating Systems</div>
+                        </div>
+                        <div class="dropdown" id="subject6">
+                            <a href="https://drive.google.com/drive/folders/1KEV6YmvcidF8sPQ2c7-F3kXCbNeLeV8N?usp=drive_link">Notes</a>
+
+                            <a href="https://youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p&si=O43XAlVe61Ir-pzd"
+                                target="_blank" rel="noopener noreferrer">Lecture
+                                Playlist 1 - Gate Smasher</a>
+                            <a href="https://youtube.com/playlist?list=PLevuEtnAdteQGUlTCdh9a1Q4zN-_hxJQl&si=1F5B347IKHzpJbwb"
+                                target="_blank" rel="noopener noreferrer">Lecture
+                                Playlist 2 - Ashish Garg</a>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card" onclick="toggleDropdown('subject7')">
+                            <div class="card-title">Database Management System </div>
+                        </div>
+                        <div class="dropdown" id="subject7">
+                            <a href="https://drive.google.com/drive/folders/1bSonkIK-x0IQf0N3DKEwIKFOgH3wSr-L?usp=drive_link">Notes</a>
+                            <a href="https://youtube.com/playlist?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y&si=sMEPeIwpyBeCsS-T"
+                                target="_blank" rel="noopener noreferrer">Lecture
+                                Playlist 1 -
+                                Gate Smasher</a>
+                            <a href="https://youtube.com/playlist?list=PLrL_PSQ6q062cD0vPMGYW_AIpNg6T0_Fq&si=JW4QIrnTKmtrlQbA"
+                                target="_blank" rel="noopener noreferrer">Lecture
+                                Playlist 2 -
+                                Riti Kumari</a>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card" onclick="toggleDropdown('subject8')">
+                            <div class="card-title">Software Engineering</div>
+                        </div>
+                        <div class="dropdown" id="subject8">
+                            <a href="https://drive.google.com/drive/folders/1jxYK6Ly_5B0JGUbMfPirF51V9qa6lAqE?usp=drive_link">Notes</a>
+
+                            <a href="https://youtube.com/playlist?list=PLxCzCOWd7aiEed7SKZBnC6ypFDWYLRvB2&si=pk_8dZJjX6C6mO7F"
+                                target="_blank" rel="noopener noreferrer">Lecture
+                                Playlist 1 -
+                                Gate Smasher</a>
+                            <a href="https://youtube.com/playlist?list=PLmXKhU9FNesTrw7n8ouPsSLEcduRlENHr&si=T35oWBcioPt7DlaQ"
+                                target="_blank" rel="noopener noreferrer">Lecture
+                                Playlist 2 -
+                                KnowledgeGate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Semester 3 -->
+        <div class="card-container">
+            <div class="card" onclick="toggleDropdown('dropdown3')">
+                <div class="card-title">Semester 3</div>
+            </div>
+            <div class="dropdown" id="dropdown3">
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject9')">
+                        <div class="card-title">OOPs</div>
+                    </div>
+                    <div class="dropdown" id="subject9">
+                        <a href="https://drive.google.com/drive/folders/1yANp39D36jn_Wckrp-_f5YN9ZtVhJMdq?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL&si=ilVYr_aWJ7xTf6jD"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 -
+                            CodeWithHarry</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject10')">
+                        <div class="card-title">Java Programming</div>
+                    </div>
+                    <div class="dropdown" id="subject10">
+                        <a href="https://drive.google.com/drive/folders/1pQEB5z5T7__4PdL-58AYmLrMSDghGPUW?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLsyeobzWxl7pe_IiTfNyr55kwJPWbgxB5&si=pX0Sglf2el7USGSY"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 -
+                            Telusko</a>
+                        <a href="https://www.youtube.com/@akashchauhansir/featured" target="_blank"
+                            rel="noopener noreferrer">Lecture
+                            Playlist 2 -
+                            Akash Chauhan</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject11')">
+                        <div class="card-title">Computer Organization</div>
+                    </div>
+                    <div class="dropdown" id="subject11">
+                        <a href="https://drive.google.com/drive/folders/15XCM74U-Dud5MStgk4-q_hWeLp-l63hN?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX&si=vso0YTm2dmQIvTJs"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 -
+                            Gate Smasher</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject12')">
+                        <div class="card-title">Networking</div>
+                    </div>
+                    <div class="dropdown" id="subject12">
+                        <a href="https://drive.google.com/drive/folders/1-ssHTgnp7FjjXOJT-yko_C9K3zQqEPYI?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_&si=TfZ_n7NpmfOaFIl0"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 -
+                            Gate Smasher</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Semester 4 -->
+        <div class="card-container">
+            <div class="card" onclick="toggleDropdown('dropdown4')">
+                <div class="card-title">Semester 4</div>
+            </div>
+            <div class="dropdown" id="dropdown4">
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject13')">
+                        <div class="card-title">Web Development</div>
+                    </div>
+                    <div class="dropdown" id="subject13">
+                        <a href="https://drive.google.com/drive/folders/16LS5i0_m7F3XIQuXANgix4L4O5PrwnjV?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLbtI3_MArDOmesZspqwcTGfkfzZNjsATY&si=abVV2ftV5gDxJRn_"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 - Sheryians Coding School </a>
+                        <a href="https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&si=bVzMVS0kSWV_TYJH"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 2 -
+                            CodeWithHarry</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject14')">
+                        <div class="card-title">Python Programming</div>
+                    </div>
+                    <div class="dropdown" id="subject14">
+                        <a href="https://drive.google.com/drive/folders/1LrypNgcuh0tt-ZJyAIqMCAOGfv2ekesG?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0&si=W-Buoz0XdSBPnV2h"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 -
+                            Shradha Khapra</a>
+                        <a href="https://youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg&si=wfKNWL6sp-00n7I0"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 2 -
+                            CodeWithHarry</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject15')">
+                        <div class="card-title">App Development</div>
+                    </div>
+                    <div class="dropdown" id="subject15">
+                        <a href="https://drive.google.com/drive/folders/1IAe96XF_c6pO7-oGUOm0n0TBA6_oY7SW?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLu0W_9lII9aiL0kysYlfSOUgY5rNlOhUd&si=8x0qE-KbGhYCCUC8"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 -
+                            CodeWithHarry</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject16')">
+                        <div class="card-title">Cloud Computing</div>
+                    </div>
+                    <div class="dropdown" id="subject16">
+                        <a href="https://drive.google.com/drive/folders/1iksCDR3PF_ojaz9hDU29xKJ2fVDr-akM?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLxCzCOWd7aiHRHVUtR-O52MsrdUSrzuy4&si=iDq4vOO0cAY3GybT"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 -
+                            Gate Smasher</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Semester 5 -->
+        <div class="card-container">
+            <div class="card" onclick="toggleDropdown('dropdown5')">
+                <div class="card-title">Semester 5</div>
+            </div>
+            <div class="dropdown" id="dropdown5">
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject17')">
+                        <div class="card-title">Artificial Intelligence</div>
+                    </div>
+                    <div class="dropdown" id="subject17">
+                        <a href="https://drive.google.com/drive/folders/1Iw-wWZP72He3dDBP-WjfWAwEaQmUyUUQ?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI&si=KFKAg-nsfee_oXFb"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 -
+                            Gate Smasher</a>
+                        <a href="https://youtube.com/playlist?list=PLV8vIYTIdSnYsdt0Dh9KkD9WFEi7nVgbe&si=EyKCmYVpHrbagzXo"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 2 -
+                            Easy Engineering Classes</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject18')">
+                        <div class="card-title">Big Data</div>
+                    </div>
+                    <div class="dropdown" id="subject18">
+                        <a href="https://drive.google.com/drive/folders/1h3wbAXDo1M_ZTroDQ9zZ_V2ZMe6EGLz6?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLPIwNooIb9vi4f8tVkzLnr1tll6Pubbqh&si=GSbrU_4Az0emWosY"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 -
+                            Perfect Computer Engineer</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject19')">
+                        <div class="card-title">Cyber Security</div>
+                    </div>
+                    <div class="dropdown" id="subject19">
+                        <a href="https://drive.google.com/drive/folders/1Uqyh04j90_PGo4fczUTOFVTD6ztOvsqX?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLYwpaL_SFmcArHtWmbs_vXX6soTK3WEJw&si=kwCdzQTiw-w9fNuZ"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 -
+                            5 Minutes Engineering</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject20')">
+                        <div class="card-title">Data Analytics</div>
+                    </div>
+                    <div class="dropdown" id="subject20">
+                        <a href="https://drive.google.com/drive/folders/1P6SmUJiJkF6HtFlRxqwDeWkLWRR7XT0P?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLOWRNl6YgsT79ezWdEhOjvK4D-cQfr7ys&si=hWm_yjORmCNYCFmA"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 -
+                            Top VerSity</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Semester 6 -->
+        <div class="card-container">
+            <div class="card" onclick="toggleDropdown('dropdown6')">
+                <div class="card-title">Semester 6</div>
+            </div>
+            <div class="dropdown" id="dropdown6">
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject22')">
+                        <div class="card-title">Machine Learning</div>
+                    </div>
+                    <div class="dropdown" id="subject22">
+                        <a href="https://drive.google.com/drive/folders/1dXZ3JeC9kyH0qvi1JuDpzjXPh8AtwnS1?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T&si=n6KLxDHnawwFEh6M"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 -
+                            Gate Smasher</a>
+                        <a href="https://youtube.com/playlist?list=PLYwpaL_SFmcBhOEPwf5cFwqo5B-cP9G4P&si=cUTJeCXt_xCDjfXq"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 2 -
+                            5 Minutes Engineering</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject23')">
+                        <div class="card-title">Blockchain Technology</div>
+                    </div>
+                    <div class="dropdown" id="subject23">
+                        <a href="https://drive.google.com/drive/folders/1CoR2Ny5Y0lYQBYZBGi-pxpjiQMfQwOvS?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLYwpaL_SFmcDFRupamGc-9zc-vQqvkQnn&si=Wl0CSxp6MPHZN-lj"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 -
+                            5 Minutes Engineering</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject24')">
+                        <div class="card-title">Entrepreneurship</div>
+                    </div>
+                    <div class="dropdown" id="subject24">
+                        <a href="https://drive.google.com/drive/folders/1sUAFHbBt4PYKbYIXTxgz8xsoF5BVv6pX?usp=drive_link">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLsh2FvSr3n7fQlIDbfKutmSL26TsWitGQ&si=-0fKSq4q0glirUsF"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 - DWIVEDI GUIDANCE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Knowledge Hub. All rights reserved. | <a href="#">Privacy Policy</a>
+    </footer>
+
+    <script>
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>

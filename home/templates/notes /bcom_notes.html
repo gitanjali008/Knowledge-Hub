@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semesters Overview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #021122;
+            margin-bottom: 20px;
+        }
+
+        .semester-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card-container {
+            margin-bottom: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card {
+            padding: 15px 20px;
+            background: #021122;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .card:hover {
+            background: #020f1f;
+        }
+
+        .card-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .dropdown {
+            display: none;
+            background: #f9f9f9;
+            padding: 10px 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        .dropdown a {
+            display: block;
+            text-decoration: none;
+            color: #031325;
+            margin: 8px 0;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dropdown a:hover {
+            background: #021122;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        footer a {
+            color: #021122;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BCom Course</h1>
+    <div class="semester-container">
+        <!-- Semester 1 -->
+        <div class="card-container">
+            <div class="card" onclick="toggleDropdown('dropdown1')">
+                <div class="card-title">Semester 1</div>
+            </div>
+            <div class="dropdown" id="dropdown1">
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject1')">
+                        <div class="card-title">Financial Accounting</div>
+                    </div>
+                    <div class="dropdown" id="subject1">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLaAhQ2ofZZRCJIUbTjeUXx4JoZ7CyGHr3&si=jX80sHMies1lr7yZ"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Accounting MasterClass</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject2')">
+                        <div class="card-title">Business Economics</div>
+                    </div>
+                    <div class="dropdown" id="subject2">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLsOlZpO_j74S_xP4IZwcpDISbvYejEeC&si=fIsOJUVDCLs6THJj"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Study With Niharika
+                            Tiwari</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject3')">
+                        <div class="card-title">Business Law</div>
+                    </div>
+                    <div class="dropdown" id="subject3">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLZJhsh14wio6FpdRnp9WUwkST-l2CRqPQ&si=1yO7WjDwRa9_TAwz"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Rajat Arora UG and
+                            Professional Courses</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject4')">
+                        <div class="card-title">Business Communication</div>
+                    </div>
+                    <div class="dropdown" id="subject4">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PL9dEomJZklDpx4odNXIi6ZoCcogIOmz7b&si=MTdM06Z4Kn3bdmdv"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Mahaveer PG College</a>
+                        <a href="https://youtube.com/playlist?list=PLnyJK8kcdCduqkQ7rWxHyIic6_nOeUS5W&si=oCL3ijt2g4COrja7"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 2 - Accounting Seekho</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject5')">
+                        <div class="card-title">Principles of Management</div>
+                    </div>
+                    <div class="dropdown" id="subject5">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLaAhQ2ofZZRBjpgXHPpWF0sYwiLD5Gh1k&si=nkzck_MqPxtqmJ8E"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Accounting MasterClass</a>
+                        <a href="https://youtube.com/playlist?list=PL92RPe36fLKh2hsOJEA0FvzYR1wPP3Isu&si=O7FdwVzSPRhocFT0"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 2 - Vidhyaashram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Semester 2 -->
+        <div class="card-container">
+            <div class="card" onclick="toggleDropdown('dropdown2')">
+                <div class="card-title">Semester 2</div>
+            </div>
+            <div class="dropdown" id="dropdown2">
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject6')">
+                        <div class="card-title">Corporate Accounting</div>
+                    </div>
+                    <div class="dropdown" id="subject6">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PL9Cd7H8NFRQymNGuIkEE-ZD9aNjk9KxWZ&si=0l4ta104rCQNyigm"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - CWG for BCOM</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject7')">
+                        <div class="card-title">Microeconomics</div>
+                    </div>
+                    <div class="dropdown" id="subject7">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PL-fORSyPTUEILOVoZ9rh5KTCC1EnvKCJ0&si=FAG_TjxTFq5TEo0o"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Pratham Singh - The Economics
+                            Addict</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject8')">
+                        <div class="card-title">Company Law</div>
+                    </div>
+                    <div class="dropdown" id="subject8">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLsOlZpO_j74p2VMPKjPp6b3f7h7u1hQSz&si=a3aD1XollHsD_ej4"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Study with Niharika
+                            Tiwari</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject9')">
+                        <div class="card-title">Marketing Management</div>
+                    </div>
+                    <div class="dropdown" id="subject9">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLaAhQ2ofZZRBhZEC2Oqm-vg2iMeOo1V7J&si=fSNNDwylip6f5x8f"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Accounting MasterClass</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject10')">
+                        <div class="card-title">English Communication</div>
+                    </div>
+                    <div class="dropdown" id="subject10">
+                        <a href="#">Notes</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Semester 3 -->
+        <div class="card-container">
+            <div class="card" onclick="toggleDropdown('dropdown3')">
+                <div class="card-title">Semester 3</div>
+            </div>
+            <div class="dropdown" id="dropdown3">
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject11')">
+                        <div class="card-title">Cost Accounting</div>
+                    </div>
+                    <div class="dropdown" id="subject11">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLaAhQ2ofZZRBTKhB-Moy11opzd18YAstV&si=efgfgpDBDaf4dIUD"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Accounting MasterClass</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject12')">
+                        <div class="card-title">Macroeconomics</div>
+                    </div>
+                    <div class="dropdown" id="subject12">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PL-fORSyPTUEJbgDzDxVNX6cLjERs10Ob8&si=q8VJOEdS94Hqcemy"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Pratham Singh - The Economics
+                            Addict</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject13')">
+                        <div class="card-title">Human Resource Management</div>
+                    </div>
+                    <div class="dropdown" id="subject13">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PL9Cd7H8NFRQyHThG3ol8UEt4UD8Gyclo-&si=db5tpzv79_YFc3kW"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - CWG for BCom</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject14')">
+                        <div class="card-title">Business Statistics</div>
+                    </div>
+                    <div class="dropdown" id="subject14">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLEHGYFbPuuMG-0ueLQAgjLTVkLneJpIFJ&si=oqVMq_f4h8jvsnh5"
+                            target="_blank" rel="noopener noreferrer">Lecture
+                            Playlist 1 -
+                            Dream Maths</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Semester 4 -->
+        <div class="card-container">
+            <div class="card" onclick="toggleDropdown('dropdown4')">
+                <div class="card-title">Semester 4</div>
+            </div>
+            <div class="dropdown" id="dropdown4">
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject15')">
+                        <div class="card-title">Income Tax</div>
+                    </div>
+                    <div class="dropdown" id="subject15">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PL9Cd7H8NFRQyltiuJ10zj2adOTLP-jVih&si=YtH8cuDWz3AlKe03"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - CWG for BCOM</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject16')">
+                        <div class="card-title">International Business</div>
+                    </div>
+                    <div class="dropdown" id="subject16">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLt6mJY81Onm78sTyqXgr68swjkWg-04Y7&si=QWZ1jVOaTsSU7Zqv"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - SWATI DHAMA</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject17')">
+                        <div class="card-title">Investment Management</div>
+                    </div>
+                    <div class="dropdown" id="subject17">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PL37w2MrEq_eQr-302sY0ZBvM49CLgXp28&si=8rRi9By-11VYfFNX"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Learning with Komal</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject18')">
+                        <div class="card-title">Entrepreneurship</div>
+                    </div>
+                    <div class="dropdown" id="subject18">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLsh2FvSr3n7fQlIDbfKutmSL26TsWitGQ&si=-0fKSq4q0glirUsF"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - DWIVEDI GUIDANCE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Semester 5 -->
+        <div class="card-container">
+            <div class="card" onclick="toggleDropdown('dropdown5')">
+                <div class="card-title">Semester 5</div>
+            </div>
+            <div class="dropdown" id="dropdown5">
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject19')">
+                        <div class="card-title">Management Accounting</div>
+                    </div>
+                    <div class="dropdown" id="subject19">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLaAhQ2ofZZRC82cz8ywjj3qQwHKHFqPiy&si=wwdkLUWKVaZCvr_O"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Accounting MasterClass</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject20')">
+                        <div class="card-title">Financial Management</div>
+                    </div>
+                    <div class="dropdown" id="subject20">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLaAhQ2ofZZRB3NEmEMkqoBm0QIpQkgJyK&si=C5Itvpjxm-8TWJ1L"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Accounting MasterClass</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject21')">
+                        <div class="card-title">Auditing</div>
+                    </div>
+                    <div class="dropdown" id="subject21">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLaAhQ2ofZZRD9cTBc5DRwyTOgR83-GZRh&si=7cv27GJmeQUm92EV"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Accounting MasterClass</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject22')">
+                        <div class="card-title">E-Commerce</div>
+                    </div>
+                    <div class="dropdown" id="subject22">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLEXqaapMkvpdD2crTIP4NsADgWNtxzrVv&si=TDSh8YMMMOmOg3av"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Knowledge City by Bharat
+                            Dixit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Semester 6 -->
+        <div class="card-container">
+            <div class="card" onclick="toggleDropdown('dropdown6')">
+                <div class="card-title">Semester 6</div>
+            </div>
+            <div class="dropdown" id="dropdown6">
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject23')">
+                        <div class="card-title">Indirect Tax</div>
+                    </div>
+                    <div class="dropdown" id="subject23">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLCyCyhRyXPpYhpzI31tSm2_kMt4uXGUV-&si=PX51OEbjZbGGJYXP"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - UDDESHYA COMMERCE ACADEMY</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject24')">
+                        <div class="card-title">Strategic Management</div>
+                    </div>
+                    <div class="dropdown" id="subject24">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLim9gWjsjN-MkICiOQTuTUHfvKTiGg1rr&si=Mi3lXNVSVJeOSd_X"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Learning with Dr. Anand
+                            Vyas</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject25')">
+                        <div class="card-title">Financial Markets</div>
+                    </div>
+                    <div class="dropdown" id="subject25">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLaAhQ2ofZZRBPcg8dZ5z-JwOEpUGOEBd4&si=Al571cViISHH3olv"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Accounting MasterClass</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" onclick="toggleDropdown('subject26')">
+                        <div class="card-title">Management Skills</div>
+                    </div>
+                    <div class="dropdown" id="subject26">
+                        <a href="#">Notes</a>
+                        <a href="https://youtube.com/playlist?list=PLaAhQ2ofZZRBjpgXHPpWF0sYwiLD5Gh1k&si=JMDaJXE_c2H9pjBr"
+                            target="_blank" rel="noopener noreferrer">Lecture Playlist 1 - Accounting MasterClass</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Knowledge Hub. All rights reserved. | <a href="#">Privacy Policy</a>
+    </footer>
+
+    <script>
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>
