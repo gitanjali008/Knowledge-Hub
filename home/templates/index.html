@@ -198,6 +198,7 @@ body{
 
         }
 
+
         #faculty {
             text-align: center;
             font-size: 45px;
@@ -719,6 +720,17 @@ body{
             background-color: #021122;
             color: white;
           }
+          .contactus{
+            display: flex;
+            flex-direction: row;
+            margin: 5px;
+            padding-right: 30px;
+          }
+          .contactus a{
+            margin-right: 15px;
+            margin-left: -5px;
+            
+          }
 
 
           @media (max-width:480px){
@@ -764,13 +776,20 @@ body{
         margin: 0 auto;
         padding: 0 auto;
     }
+    #second_content{
+        margin-right: 20px;
+    }
     .bluebox_content svg{
             height: 18px;
             width: 100%;
+            
         }
         .bluebox_content{
             font-size: 10px;
             width: 100%;
+            margin-left: -50px;
+            margin-right: 20px;
+            
         }
         .bluebox{
             width: 100%;
@@ -874,8 +893,8 @@ body{
         }
         #second_content{
             font-size: 14px;
-            padding-left: 28px;
-            padding-right: 28px;
+            padding-left: 8px;
+            padding-right: 48px;
         }
         .bluebox_content svg{
             height: 18px;
@@ -884,6 +903,7 @@ body{
         .bluebox_content{
             font-size: 15px;
             width: 100%;
+            margin-left: -50px;
         }
         #first_content {
         font-size: 18px; /* Smaller font size for medium screens */
@@ -1048,7 +1068,7 @@ input, textarea {
                         </div>
                         <div id="robot">
                             <div>
-                                <img src="https://media2.giphy.com/media/anT3nB7MbsfWKHTuw4/giphy.gif?cid=6c09b952y7ncm99imm5fjg97lhv65it2orktvfh7mt4uw27o&ep=v1_gifs_search&rid=giphy.gif&ct=g" height="400px" width="400px">
+                                <img src="https://assets-v2.lottiefiles.com/a/b80c8f58-1166-11ee-bad3-8fb1e44c9ce0/Pzwmsjc4m2.gif" height="400px" width="400px">
 
                             </div>
                         </div>
@@ -1106,10 +1126,9 @@ input, textarea {
                 <div class="students_msg">
                     <div class="msg002" id="msg123">
                         <h2>Notes</h2>
-                        <p>Our notes are specially desingned by our experts and they contains all the valuable key
-                            points and topics, related for upcoming government exams</p>
+                        <p>This website provides well-structured and easily accessible notes to simplify learning and boost productivity. 🚀</p>
                         <img src="https://i.ibb.co/4FDzmw8/note-taking.png" alt="" height="150px" width="200px">
-                        <button type="button" id="student_button"><a href="{% url 'courses' %}">Enroll Now</a></button>
+                        <button type="button" id="student_button"><a href="{% url 'courses' %}">Check here</a></button>
                     </div>
                 </div>
                 <div class="students_msg">
@@ -1118,16 +1137,15 @@ input, textarea {
                         <p>our experts have created through study materials that break down complicated concepts into
                             easy languages.</p>
                         <img src="https://i.ibb.co/746tVBH/download-2.jpg" alt="" height="150px" width="200px">
-                        <button type="button" id="student_button"><a href="{% url 'book' %}">Enroll Now</a></button>
+                        <button type="button" id="student_button"><a href="{% url 'book' %}">Check Here</a></button>
                     </div>
                 </div>
                 <div class="students_msg">
                     <div class="msg002" id="msg132">
                         <h2>Assisgnments</h2>
-                        <p>Unlock academic excellence with ours experts solutionswhich provided ou step-by-step
-                            solutions.</p>
+                        <p>This website provides well-structured assignments, making learning more organized and efficient. 🚀</p>
                         <img src="https://i.ibb.co/qF6j7yM/pngegg.png" alt="" height="150px" width="200px">
-                        <button type="button" id="student_button"><a href="{% url 'assignment' %}">Enroll Now</a></button>
+                        <button type="button" id="student_button"><a href="{% url 'assignment' %}">Check Here</a></button>
                     </div>
                 </div>
             </div>
