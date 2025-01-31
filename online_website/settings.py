@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import pymysql
 pymysql.install_as_MySQLdb()
 
+
 from pathlib import Path
 import os
 from datetime import timedelta
@@ -82,10 +83,10 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'Contact',
         'CLIENT': {
-            'host': 'mongodb+srv://Ajay7983:Ajay7983@contact.cwezn.mongodb.net/?retryWrites=true&w=majority',
-            'username': 'Ajay7983',
-            'password': 'Ajay7983@',  # Your actual MongoDB password
-            'authSource': 'admin',
+            'host': 'mongodb+srv://Ajay7983:Ajay7983%40@contact.cwezn.mongodb.net/?retryWrites=true&w=majority',
+    'username': 'Ajay7983',
+    'password': 'Ajay7983@',  # Yeh sahi hai password mein
+    'authSource': 'admin',
         },
     }
 }
