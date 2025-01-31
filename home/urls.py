@@ -8,7 +8,7 @@ urlpatterns = [
     path('admin',admin.site.urls),
     path("about/", views.about, name='about'),
     path('contact/', views.contact, name='contact'),
-    path('', views.login_view, name='login'), 
+    path('', views.index, name='index'), 
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path("faculty/", views.faculty, name='faculty'),
     path("pyq/", views.pyq, name='pyq'),
