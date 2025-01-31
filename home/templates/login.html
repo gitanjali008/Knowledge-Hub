@@ -301,6 +301,9 @@
                 wrapper.classList.remove('active');
             }
         }
+        {% if error_message %}
+        alert("{{ error_message }}");
+        {% endif %}
 
     </script>
 </body>
