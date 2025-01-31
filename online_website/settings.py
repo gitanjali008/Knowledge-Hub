@@ -9,28 +9,27 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
+
 import pymysql
 pymysql.install_as_MySQLdb()
 
-from pathlib import Path, os
+from pathlib import Path
+import os
+from datetime import timedelta
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-mtte4pdc+x=@p@hka=lz73@1zt*@#+_$phxmua^%0y1a+@$)xd'
+
+# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'  # Change to False in production
-
-
 
 APPEND_SLASH = False
 
-
-ALLOWED_HOSTS = [ '127.0.0.1', 'localhost','knowledge-hub-2mtc.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'knowledge-hub-2mtc.onrender.com']
 
 
 # Application definition
@@ -76,12 +75,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'online_website.wsgi.application'
 
 
-# #  Database
-# #  https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
-
-
-
+# Database
+# Default: SQLite, Change this if using MySQL/PostgreSQL
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -90,14 +85,12 @@ DATABASES = {
 }
 
 
-AUTHENTICATION_BACKENDS=[
-       'django.contrib.auth.backends.ModelBackend',
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
 ]
 
 
 # Password validation
-# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -115,8 +108,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Internationalization
-# https://docs.djangoproject.com/en/5.1/topics/i18n/
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -125,16 +116,26 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 SILENCED_SYSTEM_CHECKS = ['urls.W005']
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATIC_URL = 'static/'
+# Media files (for user-uploaded files)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+# Session Settings (Fix for auto-deleting session data)
+SESSION_ENGINE = "django.contrib.sessions.backends.db"  # Store sessions in DB
+SESSION_COOKIE_AGE = 100 * 365 * 24 * 60 * 60  # 100 years
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+SESSION_SAVE_EVERY_REQUEST = True  # Refresh session expiry on activity
+
 
 # Default primary key field type
-# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
