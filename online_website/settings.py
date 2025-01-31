@@ -79,10 +79,18 @@ WSGI_APPLICATION = 'online_website.wsgi.application'
 # Default: SQLite, Change this if using MySQL/PostgreSQL
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',  # BASE_DIR ensures the database file is in the project root.
+        'ENGINE': 'djongo',
+        'NAME': 'Contact',
+        'CLIENT': {
+            'host': 'mongodb+srv://Ajay7983:Ajay7983@contact.cwezn.mongodb.net/?retryWrites=true&w=majority',
+            'username': 'Ajay7983',
+            'password': 'Ajay7983@',  # Your actual MongoDB password
+            'authSource': 'admin',
+        },
     }
 }
+
+
 
 
 AUTHENTICATION_BACKENDS = [
