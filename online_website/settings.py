@@ -81,15 +81,16 @@ WSGI_APPLICATION = 'online_website.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'Contact',
+        'NAME': 'Contact',  # Your Database Name
         'CLIENT': {
             'host': 'mongodb+srv://Ajay7983:Ajay7983%40@contact.cwezn.mongodb.net/?retryWrites=true&w=majority',
-    'username': 'Ajay7983',
-    'password': 'Ajay7983@',  # Yeh sahi hai password mein
-    'authSource': 'admin',
+            'username': 'Ajay7983',  # Optional, as it's in the URI
+            'password': 'Ajay7983@',  # Optional, as it's in the URI
+            'authSource': 'admin',
         },
     }
 }
+
 
 
 
